@@ -1,0 +1,23 @@
+about:
+    home: http://www.astromatic.net/download/sextractor
+    license: GPL
+    summary: sextractor
+build:
+    number: '0'
+package:
+    name: sextractor
+    version: 2.19.5
+requirements:
+    build:
+    - atlas-generic [linux]
+    - autoconf [osx]
+    - m4 [osx]
+    - fftw
+    - pkgconfig
+    run:
+    - atlas-generic [linux]
+    - fftw
+source:
+    fn: sextractor-2.19.5.tar.gz
+    url:
+    - http://www.astromatic.net/download/sextractor/sextractor-2.19.5.tar.gz

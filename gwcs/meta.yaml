@@ -1,0 +1,27 @@
+about:
+    home: https://github.com/spacetelescope/gwcs
+    license: GPL
+    summary: gwcs
+build:
+    number: '0'
+package:
+    name: gwcs
+    version: 0.5.1
+requirements:
+    build:
+    - asdf
+    - astropy >=1.1
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - asdf
+    - astropy >=1.1
+    - numpy x.x
+    - python x.x
+source:
+    git_tag: v0.5.1
+    git_url: https://github.com/spacetelescope/gwcs
+test:
+    imports:
+    - gwcs

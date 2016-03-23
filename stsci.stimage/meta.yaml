@@ -1,0 +1,25 @@
+about:
+    home: https://github.com/embray/stsci.stimage
+    license: GPL
+    summary: stsci.stimage
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.stimage
+    version: 0.2.1
+requirements:
+    build:
+    - d2to1
+    - numpy x.x
+    - stsci.distutils
+    - setuptools
+    - python x.x
+    run:
+    - numpy x.x
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/stsci.stimage
+test:
+    imports:
+    - stsci.stimage

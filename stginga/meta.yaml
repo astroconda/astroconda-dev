@@ -1,0 +1,28 @@
+about:
+    home: https://github.com/spacetelescope/stginga
+    license: BSD
+    summary: stginga
+build:
+    number: '{{ environ.get("GIT_DESCRIBE_NUMBER", 0) }}'
+package:
+    name: stginga
+    version: '{{ environ.get("GIT_DESCRIBE_TAG", "0.0.0") }}'
+requirements:
+    build:
+    - ginga
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - setuptools
+    - python x.x
+    run:
+    - ginga
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/stginga
+test:
+    imports:
+    - stginga

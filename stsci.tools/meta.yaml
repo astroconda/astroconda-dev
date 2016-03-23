@@ -1,0 +1,30 @@
+about:
+    home: https://github.com/embray/stsci.tools
+    license: GPL
+    summary: stsci.tools
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.tools
+    version: 3.4.1
+requirements:
+    build:
+    - d2to1
+    - astropy >=1.1
+    - pytools
+    - setuptools
+    - stsci.distutils
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy >=1.1
+    - numpy x.x
+    - pytools
+    - stsci.distutils
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/stsci.tools
+test:
+    imports:
+    - stsci.tools

@@ -1,0 +1,23 @@
+about:
+    home: http://bitbucket.org/jhunkeler/htc_utils
+    license: GPL
+    readme: README.md
+    summary: htc_utils is a homebrew set of HTCondor wrappers
+build:
+    number: '0'
+package:
+    name: htc_utils
+    version: '0.1'
+requirements:
+    build:
+    - argparse [py26]
+    - setuptools
+    - python x.x
+    run:
+    - argparse [py26]
+    - python x.x
+source:
+    git_url: https://bitbucket.org/jhunkeler/htc_utils
+test:
+    imports:
+    - htc_utils

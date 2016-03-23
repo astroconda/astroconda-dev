@@ -1,0 +1,16 @@
+about:
+    home: http://www.netlib.org
+    license: BSD
+    summary: lapack
+build:
+    number: '0'
+package:
+    name: lapack
+    version: 3.6.0
+requirements:
+    build:
+    - cmake
+source:
+    fn: lapack-3.6.0.tgz
+    url:
+    - http://www.netlib.org/lapack/lapack-3.6.0.tgz

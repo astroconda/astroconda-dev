@@ -1,0 +1,39 @@
+about:
+    home: http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python
+    license: BSD
+    summary: reftools
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: reftools
+    version: 1.7.1
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - stsci.imagestats
+    - stsci.tools
+    - pywcs
+    - pysynphot
+    - stwcs
+    - calcos
+    - scipy
+    - numpy x.x
+    - setuptools
+    - python x.x
+    run:
+    - stsci.imagestats
+    - stsci.tools
+    - pywcs
+    - pysynphot
+    - stwcs
+    - calcos
+    - scipy
+    - numpy x.x
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/reftools
+test:
+    imports:
+    - reftools

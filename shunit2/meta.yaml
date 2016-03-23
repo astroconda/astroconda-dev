@@ -1,0 +1,16 @@
+about:
+    home: http://sourceforge.net/projects/shunit2
+    license: LGPL
+    summary: shunit2
+build:
+    number: '0'
+package:
+    name: shunit2
+    version: 2.0.3
+source:
+    fn: shunit2-2.0.3.tgz
+    url:
+    - https://downloads.sourceforge.net/shunit2/shunit2-2.0.3.tgz
+test:
+    commands:
+    - shunit2 --help

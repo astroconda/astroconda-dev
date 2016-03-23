@@ -1,0 +1,22 @@
+about:
+    home: https://pypi.python.org/packages/source/s/sphinxcontrib-programoutput
+    license: BSD
+    summary: sphinxcontrib-programoutput
+build:
+    number: '0'
+package:
+    name: sphinxcontrib-programoutput
+    version: '0.8'
+requirements:
+    build:
+    - sphinx
+    - setuptools
+    - python x.x
+    run:
+    - sphinx
+    - python x.x
+source:
+    fn: sphinxcontrib-programoutput-0.8.tar.gz
+    md5: bb0be17ef13f268378b2af51ff413c58
+    url:
+    - https://pypi.python.org/packages/source/s/sphinxcontrib-programoutput/sphinxcontrib-programoutput-0.8.tar.gz

@@ -1,0 +1,25 @@
+about:
+    home: https://github.com/ejeschke/ginga
+    license: BSD
+    summary: ginga
+build:
+    number: '0'
+package:
+    name: ginga
+    version: 2.5.20151215011852
+requirements:
+    build:
+    - numpy x.x
+    - setuptools
+    - python x.x
+    run:
+    - numpy x.x
+    - python x.x
+source:
+    fn: ginga-2.5.20151215011852.tar.gz
+    md5: 11cd8b9ed459c4438cc827e0a1ca4538
+    url:
+    - https://pypi.python.org/packages/source/g/ginga/ginga-2.5.20151215011852.tar.gz
+test:
+    imports:
+    - ginga

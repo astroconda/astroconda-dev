@@ -1,0 +1,23 @@
+about:
+    home: https://pypi.python.org/packages/source/m/mechanize
+    license: BSD
+    summary: mechanize
+build:
+    number: '0'
+package:
+    name: mechanize
+    version: 0.2.5
+requirements:
+    build:
+    - setuptools
+    - python x.x
+    run:
+    - python x.x
+source:
+    fn: mechanize-0.2.5.tar.gz
+    md5: 32657f139fc2fb75bcf193b63b8c60b2
+    url:
+    - https://pypi.python.org/packages/source/m/mechanize/mechanize-0.2.5.tar.gz
+test:
+    imports:
+    - mechanize

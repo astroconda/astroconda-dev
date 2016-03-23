@@ -1,0 +1,23 @@
+about:
+    home: https://pypi.python.org/packages/source/s/selenium
+    license: BSD
+    summary: selenium
+build:
+    number: '0'
+package:
+    name: selenium
+    version: 2.49.2
+requirements:
+    build:
+    - setuptools
+    - python x.x
+    run:
+    - python x.x
+source:
+    fn: selenium-2.49.2.tar.gz
+    md5: 17cfe7c6adb2cad1f64a61cf753f0738
+    url:
+    - https://pypi.python.org/packages/source/s/selenium/selenium-2.49.2.tar.gz
+test:
+    imports:
+    - selenium

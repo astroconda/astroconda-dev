@@ -1,0 +1,39 @@
+about:
+    home: https://github.com/mperrin/webbpsf
+    license: BSD
+    summary: webbpsf
+build:
+    number: '0'
+    preserve_egg_dir: 'True'
+package:
+    name: webbpsf
+    version: 0.4.0
+requirements:
+    build:
+    - nose
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - matplotlib
+    - poppy
+    - six [py27]
+    - webbpsf-data ==0.4.0
+    - setuptools
+    - python x.x
+    run:
+    - nose
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - matplotlib
+    - poppy
+    - six [py27]
+    - webbpsf-data ==0.4.0
+    - setuptools
+    - python x.x
+source:
+    git_tag: v0.4.0
+    git_url: https://github.com/mperrin/webbpsf
+test:
+    commands:
+    - WEBBPSF_PATH=$PREFIX/share/webbpsf-data python -c 'import webbpsf'

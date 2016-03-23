@@ -1,0 +1,29 @@
+about:
+    home: http://github.com/spacetelescope/fitsblender
+    license: BSD
+    summary: fitsblender
+build:
+    number: '0'
+package:
+    name: fitsblender
+    version: 0.2.6
+requirements:
+    build:
+    - astropy >=1.1
+    - d2to1
+    - stsci.distutils
+    - stsci.tools
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy >=1.1
+    - stsci.tools
+    - numpy x.x
+    - python x.x
+source:
+    git_tag: 0.2.6
+    git_url: https://github.com/spacetelescope/fitsblender
+test:
+    imports:
+    - fitsblender

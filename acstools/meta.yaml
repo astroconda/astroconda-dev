@@ -1,0 +1,41 @@
+about:
+    home: http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python
+    license: BSD
+    summary: acstools
+build:
+    number: '0'
+package:
+    name: acstools
+    version: 2.0.0
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - python x.x
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - scikit-image
+    - matplotlib
+    - stsci.imagestats
+    - stsci.tools
+    - setuptools
+    run:
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - scikit-image
+    - matplotlib
+    - stsci.imagestats
+    - stsci.tools
+    - setuptools
+    - python x.x
+source:
+    git_tag: 2.0.0
+    git_url: https://github.com/spacetelescope/acstools
+test:
+    commands:
+    - acs_destripe --help
+    - acs_destripe_plus --help
+    imports:
+    - acstools

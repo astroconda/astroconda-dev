@@ -1,0 +1,13 @@
+about:
+    home: http://sourceforge.net/projects/math-atlas/files/Stable
+    license: BSD
+    summary: atlas-generic
+build:
+    number: '0'
+package:
+    name: atlas-generic
+    version: 3.10.2
+source:
+    fn: atlas3.10.2.tar.bz2
+    url:
+    - http://sourceforge.net/projects/math-atlas/files/Stable/3.10.2/atlas3.10.2.tar.bz2

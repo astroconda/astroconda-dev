@@ -1,0 +1,29 @@
+about:
+    home: https://pypi.python.org/packages/source/t/traceback2
+    license: BSD
+    summary: traceback2
+build:
+    number: '0'
+package:
+    name: traceback2
+    version: 1.4.0
+requirements:
+    build:
+    - pbr
+    - linecache2
+    - six
+    - setuptools
+    - python x.x
+    run:
+    - pbr
+    - linecache2
+    - six
+    - python x.x
+source:
+    fn: traceback2-1.4.0.tar.gz
+    md5: 9e9723f4d70bfc6308fa992dd193c400
+    url:
+    - https://pypi.python.org/packages/source/t/traceback2/traceback2-1.4.0.tar.gz
+test:
+    imports:
+    - traceback2

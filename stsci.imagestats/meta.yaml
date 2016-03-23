@@ -1,0 +1,25 @@
+about:
+    home: https://github.com/embray/stsci.imagestats
+    license: GPL
+    summary: stsci.imagestats
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.imagestats
+    version: 1.4.1
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - numpy x.x
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/stsci.imagestats
+test:
+    imports:
+    - stsci.imagestats

@@ -1,0 +1,28 @@
+about:
+    home: https://github.com/spacetelescope/cube-tools
+    license: BSD
+    summary: cube-tools
+build:
+    number: '{{ environ.get("GIT_DESCRIBE_NUMBER", 0) }}'
+package:
+    name: cube-tools
+    version: '{{ environ.get("GIT_DESCRIBE_TAG", "0.0.0") }}'
+requirements:
+    build:
+    - glueviz
+    - specview
+    - pyqtgraph
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - glueviz
+    - specview
+    - pyqtgraph
+    - numpy x.x
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/cube-tools
+test:
+    imports:
+    - cube_tools

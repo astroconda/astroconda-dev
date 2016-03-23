@@ -1,0 +1,26 @@
+about:
+    home: https://github.com/spacetelescope/pywcs
+    license: BSD
+    summary: pywcs
+build:
+    number: '0'
+package:
+    name: pywcs
+    version: 1.12.1
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - stsci.tools
+    - numpy x.x
+    - setuptools
+    - python x.x
+    run:
+    - stsci.tools
+    - numpy x.x
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/pywcs
+test:
+    imports:
+    - pywcs

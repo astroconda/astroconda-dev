@@ -1,0 +1,29 @@
+about:
+    home: http://www.stsci.edu/institute/software_hardware
+    license: GPL
+    summary: stsci.sphere
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.sphere
+    version: '0.2'
+requirements:
+    build:
+    - d2to1
+    - astropy >=1.1
+    - matplotlib
+    - numpy x.x
+    - setuptools
+    - stsci.distutils
+    - python x.x
+    run:
+    - astropy >=1.1
+    - matplotlib
+    - numpy x.x
+    - python x.x
+source:
+    git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere
+test:
+    imports:
+    - stsci.sphere

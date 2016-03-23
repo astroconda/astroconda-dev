@@ -1,0 +1,39 @@
+about:
+    home: https://github.com/spacetelescope/imexam
+    license: BSD
+    readme: README.rst
+    summary: imexam
+build:
+    number: '0'
+package:
+    name: imexam
+    version: 0.5.2
+requirements:
+    build:
+    - d2to1
+    - nose
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - cython
+    - matplotlib
+    - ipython
+    - setuptools
+    - mock [py27]
+    - python x.x
+    run:
+    - d2to1
+    - nose
+    - astropy >=1.1
+    - numpy x.x
+    - scipy
+    - cython
+    - matplotlib
+    - ipython
+    - mock [py27]
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/imexam
+test:
+    imports:
+    - imexam

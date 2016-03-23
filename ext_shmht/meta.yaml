@@ -1,0 +1,21 @@
+about:
+    home: https://github.com/stsci-ssb/ext_shmht
+    license: BSD
+    summary: ext_shmht
+build:
+    number: '0'
+package:
+    name: ext_shmht
+    version: '0.1'
+requirements:
+    build:
+    - setuptools
+    - python x.x
+    run:
+    - six
+    - python x.x
+source:
+    git_url: https://github.com/stsci-ssb/ext_shmht
+test:
+    imports:
+    - ext_shmht

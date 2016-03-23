@@ -1,0 +1,35 @@
+about:
+    home: https://github.com/spacetelescope/stsci.skypac
+    license: BSD
+    summary: stsci.skypac
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.skypac
+    version: '0.9'
+requirements:
+    build:
+    - astropy >=1.1
+    - stsci.distutils
+    - stsci.imagestats
+    - stsci.sphere
+    - stsci.tools
+    - stwcs
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy >=1.1
+    - stsci.imagestats
+    - stsci.sphere
+    - stsci.tools
+    - stwcs
+    - python x.x
+    - python x.x
+source:
+    git_tag: '0.9'
+    git_url: https://github.com/spacetelescope/stsci.skypac
+test:
+    imports:
+    - stsci.skypac

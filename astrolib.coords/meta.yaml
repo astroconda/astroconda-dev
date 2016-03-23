@@ -1,0 +1,25 @@
+about:
+    home: https://github.com/spacetelescope/astrolib.coords.git
+    license: BSD
+    summary: astrolib.coords
+build:
+    number: '0'
+package:
+    name: astrolib.coords
+    version: 0.39.6
+requirements:
+    build:
+    - d2to1
+    - stsci.distutils
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - numpy x.x
+    - python x.x
+source:
+    git_tag: 0.39.6
+    git_url: https://github.com/spacetelescope/astrolib.coords.git/
+test:
+    imports:
+    - astrolib.coords

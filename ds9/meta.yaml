@@ -1,0 +1,16 @@
+about:
+    home: http://ds9.si.edu/download/source/
+    license: GPL,LGPL,BSD
+    summary: ds9
+build:
+    number: '0'
+package:
+    name: ds9
+    version: '7.4'
+requirements:
+    build:
+    - gcc >=4.6 [osx]
+source:
+    fn: ds9.7.4.tar.gz
+    url:
+    - http://ds9.si.edu/download/source//ds9.7.4.tar.gz

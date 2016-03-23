@@ -1,0 +1,31 @@
+about:
+    home: http://hgomersall.github.com/pyFFTW
+    license: GPL
+    summary: pyfftw
+build:
+    number: '0'
+package:
+    name: pyfftw
+    version: 0.9.2
+requirements:
+    build:
+    - numpy >=1.9
+    - fftw
+    - cython
+    - pkg-config [osx]
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - numpy >=1.9
+    - cython
+    - fftw
+    - numpy x.x
+    - python x.x
+source:
+    fn: pyFFTW-0.9.2.tar.gz
+    url:
+    - https://pypi.python.org/packages/source/p/pyFFTW/pyFFTW-0.9.2.tar.gz
+test:
+    imports:
+    - pyfftw

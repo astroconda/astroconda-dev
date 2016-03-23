@@ -1,0 +1,26 @@
+about:
+    home: https://github.com/spacetelescope/asdf-standard
+    license: BSD
+    summary: asdf-standard
+build:
+    number: '0'
+package:
+    name: asdf-standard
+    version: 1.0.0
+requirements:
+    build:
+    - sphinx
+    - jsonschema
+    - pyyaml
+    - mistune
+    - six [py27|py3k]
+    - setuptools
+    - python x.x
+    run:
+    - nose
+    - astropy >=1.1
+    - setuptools
+    - python x.x
+source:
+    git_tag: v1.0.0
+    git_url: https://github.com/spacetelescope/asdf-standard

@@ -1,0 +1,32 @@
+about:
+    home: https://github.com/spacetelescope/pyraf
+    license: BSD
+    summary: pyraf
+build:
+    number: '0'
+package:
+    name: pyraf
+    version: 2.1.10
+requirements:
+    build:
+    - d2to1
+    - astropy >=1.1
+    - ipython
+    - stsci.distutils
+    - stsci.tools
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy >=1.1
+    - ipython
+    - stsci.distutils
+    - stsci.tools
+    - numpy x.x
+    - python x.x
+source:
+    git_tag: 2.1.10
+    git_url: https://github.com/spacetelescope/pyraf
+test:
+    commands:
+    - pyraf --help

@@ -1,0 +1,26 @@
+about:
+    home: https://github.com/embray/stsci.numdisplay
+    license: GPL
+    summary: stsci.numdisplay
+build:
+    number: '0'
+    preserve_egg_dir: 'yes'
+package:
+    name: stsci.numdisplay
+    version: 1.6.1
+requirements:
+    build:
+    - d2to1
+    - numpy x.x
+    - stsci.tools
+    - setuptools
+    - python x.x
+    run:
+    - numpy x.x
+    - stsci.tools
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/stsci.numdisplay
+test:
+    imports:
+    - stsci.numdisplay

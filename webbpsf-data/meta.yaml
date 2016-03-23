@@ -1,0 +1,13 @@
+about:
+    home: http://www.stsci.edu/~mperrin/software/webbpsf
+    license: BSD
+    summary: webbpsf-data data files
+build:
+    number: '0'
+package:
+    name: webbpsf-data
+    version: 0.4.0
+source:
+    fn: webbpsf-data-0.4.0.tar.gz
+    url:
+    - http://www.stsci.edu/~mperrin/software/webbpsf/webbpsf-data-0.4.0.tar.gz

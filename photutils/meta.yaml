@@ -1,0 +1,36 @@
+about:
+    home: https://github.com/astropy/photutils
+    license: BSD
+    summary: photutils
+build:
+    number: '0'
+package:
+    name: photutils
+    version: 0.2.1
+requirements:
+    build:
+    - d2to1
+    - nose
+    - astropy >=1.1
+    - cython
+    - matplotlib
+    - numpy x.x
+    - scikit-learn
+    - scipy
+    - setuptools
+    - python x.x
+    run:
+    - astropy >=1.1
+    - cython
+    - matplotlib
+    - numpy x.x
+    - scikit-learn
+    - scipy
+    - setuptools
+    - python x.x
+source:
+    git_tag: v0.2.1
+    git_url: https://github.com/astropy/photutils
+test:
+    imports:
+    - photutils

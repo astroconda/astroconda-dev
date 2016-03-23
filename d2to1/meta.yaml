@@ -1,0 +1,19 @@
+about:
+    home: https://github.com/embray/d2to1
+    license: GPL
+    summary: d2to1
+build:
+    number: '0'
+package:
+    name: d2to1
+    version: 0.2.12
+requirements:
+    build:
+    - setuptools
+    - python x.x
+    run:
+    - setuptools
+    - python x.x
+source:
+    git_tag: 0.2.12
+    git_url: https://github.com/embray/d2to1

@@ -1,0 +1,18 @@
+about:
+    home: https://github.com/ericmandel/xpa
+    license: MIT
+    summary: Provides seamless communication between many kinds of Unix programs
+build:
+    number: '0'
+package:
+    name: xpa
+    version: 2.1.17
+source:
+    git_tag: v2.1.17
+    git_url: https://github.com/ericmandel/xpa
+test:
+    commands:
+    - test -x `which xpaget`
+    - test -x `which xpaset`
+    - test -x `which xpainfo`
+    - test -x `which xpaaccess`

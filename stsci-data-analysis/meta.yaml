@@ -1,0 +1,30 @@
+about:
+    home: http://stsci.edu
+    license: BSD
+    summary: stsci-data-analysis meta-package
+build:
+    number: '0'
+package:
+    name: stsci-data-analysis
+    version: 1.0.0
+requirements:
+    build:
+    - astropy >=1.1
+    - specview ==0.1
+    - astroimtools ==0.1
+    - cube-tools ==0.0.0
+    - stginga ==0.0.0
+    - asv ==0.1.1
+    - asdf ==1.0.2
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy >=1.1
+    - specview ==0.1
+    - astroimtools ==0.1
+    - cube-tools ==0.0.0
+    - stginga ==0.0.0
+    - asv ==0.1.1
+    - asdf ==1.0.2
+    - numpy x.x
+    - python x.x

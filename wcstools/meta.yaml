@@ -1,0 +1,16 @@
+about:
+    home: http://tdc-www.harvard.edu/wcstools
+    license: GPL
+    summary: 'For setting and using the world coordinate systems (WCS) in the headers of the most common astronomical image formats'
+build:
+    number: '0'
+package:
+    name: wcstools
+    version: '3.9.2'
+requirements:
+    build:
+    run:
+source:
+    fn: wcstools-3.9.2.tar.gz
+    url:
+    - http://tdc-www.harvard.edu/software/wcstools/wcstools-3.9.2.tar.gz

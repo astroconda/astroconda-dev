@@ -11,16 +11,17 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - numpy x.x
+    - recon
     - scipy
     - stsci.tools
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
     - scipy
     - stsci.tools
+    - numpy x.x
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/stsci.image.git

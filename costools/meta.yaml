@@ -11,6 +11,7 @@ requirements:
     build:
     - astropy >=1.1
     - calcos
+    - recon
     - stsci.tools
     - setuptools
     - numpy x.x

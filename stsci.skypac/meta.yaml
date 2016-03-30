@@ -11,6 +11,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
+    - recon
     - stsci.imagestats
     - stsci.sphere
     - stsci.tools

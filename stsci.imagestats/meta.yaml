@@ -10,6 +10,7 @@ package:
     version: 1.4.1
 requirements:
     build:
+    - recon
     - setuptools
     - numpy x.x
     - python x.x

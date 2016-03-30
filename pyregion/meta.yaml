@@ -9,15 +9,16 @@ package:
     version: 1.1.2
 requirements:
     build:
-    - numpy x.x
     - pyparsing
-    - python x.x
+    - recon
     - setuptools
+    - numpy x.x
+    - python x.x
     run:
-    - numpy x.x
     - pyparsing
-    - setuptools
+    - numpy x.x
     - python x.x
+    - setuptools
 source:
     git_url: https://github.com/spacetelescope/pyregion
 test:

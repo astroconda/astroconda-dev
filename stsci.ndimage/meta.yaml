@@ -10,8 +10,9 @@ package:
     version: 0.10.1
 requirements:
     build:
-    - setuptools
     - astropy >=1.1
+    - recon
+    - setuptools
     - numpy x.x
     - python x.x
     run:

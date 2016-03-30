@@ -12,7 +12,7 @@ requirements:
     - astropy >=1.1
     - fitsblender
     - nictools
-    - numpy x.x
+    - recon
     - scipy
     - stsci.convolve
     - stsci.image
@@ -24,13 +24,13 @@ requirements:
     - stsci.stimage
     - stwcs
     - pyregion
-    - python x.x
     - setuptools
+    - numpy x.x
+    - python x.x
     run:
     - astropy >=1.1
     - fitsblender
     - nictools
-    - numpy x.x
     - scipy
     - stsci.convolve
     - stsci.image
@@ -43,6 +43,7 @@ requirements:
     - stwcs
     - pyregion
     - setuptools
+    - numpy x.x
     - python x.x
 source:
     git_tag: 2.1.3

@@ -13,16 +13,17 @@ requirements:
     - nose
     - astropy >=1.1
     - cython
-    - numpy x.x
     - matplotlib
+    - recon
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - nose
     - astropy >=1.1
     - cython
-    - numpy x.x
     - matplotlib
+    - numpy x.x
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/pysynphot

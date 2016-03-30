@@ -14,11 +14,12 @@ requirements:
     - stsci.tools
     - pywcs
     - pysynphot
+    - recon
     - stwcs
     - calcos
     - scipy
-    - numpy x.x
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - stsci.imagestats

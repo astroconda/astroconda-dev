@@ -10,8 +10,9 @@ package:
     version: 0.2.1
 requirements:
     build:
-    - numpy x.x
+    - recon
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - numpy x.x

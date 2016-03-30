@@ -12,8 +12,9 @@ requirements:
     build:
     - astropy >=1.1
     - matplotlib
-    - numpy x.x
+    - recon
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - astropy >=1.1

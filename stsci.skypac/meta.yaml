@@ -11,7 +11,6 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - stsci.distutils
     - stsci.imagestats
     - stsci.sphere
     - stsci.tools

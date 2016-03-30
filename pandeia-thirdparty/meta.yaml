@@ -9,7 +9,6 @@ package:
     version: 1.1.4
 requirements:
     build:
-    - d2to1
     - astropy >=1.1
     - pandokia
     - yolk
@@ -34,7 +33,6 @@ requirements:
     - ipython-notebook
     - python x.x
     run:
-    - d2to1
     - astropy >=1.1
     - pandokia
     - yolk

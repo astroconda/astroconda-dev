@@ -9,8 +9,6 @@ package:
     version: 2.0.0
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - python x.x
     - astropy >=1.1
     - numpy x.x

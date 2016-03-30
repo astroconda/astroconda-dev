@@ -10,12 +10,10 @@ package:
     version: '0.2'
 requirements:
     build:
-    - d2to1
     - astropy >=1.1
     - matplotlib
     - numpy x.x
     - setuptools
-    - stsci.distutils
     - python x.x
     run:
     - astropy >=1.1

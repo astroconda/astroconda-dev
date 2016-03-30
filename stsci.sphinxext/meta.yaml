@@ -10,14 +10,11 @@ package:
     version: 1.2.2
 requirements:
     build:
-    - d2to1
     - numpydoc
-    - stsci.distutils
     - setuptools
     - python x.x
     run:
     - numpydoc
-    - stsci.distutils
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/stsci.sphinxext

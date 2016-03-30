@@ -10,7 +10,6 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - stsci.distutils
     - stsci.tools
     - setuptools
     - numpy x.x

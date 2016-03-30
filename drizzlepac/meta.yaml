@@ -15,7 +15,6 @@ requirements:
     - numpy x.x
     - scipy
     - stsci.convolve
-    - stsci.distutils
     - stsci.image
     - stsci.imagemanip
     - stsci.imagestats

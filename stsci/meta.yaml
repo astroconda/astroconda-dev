@@ -6,14 +6,13 @@ build:
     number: '0'
 package:
     name: stsci
-    version: 1.0.0
+    version: 1.0.1
 requirements:
     build:
-    - stsci-hst
-    - stsci-data-analysis
+    - stsci-hst ==1.0.1
+    - stsci-data-analysis ==1.0.1
     - astropy >=1.1
     - cfitsio ==3.370
-    - d2to1 ==0.2.12
     - ds9 ==7.4
     - fftw ==3.3.4
     - htc_utils >=0.1
@@ -28,11 +27,10 @@ requirements:
     - numpy x.x
     - python x.x
     run:
-    - stsci-hst
-    - stsci-data-analysis
+    - stsci-hst ==1.0.1
+    - stsci-data-analysis ==1.0.1
     - astropy >=1.1
     - cfitsio ==3.370
-    - d2to1 ==0.2.12
     - ds9 ==7.4
     - fftw ==3.3.4
     - htc_utils >=0.1

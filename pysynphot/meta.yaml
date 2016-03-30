@@ -10,9 +10,7 @@ package:
     version: 0.9.8.2
 requirements:
     build:
-    - d2to1
     - nose
-    - stsci.distutils
     - astropy >=1.1
     - cython
     - numpy x.x

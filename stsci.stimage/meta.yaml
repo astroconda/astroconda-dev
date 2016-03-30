@@ -10,9 +10,7 @@ package:
     version: 0.2.1
 requirements:
     build:
-    - d2to1
     - numpy x.x
-    - stsci.distutils
     - setuptools
     - python x.x
     run:

@@ -9,8 +9,6 @@ package:
     version: 1.2.1
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - astropy >=1.1
     - calcos
     - stsci.tools

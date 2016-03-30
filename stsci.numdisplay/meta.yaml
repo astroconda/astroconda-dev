@@ -10,7 +10,6 @@ package:
     version: 1.6.1
 requirements:
     build:
-    - d2to1
     - numpy x.x
     - stsci.tools
     - setuptools

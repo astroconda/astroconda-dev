@@ -9,10 +9,8 @@ package:
     version: '1.1'
 requirements:
     build:
-    - d2to1
     - astropy >=1.1
     - scipy
-    - stsci.distutils
     - stsci.tools
     - setuptools
     - numpy x.x

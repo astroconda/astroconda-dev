@@ -6,7 +6,7 @@ build:
     number: '0'
 package:
     name: costools
-    version: 1.2.1
+    version: 1.2.2
 requirements:
     build:
     - astropy >=1.1
@@ -24,7 +24,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 1.2.1
+    git_tag: 1.2.2
     git_url: https://github.com/spacetelescope/costools
 test:
     commands:

@@ -7,7 +7,7 @@ build:
     preserve_egg_dir: 'yes'
 package:
     name: stsci.tools
-    version: 3.4.1
+    version: 3.4.2
 requirements:
     build:
     - astropy >=1.1
@@ -22,6 +22,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
+    git_tag: 3.4.2
     git_url: https://github.com/spacetelescope/stsci.tools
 test:
     imports:

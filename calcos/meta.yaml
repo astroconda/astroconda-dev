@@ -5,7 +5,7 @@ build:
     number: '0'
 package:
     name: calcos
-    version: 3.1.3
+    version: 3.1.4
 requirements:
     build:
     - astropy >=1.1
@@ -22,7 +22,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 3.1.3
+    git_tag: 3.1.4
     git_url: https://github.com/spacetelescope/calcos
 test:
     commands:

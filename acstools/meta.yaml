@@ -1,12 +1,12 @@
 about:
-    home: http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python
+    home: https://github.com/spacetelescope/acstools
     license: BSD
     summary: acstools
 build:
     number: '0'
 package:
     name: acstools
-    version: 2.0.0
+    version: 2.0.1
 requirements:
     build:
     - astropy >=1.1
@@ -30,7 +30,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 2.0.0
+    git_tag: 2.0.1
     git_url: https://github.com/spacetelescope/acstools
 test:
     commands:

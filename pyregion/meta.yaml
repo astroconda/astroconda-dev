@@ -6,7 +6,7 @@ build:
     number: '0'
 package:
     name: pyregion
-    version: 1.1.2
+    version: 1.1.3
 requirements:
     build:
     - pyparsing
@@ -20,6 +20,7 @@ requirements:
     - python x.x
     - setuptools
 source:
+    git_tag: 1.1.3
     git_url: https://github.com/spacetelescope/pyregion
 test:
     imports:

@@ -1,5 +1,5 @@
 about:
-    home: https://github.com/embray/stsci.image
+    home: https://github.com/spacetelescope/stsci.image
     license: GPL
     summary: stsci.image
 build:
@@ -7,7 +7,7 @@ build:
     preserve_egg_dir: 'yes'
 package:
     name: stsci.image
-    version: 2.2.0
+    version: 2.2.1
 requirements:
     build:
     - astropy >=1.1
@@ -24,6 +24,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
+    git_tag: 2.2.1
     git_url: https://github.com/spacetelescope/stsci.image.git
 test:
     imports:

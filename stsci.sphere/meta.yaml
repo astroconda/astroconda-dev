@@ -7,7 +7,7 @@ build:
     preserve_egg_dir: 'yes'
 package:
     name: stsci.sphere
-    version: '0.2'
+    version: '0.2.1'
 requirements:
     build:
     - astropy >=1.1
@@ -22,6 +22,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
+    git_tag: 0.2.1
     git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere
 test:
     imports:

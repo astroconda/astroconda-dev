@@ -7,7 +7,7 @@ build:
     preserve_egg_dir: 'yes'
 package:
     name: stsci.numdisplay
-    version: 1.6.1
+    version: 1.6.2
 requirements:
     build:
     - recon
@@ -20,6 +20,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
+    git_url: 1.6.2
     git_url: https://github.com/spacetelescope/stsci.numdisplay
 test:
     imports:

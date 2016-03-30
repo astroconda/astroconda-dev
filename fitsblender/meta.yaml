@@ -6,7 +6,7 @@ build:
     number: '0'
 package:
     name: fitsblender
-    version: 0.2.6
+    version: 0.2.7
 requirements:
     build:
     - astropy >=1.1
@@ -21,7 +21,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 0.2.6
+    git_tag: 0.2.7
     git_url: https://github.com/spacetelescope/fitsblender
 test:
     imports:

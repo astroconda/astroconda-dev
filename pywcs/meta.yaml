@@ -11,12 +11,12 @@ requirements:
     build:
     - d2to1
     - stsci.distutils
-    - stsci.tools
+    - stsci.tools <=3.4.1
     - numpy x.x
     - setuptools
     - python x.x
     run:
-    - stsci.tools
+    - stsci.tools <=3.4.1
     - numpy x.x
     - python x.x
 source:

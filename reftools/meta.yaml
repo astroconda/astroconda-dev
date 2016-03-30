@@ -11,7 +11,7 @@ package:
 requirements:
     build:
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - pywcs
     - pysynphot
     - recon >=1.0.2
@@ -23,7 +23,7 @@ requirements:
     - python x.x
     run:
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - pywcs
     - pysynphot
     - stwcs

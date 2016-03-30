@@ -13,14 +13,14 @@ requirements:
     - d2to1
     - astropy >=1.1
     - stsci.distutils
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - numpy x.x
     - setuptools
     - python x.x
     run:
     - astropy >=1.1
     - numpy x.x
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

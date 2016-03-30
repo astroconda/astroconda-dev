@@ -13,7 +13,7 @@ requirements:
     - recon >=1.0.2
     - scipy
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x
@@ -21,7 +21,7 @@ requirements:
     - astropy >=1.1
     - scipy
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - numpy x.x
     - python x.x
 source:

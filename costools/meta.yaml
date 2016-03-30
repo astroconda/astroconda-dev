@@ -12,14 +12,14 @@ requirements:
     - astropy >=1.1
     - calcos
     - recon >=1.0.2
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
     - calcos
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x

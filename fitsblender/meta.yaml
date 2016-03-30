@@ -11,13 +11,13 @@ requirements:
     build:
     - astropy >=1.1
     - recon >=1.0.2
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - numpy x.x
     - python x.x
 source:

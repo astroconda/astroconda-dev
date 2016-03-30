@@ -68,7 +68,7 @@ requirements:
     - stsci.stimage ==0.2.2
     - stsci.skypac ==0.9.1
     - stsci.sphere ==0.2.1
-    - stsci.tools ==3.4.2
+    - stsci.tools >=3.4.2
     - stwcs ==1.2.4
     - wfpc2tools ==1.0.4
     - wfc3tools ==1.3.2

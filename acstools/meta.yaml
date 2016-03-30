@@ -15,7 +15,7 @@ requirements:
     - matplotlib
     - recon >=1.0.2
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x
@@ -25,7 +25,7 @@ requirements:
     - scikit-image
     - matplotlib
     - stsci.imagestats
-    - stsci.tools
+    - stsci.tools >=3.4.2
     - setuptools
     - numpy x.x
     - python x.x

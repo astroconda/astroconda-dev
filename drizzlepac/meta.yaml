@@ -12,7 +12,7 @@ requirements:
     - astropy >=1.1
     - fitsblender
     - nictools
-    - recon
+    - recon >=1.0.2
     - scipy
     - stsci.convolve
     - stsci.image

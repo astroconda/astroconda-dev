@@ -10,7 +10,7 @@ package:
     version: 1.6.2
 requirements:
     build:
-    - recon
+    - recon >=1.0.2
     - stsci.tools
     - setuptools
     - numpy x.x

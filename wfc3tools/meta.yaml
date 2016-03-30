@@ -11,7 +11,7 @@ requirements:
     build:
     - astropy >=1.1
     - matplotlib
-    - recon
+    - recon >=1.0.2
     - scipy
     - stsci.tools
     - setuptools

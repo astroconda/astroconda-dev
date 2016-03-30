@@ -10,7 +10,7 @@ package:
 requirements:
     build:
     - pyparsing
-    - recon
+    - recon >=1.0.2
     - setuptools
     - numpy x.x
     - python x.x

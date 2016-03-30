@@ -10,7 +10,7 @@ package:
     version: 2.1.4
 requirements:
     build:
-    - recon
+    - recon >=1.0.2
     - numpy x.x
     - python x.x
     run:

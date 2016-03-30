@@ -11,7 +11,7 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - recon
+    - recon >=1.0.2
     - setuptools
     - numpy x.x
     - python x.x

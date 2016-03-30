@@ -12,7 +12,7 @@ requirements:
     build:
     - astropy >=1.1
     - pytools
-    - recon
+    - recon >=1.0.2
     - setuptools
     - numpy x.x
     - python x.x

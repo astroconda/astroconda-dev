@@ -11,7 +11,7 @@ package:
 requirements:
     build:
     - numpydoc
-    - recon
+    - recon >=1.0.2
     - setuptools
     - python x.x
     run:

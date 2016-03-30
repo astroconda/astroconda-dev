@@ -9,7 +9,7 @@ package:
     version: 1.0.3
 requirements:
     build:
-    - recon
+    - recon >=1.0.2
     - setuptools
     - numpy x.x
     - python x.x

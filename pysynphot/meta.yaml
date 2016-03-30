@@ -14,7 +14,7 @@ requirements:
     - astropy >=1.1
     - cython
     - matplotlib
-    - recon
+    - recon >=1.0.2
     - setuptools
     - numpy x.x
     - python x.x

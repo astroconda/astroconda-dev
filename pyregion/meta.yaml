@@ -10,7 +10,7 @@ package:
 requirements:
     build:
     - pyparsing
-    - recon >=1.0.2
+    - relic >=1.0.3
     - setuptools
     - numpy x.x
     - python x.x

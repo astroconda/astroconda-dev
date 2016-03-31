@@ -10,7 +10,7 @@ package:
     version: 2.1.4
 requirements:
     build:
-    - recon >=1.0.2
+    - relic >=1.0.3
     - numpy x.x
     - python x.x
     run:

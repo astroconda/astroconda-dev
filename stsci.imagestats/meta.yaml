@@ -10,7 +10,7 @@ package:
     version: 1.4.2
 requirements:
     build:
-    - recon >=1.0.2
+    - relic >=1.0.3
     - setuptools
     - numpy x.x
     - python x.x

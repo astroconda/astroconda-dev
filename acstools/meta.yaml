@@ -13,7 +13,7 @@ requirements:
     - scipy
     - scikit-image
     - matplotlib
-    - recon >=1.0.2
+    - relic >=1.0.3
     - stsci.imagestats
     - stsci.tools >=3.4.2
     - setuptools

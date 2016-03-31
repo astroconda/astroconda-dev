@@ -11,7 +11,7 @@ requirements:
     build:
     - nose
     - pytest
-    - recon >=1.0.2
+    - relic >=1.0.3
     - shunit2
     - setuptools
     - python x.x

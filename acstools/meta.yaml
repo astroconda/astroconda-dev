@@ -1,12 +1,16 @@
+{% set name = 'acstools' %}
+{% set version = '2.0.1' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/acstools
     license: BSD
     summary: acstools
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: acstools
-    version: 2.0.1
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1
@@ -30,7 +34,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 2.0.1
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/acstools
 test:
     commands:

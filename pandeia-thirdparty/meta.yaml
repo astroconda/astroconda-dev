@@ -1,12 +1,16 @@
+{% set name = 'pandeia-thirdparty' %}
+{% set version = '1.1.4' %}
+{% set number = '0' %}
+
 about:
     home: http://stsci.edu
     license: BSD
     summary: pandeia-thirdparty meta-package
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: pandeia-thirdparty
-    version: 1.1.4
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1

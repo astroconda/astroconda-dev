@@ -1,13 +1,17 @@
+{% set name = 'jwst_lib' %}
+{% set version = GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
+{% set number = '0' %}
+
 about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
     license: BSD
     summary: jwst_lib
 build:
-    number: '{{ environ.get("GIT_DESCRIBE_NUMBER", 0) }}'
+    number: {{ number }}
     preserve_egg_dir: 'True'
 package:
-    name: jwst_lib
-    version: '{{ environ.get("GIT_DESCRIBE_TAG", "0.0.0") }}'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - d2to1

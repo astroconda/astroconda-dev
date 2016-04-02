@@ -1,12 +1,16 @@
+{% set name = 'pyraf' %}
+{% set version = '2.1.11' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/pyraf
     license: BSD
     summary: pyraf
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: pyraf
-    version: 2.1.11
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1
@@ -23,7 +27,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 2.1.11
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/pyraf
 test:
     commands:

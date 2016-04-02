@@ -1,13 +1,17 @@
+{% set name = 'stsci.numdisplay' %}
+{% set version = '1.6.2' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/embray/stsci.numdisplay
     license: GPL
     summary: stsci.numdisplay
 build:
-    number: '0'
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 package:
-    name: stsci.numdisplay
-    version: 1.6.2
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - relic >=1.0.3

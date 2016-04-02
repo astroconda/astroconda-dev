@@ -1,3 +1,7 @@
+{% set name = 'iraf' %}
+{% set version = '2.16.1' %}
+{% set number = '0' %}
+
 about:
     home: http://iraf.noao.edu
     license: MIT
@@ -5,10 +9,10 @@ about:
 build:
     binary_relocation: False [osx]
     detect_binary_files_with_prefix: False [osx]
-    number: '0'
+    number: {{ number }}
 package:
-    name: iraf
-    version: 2.16.1
+    name: {{ name }}
+    version: {{ version }}
 source:
     fn: iraf.tar.gz
     url:

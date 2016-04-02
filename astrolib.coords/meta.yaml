@@ -1,12 +1,16 @@
+{% set name = 'astrolib.coords' %}
+{% set version = '0.39.7' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/astrolib.coords.git
     license: BSD
     summary: astrolib.coords
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: astrolib.coords
-    version: 0.39.7
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - relic >=1.0.3
@@ -17,7 +21,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 0.39.7
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/astrolib.coords.git/
 test:
     imports:

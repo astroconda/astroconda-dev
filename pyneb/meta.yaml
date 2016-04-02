@@ -1,12 +1,16 @@
+{% set name = 'pyneb' %}
+{% set version = '1.0.14' %}
+{% set number = '0' %}
+
 about:
     home: http://www.iac.es/proyecto/PyNeb/
     license: Unknown
     summary: A modern python tool to compute emission line emissivities
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: pyneb
-    version: 1.0.14
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy
@@ -22,7 +26,7 @@ requirements:
     - scipy
     - python x.x
 source:
-    fn: pyneb-1.0.14.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     url:
     - https://pypi.python.org/packages/source/P/pyneb
 test:

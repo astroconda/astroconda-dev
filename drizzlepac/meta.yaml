@@ -1,12 +1,16 @@
+{% set name = 'drizzlepac' %}
+{% set version = '2.1.4' %}
+{% set number = '0' %}
+
 about:
     home: http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python
     license: BSD
     summary: drizzlepac
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: drizzlepac
-    version: 2.1.4
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1
@@ -46,7 +50,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 2.1.4
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/drizzlepac
 test:
     imports:

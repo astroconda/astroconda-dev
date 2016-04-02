@@ -1,13 +1,17 @@
+{% set name = 'htc_utils' %}
+{% set version = '0.1' %}
+{% set number = '0' %}
+
 about:
     home: http://bitbucket.org/jhunkeler/htc_utils
     license: GPL
     readme: README.md
     summary: htc_utils is a homebrew set of HTCondor wrappers
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: htc_utils
-    version: '0.1'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - argparse [py26]

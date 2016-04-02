@@ -1,11 +1,15 @@
+{% set name = 'calcos' %}
+{% set version = '3.1.4' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/calcos
     summary: calcos
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: calcos
-    version: 3.1.4
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1
@@ -22,7 +26,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 3.1.4
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/calcos
 test:
     commands:

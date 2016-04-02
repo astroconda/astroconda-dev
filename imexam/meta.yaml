@@ -1,13 +1,17 @@
+{% set name = 'imexam' %}
+{% set version = '0.5.2' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/imexam
     license: BSD
     readme: README.rst
     summary: imexam
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: imexam
-    version: 0.5.2
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - d2to1

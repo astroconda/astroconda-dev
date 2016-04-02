@@ -1,12 +1,16 @@
+{% set name = 'stsci-data-analysis' %}
+{% set version = '1.0.0' %}
+{% set number = '0' %}
+
 about:
     home: http://stsci.edu
     license: BSD
     summary: stsci-data-analysis meta-package
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: stsci-data-analysis
-    version: 1.0.0
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1

@@ -1,13 +1,17 @@
+{% set name = 'stsci.sphinxext' %}
+{% set version = '1.2.3' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/stsci.sphinxext
     license: GPL
     summary: stsci.sphinxext
 build:
-    number: '0'
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 package:
-    name: stsci.sphinxext
-    version: 1.2.3
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - numpydoc
@@ -18,7 +22,7 @@ requirements:
     - numpydoc
     - python x.x
 source:
-    git_tag: 1.2.3
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/stsci.sphinxext
 test:
     imports:

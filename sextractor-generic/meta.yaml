@@ -1,12 +1,16 @@
+{% set name = 'sextractor-generic' %}
+{% set version = '2.19.5' %}
+{% set number = '0' %}
+
 about:
     home: http://www.astromatic.net/download/sextractor
     license: GPL
     summary: sextractor-generic
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: sextractor-generic
-    version: 2.19.5
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - fftw

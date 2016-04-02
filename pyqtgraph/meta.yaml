@@ -1,12 +1,16 @@
+{% set name = 'pyqtgraph' %}
+{% set version = '0.9.10' %}
+{% set number = '0' %}
+
 about:
     home: http://www.pyqtgraph.org/
     license: MIT
     summary: pyqtgraph
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: pyqtgraph
-    version: 0.9.10
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - setuptools
@@ -17,10 +21,10 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    fn: pyqtgraph-0.9.10.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: bd84bf7537c43cf38db81cc1ad4f743a
     url:
-    - https://pypi.python.org/packages/source/p/pyqtgraph/pyqtgraph-0.9.10.tar.gz
+    - https://pypi.python.org/packages/source/p/pyqtgraph/{{ name }}-{{ version }}.tar.gz
 test:
     imports:
     - pyqtgraph

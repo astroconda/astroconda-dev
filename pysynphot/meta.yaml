@@ -1,13 +1,17 @@
+{% set name = 'pysynphot' %}
+{% set version = '0.9.8.2' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/pysynphot
     license: BSD
     summary: pysynphot
 build:
-    number: '0'
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 package:
-    name: pysynphot
-    version: 0.9.8.2
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - nose

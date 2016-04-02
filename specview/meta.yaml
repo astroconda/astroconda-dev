@@ -1,13 +1,17 @@
+{% set name = 'specview' %}
+{% set version = '0.1' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/specview
     license: BSD
     readme: README.rst
     summary: specview
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: specview
-    version: '0.1'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - astropy >=1.1

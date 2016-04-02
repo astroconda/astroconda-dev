@@ -1,13 +1,17 @@
+{% set name = 'stsci.convolve' %}
+{% set version = '2.1.4' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/embray/stsci.convolve
     license: GPL
     summary: stsci.convolve
 build:
-    number: '0'
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 package:
-    name: stsci.convolve
-    version: 2.1.4
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - relic >=1.0.3
@@ -17,7 +21,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: 2.1.4
+    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/stsci.convolve
 test:
     imports:

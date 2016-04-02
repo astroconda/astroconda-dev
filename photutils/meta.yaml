@@ -1,12 +1,16 @@
+{% set name = 'photutils' %}
+{% set version = '0.2.1' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/astropy/photutils
     license: BSD
     summary: photutils
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: photutils
-    version: 0.2.1
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - d2to1
@@ -29,7 +33,7 @@ requirements:
     - setuptools
     - python x.x
 source:
-    git_tag: v0.2.1
+    git_tag: {{ version }}
     git_url: https://github.com/astropy/photutils
 test:
     imports:

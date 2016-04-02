@@ -1,12 +1,16 @@
+{% set name = 'pywcs' %}
+{% set version = '1.12.1' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/pywcs
     license: BSD
     summary: pywcs
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: pywcs
-    version: 1.12.1
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - d2to1

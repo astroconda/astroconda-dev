@@ -1,12 +1,16 @@
+{% set name = 'sextractor' %}
+{% set version = '2.19.5' %}
+{% set number = '0' %}
+
 about:
     home: http://www.astromatic.net/download/sextractor
     license: GPL
     summary: sextractor
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: sextractor
-    version: 2.19.5
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - atlas-generic [linux]
@@ -18,6 +22,6 @@ requirements:
     - atlas-generic [linux]
     - fftw
 source:
-    fn: sextractor-2.19.5.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     url:
-    - http://www.astromatic.net/download/sextractor/sextractor-2.19.5.tar.gz
+    - http://www.astromatic.net/download/sextractor/{{ name }}-{{ version }}.tar.gz

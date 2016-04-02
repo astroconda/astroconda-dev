@@ -1,13 +1,17 @@
+{% set name = 'pandeia_data' %}
+{% set version = GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com:stsci-ssb/pandeia_data
     license: BSD
     summary: pandeia_data
 build:
-    number: '{{ environ.get("GIT_DESCRIBE_NUMBER", 0) }}'
+    number: {{ number }}
     preserve_egg_dir: 'yes'
 package:
-    name: pandeia_data
-    version: '{{ environ.get("GIT_DESCRIBE_TAG", "0.0.0") }'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - setuptools

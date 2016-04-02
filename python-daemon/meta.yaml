@@ -1,12 +1,16 @@
+{% set name = 'python-daemon' %}
+{% set version = '2.0.5' %}
+{% set number = '0' %}
+
 about:
     home: http://bitbucket.org/jhunkeler/python-daemon
     license: Apache-2
     summary: Library to implement a well-behaved Unix daemon process.
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: python-daemon
-    version: 2.0.5
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - docutils
@@ -16,7 +20,7 @@ requirements:
     - lockfile
     - python x.x
 source:
-    fn: python-daemon-2.0.5.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 73e7f49f525c51fa4a995aea4d80de41
     url:
-    - https://pypi.python.org/packages/source/p/python-daemon/python-daemon-2.0.5.tar.gz
+    - https://pypi.python.org/packages/source/p/python-daemon/{{ name }}-{{ version }}.tar.gz

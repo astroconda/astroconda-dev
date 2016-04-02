@@ -1,12 +1,16 @@
+{% set name = 'ext_shmht' %}
+{% set version = '0.1' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/stsci-ssb/ext_shmht
     license: BSD
     summary: ext_shmht
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: ext_shmht
-    version: '0.1'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - setuptools

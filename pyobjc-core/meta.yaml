@@ -1,13 +1,17 @@
+{% set name = 'pyobjc-core' %}
+{% set version = '3.0.4' %}
+{% set number = '0' %}
+
 about:
     home: http://pyobjc.sourceforge.net/
     license: MIT
     summary: Python<->ObjC Interoperability Module
 build:
-    number: '0'
+    number: {{ number }}
     preserve_egg_dir: 'true'
 package:
-    name: pyobjc-core
-    version: 3.0.4
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - setuptools
@@ -15,10 +19,10 @@ requirements:
     run:
     - python x.x
 source:
-    fn: pyobjc-core-3.0.4.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: 6baaa0d2533cc9c26ad9f889ca9ecb01
     url:
-    - https://pypi.python.org/packages/source/p/pyobjc-core/pyobjc-core-3.0.4.tar.gz
+    - https://pypi.python.org/packages/source/p/pyobjc-core/{{ name }}-{{ version }}.tar.gz
 test:
     imports:
     - PyObjCTools

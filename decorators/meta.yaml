@@ -1,12 +1,16 @@
+{% set name = 'decorators' %}
+{% set version = '4.0.9' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/micheles/decorator
     license: BSD
     summary: Better living through Python with decorators
 build:
-    number: '0'
+    number: {{ number }}
 package:
-    name: decorators
-    version: 4.0.9
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - setuptools
@@ -14,7 +18,7 @@ requirements:
     run:
     - python x.x
 source:
-    fn: decorators-4.0.9.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
     md5: f12c5651ccd707e12a0abaa4f76cd69a
     url:
-    - https://pypi.python.org/packages/source/d/decorators/decorators-4.0.9.tar.gz
+    - https://pypi.python.org/packages/source/d/decorators/{{ name }}-{{ version }}.tar.gz

@@ -1,12 +1,16 @@
+{% set name = 'stginga' %}
+{% set version = GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
+{% set number = '0' %}
+
 about:
     home: https://github.com/spacetelescope/stginga
     license: BSD
     summary: stginga
 build:
-    number: '{{ environ.get("GIT_DESCRIBE_NUMBER", 0) }}'
+    number: {{ number }}
 package:
-    name: stginga
-    version: '{{ environ.get("GIT_DESCRIBE_TAG", "0.0.0") }}'
+    name: {{ name }}
+    version: {{ version }}
 requirements:
     build:
     - ginga

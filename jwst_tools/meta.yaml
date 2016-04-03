@@ -1,5 +1,5 @@
 {% set name = 'jwst_tools' %}
-{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
+{% set version = GIT_DESCRIBE_TAG %}
 {% set number = '0' %}
 
 about:

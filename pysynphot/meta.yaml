@@ -1,5 +1,7 @@
 {% set name = 'pysynphot' %}
-{% set version = GIT_DESCRIBE_TAG %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '0' %}
 
 about:
@@ -18,7 +20,6 @@ requirements:
     - astropy >=1.1
     - cython
     - matplotlib
-    - relic >=1.0.3
     - setuptools
     - numpy x.x
     - python x.x

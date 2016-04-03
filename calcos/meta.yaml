@@ -1,5 +1,7 @@
 {% set name = 'calcos' %}
-{% set version = GIT_DESCRIBE_TAG %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '0' %}
 
 about:
@@ -13,7 +15,6 @@ package:
 requirements:
     build:
     - astropy >=1.1
-    - relic >=1.0.3
     - scipy
     - stsci.tools
     - setuptools
@@ -26,7 +27,6 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: https://github.com/spacetelescope/calcos
 test:
     commands:

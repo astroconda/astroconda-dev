@@ -1,5 +1,5 @@
 {% set name = 'wfpc2tools' %}
-{% set version = '1.0.4' %}
+{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
 {% set number = '0' %}
 
 about:
@@ -17,7 +17,7 @@ requirements:
     - relic >=1.0.3
     - scipy
     - stsci.imagestats
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - setuptools
     - numpy x.x
     - python x.x
@@ -25,7 +25,7 @@ requirements:
     - astropy >=1.1
     - scipy
     - stsci.imagestats
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - numpy x.x
     - python x.x
 source:

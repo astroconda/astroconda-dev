@@ -1,5 +1,5 @@
 {% set name = 'acstools' %}
-{% set version = '2.0.1' %}
+{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
 {% set number = '0' %}
 
 about:
@@ -19,7 +19,7 @@ requirements:
     - matplotlib
     - relic >=1.0.3
     - stsci.imagestats
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - setuptools
     - numpy x.x
     - python x.x
@@ -29,7 +29,7 @@ requirements:
     - scikit-image
     - matplotlib
     - stsci.imagestats
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - setuptools
     - numpy x.x
     - python x.x

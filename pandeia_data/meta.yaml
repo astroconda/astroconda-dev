@@ -1,5 +1,5 @@
 {% set name = 'pandeia_data' %}
-{% set version = GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
+{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
 {% set number = '0' %}
 
 about:

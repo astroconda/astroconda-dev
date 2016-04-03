@@ -1,5 +1,5 @@
 {% set name = 'stsci-data-analysis' %}
-{% set version = '1.0.0' %}
+{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
 {% set number = '0' %}
 
 about:
@@ -12,23 +12,13 @@ package:
     name: {{ name }}
     version: {{ version }}
 requirements:
-    build:
-    - astropy >=1.1
-    - specview ==0.1
-    - astroimtools ==0.1
-    - cube-tools ==0.0.0
-    - stginga ==0.0.0
-    - asv ==0.1.1
-    - asdf ==1.0.2
-    - numpy x.x
-    - python x.x
     run:
     - astropy >=1.1
-    - specview ==0.1
-    - astroimtools ==0.1
-    - cube-tools ==0.0.0
-    - stginga ==0.0.0
-    - asv ==0.1.1
-    - asdf ==1.0.2
+    - specview
+    - astroimtools
+    - cube-tools
+    - stginga
+    - asv
+    - asdf
     - numpy x.x
     - python x.x

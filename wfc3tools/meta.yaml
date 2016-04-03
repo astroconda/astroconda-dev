@@ -1,5 +1,5 @@
 {% set name = 'wfc3tools' %}
-{% set version = '1.3.2' %}
+{% set GIT_DESCRIBE_TAG if GIT_DESCRIBE_TAG is not defined '0.0.0' %}
 {% set number = '0' %}
 
 about:
@@ -17,12 +17,12 @@ requirements:
     - matplotlib
     - relic >=1.0.3
     - scipy
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - setuptools
     - numpy x.x
     - python x.x
     run:
-    - stsci.tools >=3.4.2
+    - stsci.tools
     - astropy >=1.1
     - matplotlib
     - numpy x.x

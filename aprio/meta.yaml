@@ -18,10 +18,12 @@ requirements:
     build:
     - python x.x
     - argparse >=1.1 [py26]
+    - docutils
     - setuptools
     - psutil
     - python-daemon
     run:
+    - docutils
     - psutil
     - python-daemon
     - python x.x

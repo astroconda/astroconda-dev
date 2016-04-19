@@ -31,4 +31,5 @@ source:
     git_url: https://github.com/ericmandel/pyds9
 test:
     imports:
-    - pyds9
+    #- pyds9
+    # ^ Disabled, because it leaves behind an xpans daemon

@@ -16,6 +16,8 @@ package:
     version: {{ version }}
 requirements:
     build:
+    - d2to1
+    - stsci.distutils
     - astropy >=1.1
     - pytools
     - setuptools
@@ -23,6 +25,7 @@ requirements:
     - python x.x
     run:
     - astropy >=1.1
+    - stsci.distutils
     - pytools
     - numpy x.x
     - python x.x

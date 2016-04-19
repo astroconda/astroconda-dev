@@ -17,6 +17,7 @@ package:
 requirements:
     build:
     - d2to1
+    - stsci.distutils
     - nose
     - astropy >=1.1
     - numpy x.x
@@ -28,7 +29,6 @@ requirements:
     - mock [py27]
     - python x.x
     run:
-    - d2to1
     - nose
     - astropy >=1.1
     - numpy x.x

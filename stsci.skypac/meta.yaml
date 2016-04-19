@@ -16,6 +16,8 @@ package:
     version: {{ version }}
 requirements:
     build:
+    - d2to1
+    - stsci.distutils
     - astropy >=1.1
     - stsci.imagestats
     - stsci.sphere

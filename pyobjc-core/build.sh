@@ -1,2 +1,2 @@
-
-python setup.py install || exit 1
+cd pyobjc-core
+python setup.py install

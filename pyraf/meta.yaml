@@ -16,9 +16,13 @@ package:
 requirements:
     build:
     - d2to1
-    - stsci.distutils
     - astropy >=1.1
     - ipython
+    - matplotlib
+    - pyobjc-core [osx]
+    - pyobjc-framework-cocoa [osx]
+    - pyobjc-framework-quartz [osx]
+    - stsci.distutils
     - stsci.tools
     - setuptools
     - numpy x.x
@@ -26,6 +30,10 @@ requirements:
     run:
     - astropy >=1.1
     - ipython
+    - matplotlib
+    - pyobjc-core [osx]
+    - pyobjc-framework-cocoa [osx]
+    - pyobjc-framework-quartz [osx]
     - stsci.tools
     - numpy x.x
     - python x.x

@@ -27,7 +27,6 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere
 test:
     imports:

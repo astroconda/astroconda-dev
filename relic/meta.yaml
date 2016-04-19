@@ -21,7 +21,6 @@ requirements:
     - python x.x
 source:
     git_url: https://github.com/jhunkeler/relic.git
-    git_tag: {{ version }}
 test:
     imports:
     - relic

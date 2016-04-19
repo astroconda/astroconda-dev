@@ -20,5 +20,4 @@ requirements:
     run:
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: https://bitbucket.org/jhunkeler/purge_path

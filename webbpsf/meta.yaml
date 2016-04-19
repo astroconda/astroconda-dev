@@ -4,6 +4,11 @@
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '0' %}
 
+# Keep in mind:
+#     webbpsf-data is version-locked to prevent older builds from picking
+#     up incompatible data. As the data pack is upgraded, this recipe will
+#     need to be updated to reflect it. If there was a better way, I'd do it
+
 about:
     home: https://github.com/mperrin/webbpsf
     license: BSD
@@ -38,7 +43,6 @@ requirements:
     - setuptools
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: https://github.com/mperrin/webbpsf
 test:
     commands:

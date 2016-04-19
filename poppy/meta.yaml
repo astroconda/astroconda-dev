@@ -37,5 +37,4 @@ requirements:
     - setuptools
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: https://github.com/mperrin/poppy

@@ -26,5 +26,4 @@ requirements:
     - python-daemon
     - python x.x
 source:
-    git_tag: {{ version }}
     git_url: https://bitbucket.org/jhunkeler/aprio

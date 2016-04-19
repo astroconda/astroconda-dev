@@ -1,3 +1,4 @@
+# XQuartz or no-go
 if [[ `uname -s` == "Darwin" ]]; then
     export CFLAGS="-I/opt/X11/include"
     export LDFLAGS="-L/opt/X11/lib"

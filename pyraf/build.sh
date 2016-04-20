@@ -6,7 +6,7 @@ fi
 
 if [[ $PY3K > 0 ]]; then
 set +e
-    2to3 -w --fix=print,except,numliterals .
+    2to3 -w .
 fi
 
 python setup.py install || exit 1

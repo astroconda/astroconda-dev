@@ -18,17 +18,29 @@ requirements:
     build:
     - d2to1
     - astropy >=1.1
+    - asdf
+    - crds
+    - cython
+    - drizzlepac
+    - gwcs
     - jwst_lib
-    - stsci.convolve
+    - matplotlib
+    - scipy
     - stsci.distutils
-    - numpy x.x
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
+    - asdf
+    - crds
+    - cython
+    - drizzlepac
+    - gwcs
     - jwst_lib
+    - matplotlib
+    - scipy
     - numpy x.x
-    - stsci.convolve
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

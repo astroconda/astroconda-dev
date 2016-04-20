@@ -17,19 +17,23 @@ package:
 requirements:
     build:
     - d2to1
-    - asdf-standard
+    - asdf
     - astropy >=1.1
     - crds
-    - asdf
+    - gwcs
+    - jsonschema
     - stsci.distutils
+    - nose
     - numpy x.x
     - setuptools
     - python x.x
     run:
-    - asdf-standard
+    - asdf
     - astropy >=1.1
     - crds
-    - asdf
+    - gwcs
+    - nose
+    - jsonschema
     - numpy x.x
     - python x.x
 source:

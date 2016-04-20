@@ -18,15 +18,25 @@ requirements:
     build:
     - d2to1
     - astropy >=1.1
+    - jwst_lib
+    - matplotlib
+    - nose
+    - scipy
+    - six
     - stsci.distutils
     - stsci.tools
-    - numpy x.x
     - setuptools
+    - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
-    - numpy x.x
+    - jwst_lib
+    - matplotlib
+    - nose
+    - scipy
+    - six
     - stsci.tools
+    - numpy x.x
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

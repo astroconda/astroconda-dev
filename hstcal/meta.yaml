@@ -15,8 +15,8 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - gcc >=4.6 [osx]
+    - gcc >=4.7 [osx]
     run:
-    - libgcc >=4.6 [osx]
+    - libgcc >=4.7 [osx]
 source:
     git_url: https://github.com/spacetelescope/hstcal

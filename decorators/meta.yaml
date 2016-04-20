@@ -1,5 +1,5 @@
 {% set name = 'decorators' %}
-{% set version = '4.0.9' %}
+{% set version = '0.1' %}
 {% set number = '0' %}
 
 about:
@@ -19,6 +19,6 @@ requirements:
     - python x.x
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    md5: f12c5651ccd707e12a0abaa4f76cd69a
+    md5: 755857960408500848d1adc9d6495e98
     url:
     - https://pypi.python.org/packages/source/d/decorators/{{ name }}-{{ version }}.tar.gz

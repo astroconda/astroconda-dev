@@ -1,3 +1,4 @@
+{% set badname = 'PyNeb' %}
 {% set name = 'pyneb' %}
 {% set version = '1.0.14' %}
 {% set number = '0' %}
@@ -15,20 +16,20 @@ requirements:
     build:
     - astropy
     - matplotlib
-    - numpy >=1.5.1
+    - numpy x.x
     - scipy
     - setuptools
     - python x.x
     run:
     - astropy
     - matplotlib
-    - numpy >=1.5.1
+    - numpy x.x
     - scipy
     - python x.x
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
+    fn: {{ badname }}-{{ version }}.tar.gz
     url:
-    - https://pypi.python.org/packages/source/P/pyneb
+    - https://pypi.python.org/packages/source/P/{{ badname }}/{{ badname }}-{{ version }}.tar.gz
 test:
     imports:
     - pyneb

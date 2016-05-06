@@ -21,6 +21,7 @@ requirements:
     - asdf
     - crds
     - cython
+    - drizzle
     - drizzlepac
     - gwcs
     - jwst_lib
@@ -36,6 +37,7 @@ requirements:
     - asdf
     - crds
     - cython
+    - drizzle
     - drizzlepac
     - gwcs
     - jwst_lib

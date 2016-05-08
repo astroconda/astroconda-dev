@@ -1,7 +1,5 @@
 {% set name = 'jwst_tools' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = '0.6.0rc1' %}
 {% set number = '0' %}
 
 about:
@@ -16,29 +14,30 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - d2to1
+    - d2to1 ==0.2.12.post1.dev1
     - astropy >=1.1
-    - jwst_lib
-    - matplotlib
-    - nose
-    - scipy
-    - six
-    - stsci.distutils
-    - stsci.tools
+    - jwst_lib ==0.6.0rc1
+    - matplotlib ==1.5.1
+    - nose ==1.3.7
+    - scipy ==0.17.0
+    - six ==1.10.0
+    - stsci.distutils ==0.3.8.dev0
+    - stsci.tools ==3.4.1.dev0
     - setuptools
     - numpy x.x
     - python x.x
     run:
     - astropy >=1.1
-    - jwst_lib
-    - matplotlib
-    - nose
-    - scipy
-    - six
-    - stsci.tools
+    - jwst_lib ==0.6.0rc1
+    - matplotlib ==1.5.1
+    - nose ==1.3.7
+    - scipy ==0.17.0
+    - six ==1.10.0
+    - stsci.tools ==3.4.1.dev0
     - numpy x.x
     - python x.x
 source:
+    git_rev: 68d1cec0fb2a52273f9629325c8f8a4eaebaaf70
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
 test:
     imports:

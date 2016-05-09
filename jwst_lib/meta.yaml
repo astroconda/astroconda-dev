@@ -1,6 +1,6 @@
 {% set name = 'jwst_lib' %}
 {% set version = '0.6.0rc1' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
@@ -37,7 +37,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_rev: f68df1ad47c0287dc07081db6b8502094dbad7eb
+    git_rev: 426f68fb6f335f16b31e2a75fd85587f329700ee
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
 test:
     imports:

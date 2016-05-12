@@ -1,6 +1,6 @@
 {% set name = 'jwst_tools' %}
-{% set version = '0.6.0rc1' %}
-{% set number = '2' %}
+{% set version = '0.6.0rc2' %}
+{% set number = '0' %}
 
 about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
@@ -16,7 +16,7 @@ requirements:
     build:
     - d2to1 ==0.2.12.post1.dev1
     - astropy >=1.1
-    - jwst_lib ==0.6.0rc1
+    - jwst_lib ==0.6.0rc2
     - matplotlib ==1.5.1
     - nose ==1.3.7
     - scipy ==0.17.0
@@ -28,7 +28,7 @@ requirements:
     - python x.x
     run:
     - astropy >=1.1
-    - jwst_lib ==0.6.0rc1
+    - jwst_lib ==0.6.0rc2
     - matplotlib ==1.5.1
     - nose ==1.3.7
     - scipy ==0.17.0
@@ -37,7 +37,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_rev: 426f68fb6f335f16b31e2a75fd85587f329700ee
+    git_rev: 3f177a346da210971b435a2fad5c3f98e956609f
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
 test:
     imports:

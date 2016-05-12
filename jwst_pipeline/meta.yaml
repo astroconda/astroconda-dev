@@ -1,6 +1,6 @@
 {% set name = 'jwst_pipeline' %}
-{% set version = '0.6.0rc1' %}
-{% set number = '2' %}
+{% set version = '0.6.0rc2' %}
+{% set number = '0' %}
 
 about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
@@ -17,15 +17,15 @@ requirements:
     - d2to1 ==0.2.12.post1.dev1
     - astropy >=1.1
     - asdf ==v1.0.2.dev3
-    - crds ==6.0.0.dev50
+    - crds ==6.0.0.dev53
     - cython ==0.24
     - dask ==0.8.2
     - drizzle ==v1.1.dev4
     - drizzlepac ==2.1.3.dev0
     - gwcs ==v0.6rc1.dev10
-    - jwst_lib ==0.6.0rc1
+    - jwst_lib ==0.6.0rc2
     - matplotlib ==1.5.1
-    - photutils ==v0.2.dev166
+    - photutils ==v0.2.dev168
     - scipy ==0.17.0
     - stsci.distutils ==0.3.8.dev0
     - setuptools
@@ -47,7 +47,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_rev: 426f68fb6f335f16b31e2a75fd85587f329700ee
+    git_rev: 3f177a346da210971b435a2fad5c3f98e956609f
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
 test:
     imports:

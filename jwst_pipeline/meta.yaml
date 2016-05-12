@@ -34,7 +34,7 @@ requirements:
     run:
     - astropy >=1.1
     - asdf ==v1.0.2.dev3
-    - crds ==6.0.0.dev50
+    - crds ==6.0.0.dev53
     - cython ==0.24
     - dask ==0.8.2
     - drizzle ==v1.1.dev4

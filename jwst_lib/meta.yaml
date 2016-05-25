@@ -18,7 +18,7 @@ requirements:
     build:
     - d2to1
     - asdf
-    - astropy >=1.1
+    - astropy
     - crds
     - gwcs
     - jsonschema
@@ -30,7 +30,7 @@ requirements:
     - python x.x
     run:
     - asdf
-    - astropy >=1.1
+    - astropy
     - crds
     - gwcs
     - nose

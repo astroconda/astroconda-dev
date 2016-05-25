@@ -15,7 +15,7 @@ package:
     version: {{ version }}
 requirements:
     run:
-    - astropy >=1.1
+    - astropy
     - pandokia
     - yolk
     - parsley

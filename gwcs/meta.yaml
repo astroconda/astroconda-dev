@@ -16,13 +16,13 @@ package:
 requirements:
     build:
     - asdf
-    - astropy >=1.1
+    - astropy
     - setuptools
     - numpy x.x
     - python x.x
     run:
     - asdf
-    - astropy >=1.1
+    - astropy
     - numpy x.x
     - python x.x
 source:

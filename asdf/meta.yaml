@@ -15,7 +15,7 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - astropy >=1.1
+    - astropy
     - pyyaml
     - jsonschema
     - pytest
@@ -24,7 +24,7 @@ requirements:
     - numpy x.x
     - python x.x
     run:
-    - astropy >=1.1
+    - astropy
     - pyyaml
     - jsonschema
     - pytest

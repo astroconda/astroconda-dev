@@ -16,14 +16,14 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - astropy >=1.1
+    - astropy
     - numpy x.x
     - scipy
     - pyqtgraph
     - setuptools
     - python x.x
     run:
-    - astropy >=1.1
+    - astropy
     - numpy x.x
     - scipy
     - pyqtgraph

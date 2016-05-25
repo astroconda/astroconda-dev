@@ -17,7 +17,7 @@ requirements:
     run:
     - stsci-hst
     - stsci-data-analysis
-    - astropy >=1.1
+    - astropy
     - cfitsio
     - ds9
     - fftw

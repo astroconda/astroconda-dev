@@ -17,7 +17,7 @@ package:
 requirements:
     build:
     - d2to1
-    - astropy >=1.1
+    - astropy
     - asdf
     - crds
     - cython
@@ -34,7 +34,7 @@ requirements:
     - numpy x.x
     - python x.x
     run:
-    - astropy >=1.1
+    - astropy
     - asdf
     - crds
     - cython

@@ -16,7 +16,7 @@ package:
 requirements:
     build:
     - d2to1
-    - astropy >=1.1
+    - astropy
     - ipython
     - matplotlib
     - pyobjc-core [osx]
@@ -29,7 +29,7 @@ requirements:
     - python x.x
     run:
     - d2to1
-    - astropy >=1.1
+    - astropy
     - ipython
     - matplotlib
     - pyobjc-core [osx]

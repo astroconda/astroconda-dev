@@ -1,8 +1,7 @@
 {% set name = 'astropy' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '0' %}
+{% set build_string = environ.get("GIT_DESCRIBE_HASH", "NOHASH") + "_" + number %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -10,6 +9,7 @@ about:
     summary: Astropy is a package intended to contain much of the core functionality and some common tools needed for performing astronomy and astrophysics with Python.
 build:
     number: {{ number }}
+    string: {{ build_string }}
 package:
     name: {{ name }}
     version: {{ version }}

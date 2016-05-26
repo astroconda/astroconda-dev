@@ -1,5 +1,5 @@
 {% set name = 'jwst_lib' %}
-{% set version = '0.6.0rc2' %}
+{% set version = '0.6.0rc3' %}
 {% set number = '0' %}
 
 about:
@@ -15,9 +15,9 @@ package:
 requirements:
     build:
     - d2to1 ==0.2.12.post1.dev1
-    - asdf ==v1.0.2.dev3
-    - astropy >=1.1
-    - crds ==6.0.0.dev53
+    - asdf ==1.0.4.dev0
+    - astropy ==1.2dev3684
+    - crds ==6.0.1.dev0
     - gwcs ==v0.6rc1.dev10
     - jsonschema ==2.5.1
     - nose ==1.3.7
@@ -27,9 +27,9 @@ requirements:
     - setuptools
     - python x.x
     run:
-    - asdf ==v1.0.2.dev3
-    - astropy >=1.1
-    - crds ==6.0.0.dev53
+    - asdf ==1.0.4.dev0
+    - astropy ==1.2dev3684
+    - crds ==6.0.1.dev0
     - gwcs ==v0.6rc1.dev10
     - nose ==1.3.7
     - jsonschema ==2.5.1
@@ -37,7 +37,7 @@ requirements:
     - numpy x.x
     - python x.x
 source:
-    git_rev: 3f177a346da210971b435a2fad5c3f98e956609f
+    git_branch: Build6_rc3
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
 test:
     imports:

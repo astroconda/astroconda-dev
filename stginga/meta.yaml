@@ -16,14 +16,14 @@ package:
 requirements:
     build:
     - ginga
-    - astropy >=1.1
+    - astropy
     - numpy x.x
     - scipy
     - setuptools
     - python x.x
     run:
     - ginga
-    - astropy >=1.1
+    - astropy
     - numpy x.x
     - scipy
     - python x.x

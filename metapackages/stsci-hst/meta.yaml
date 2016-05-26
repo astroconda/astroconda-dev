@@ -18,7 +18,7 @@ requirements:
     - purge_path
     - acstools
     - astrolib.coords
-    - astropy >=1.1
+    - astropy
     - calcos
     - costools
     - crds

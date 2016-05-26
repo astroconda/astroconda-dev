@@ -24,7 +24,7 @@ requirements:
     - python x.x
     run:
     - nose
-    - astropy >=1.1
+    - astropy
     - setuptools
     - python x.x
 source:

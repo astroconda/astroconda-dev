@@ -15,13 +15,13 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - astropy >=1.1
+    - astropy
     - matplotlib
     - setuptools
     - numpy x.x
     - python x.x
     run:
-    - astropy >=1.1
+    - astropy
     - matplotlib
     - numpy x.x
     - python x.x

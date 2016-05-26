@@ -15,7 +15,7 @@ package:
     version: {{ version }}
 requirements:
     run:
-    - astropy >=1.1
+    - astropy
     - specview
     - astroimtools
     - cube-tools

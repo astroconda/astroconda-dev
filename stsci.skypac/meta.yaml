@@ -18,7 +18,7 @@ requirements:
     build:
     - d2to1
     - stsci.distutils
-    - astropy >=1.1
+    - astropy
     - stsci.imagestats
     - stsci.sphere
     - stsci.tools
@@ -27,7 +27,7 @@ requirements:
     - numpy x.x
     - python x.x
     run:
-    - astropy >=1.1
+    - astropy
     - stsci.imagestats
     - stsci.sphere
     - stsci.tools

@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/astropy/photutils
@@ -23,7 +23,6 @@ requirements:
     - matplotlib
     - numpy x.x
     - scikit-image
-    - scikit-learn
     - scipy
     - setuptools
     - python x.x
@@ -33,7 +32,6 @@ requirements:
     - matplotlib
     - numpy x.x
     - scikit-image
-    - scikit-learn
     - scipy
     - setuptools
     - python x.x

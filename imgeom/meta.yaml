@@ -1,0 +1,44 @@
+{% set name = 'imgeom' %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/spacetelescope/{{ name }}
+    license: BSD
+    summary: Tools for dealing with mapping coordinates, measurements, and models between overlapping images
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+build:
+    number: {{ number }}
+
+source:
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
+requirements:
+    build:
+    - astropy
+    - drizzle
+    - gwcs
+    - setuptools
+    - python x.x
+    run:
+    - astropy
+    - drizzle
+    - gwcs
+    - numpy x.x
+    - python x.x
+
+test:
+    imports:
+    - imgeom
+    - imgeom.drizmask
+    - imgeom.fitting
+    - imgeom.reproject
+#
+#   commands:
+#   # - (e.g. program --help)

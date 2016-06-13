@@ -15,14 +15,10 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - jwst_lib
-    - jwst_tools
-    - jwst_pipeline
+    - jwst
     - numpy x.x
     - python x.x
     run:
-    - jwst_lib
-    - jwst_pipeline
-    - jwst_tools
+    - jwst
     - numpy x.x
     - python x.x

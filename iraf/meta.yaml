@@ -1,6 +1,6 @@
 {% set name = 'iraf' %}
 {% set version = '2.16.1' %}
-{% set number = '0' %}
+{% set number = '2' %}
 
 about:
     home: http://iraf.noao.edu

@@ -105,6 +105,10 @@ sh -c 'file {} | grep broken | cut -f 1 -d :' | xargs rm -f
 mkdir -p $PREFIX/etc/conda/{activate.d,deactivate.d}
 
 echo "
+# Workaround for conda >4.1.2
+if [[ -n \$CONDA_PREFIX ]]; then
+    export CONDA_ENV_PATH=\$CONDA_PREFIX
+fi
 export IRAFARCH=$IRAFARCH
 export iraf=\$CONDA_ENV_PATH/iraf/
 export MACH=\$IRAFARCH
@@ -119,12 +123,12 @@ export F2C=\$hbin/f2c.e
 export F77=\$hbin/f77.sh
 export RANLIB=ranlib
 
-case "$IRAFARCH" in
+case "\$IRAFARCH" in
 macosx)
-export HSI_CF=\"-O -DMACOSX -w -Wunused -arch i386 -m32 -mmacosx-version-min=10.4\"
-export HSI_XF=\"-Inolibc -/DMACOSX -w -/Wunused -/m32 -/arch -//i386 -/mmacosx-version-min=10.4\"
-export HSI_FF=\"-O -arch i386 -m32 -DBLD_KERNEL -mmacosx-version-min=10.4\"
-export HSI_LF=\"-arch i386 -m32 -mmacosx-version-min=10.4\"
+export HSI_CF=\"-I\$iraf/include -O -DMACOSX -w -Wunused -arch i386 -m32 -mmacosx-version-min=10.4\"
+export HSI_XF=\"-I\$iraf/include -Inolibc -/DMACOSX -w -/Wunused -/m32 -/arch -//i386 -/mmacosx-version-min=10.4\"
+export HSI_FF=\"-I\$iraf/include -O -arch i386 -m32 -DBLD_KERNEL -mmacosx-version-min=10.4\"
+export HSI_LF=\"-I\$iraf/include -arch i386 -m32 -mmacosx-version-min=10.4\"
 ;;
 
 linux)
@@ -135,8 +139,7 @@ export HSI_XF=\"-I\$iraf/include -Inolibc -w -/Wunused -/m32\"
 ;;
 
 *)
-echo "Unknown IRAFARCH. Dying."
-exit 1
+echo "Unknown IRAFARCH. This is not supposed to happen."
 ;;
 
 esac
@@ -156,6 +159,10 @@ export UR_DIR_PKG=\$UR_DIR/variants/\$UR_VARIANT/
 chmod 755 $PREFIX/etc/conda/activate.d/iraf.sh
 
 echo '
+if [[ -n \$CONDA_PREFIX ]]; then
+    unset CONDA_ENV_PATH
+fi
+
 unset iraf
 unset IRAFARCH
 unset IMTOOLRC
@@ -188,3 +195,4 @@ unset UR_TMP
 unset UR_DIR_PKG
 ' > $PREFIX/etc/conda/deactivate.d/iraf.sh
 chmod 755 $PREFIX/etc/conda/deactivate.d/iraf.sh
+

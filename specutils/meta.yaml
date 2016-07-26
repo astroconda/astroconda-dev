@@ -1,0 +1,44 @@
+{% set name = 'specutils' %}
+{% set version = '0.2.1' %}
+{% set tag = 'v' + version %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/astropy/specutils
+    license: BSD
+    summary: One-dimensional spectral operations
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+build:
+    # Define this value above
+    number: {{ number }}
+
+source:
+    git_tag: {{ tag }}
+    git_url: https://github.com/astropy/{{ name }}.git
+
+requirements:
+    build:
+    - astropy
+    - cython
+    - scipy
+    - setuptools
+    - numpy x.x
+    - python x.x
+    run:
+    - astropy
+    - scipy
+    - numpy x.x
+    - python x.x
+
+test:
+    imports:
+    - specutils
+    - specutils.io
+    - specutils.models
+    - specutils.utils
+    - specutils.wcs
+

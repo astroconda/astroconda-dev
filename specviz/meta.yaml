@@ -1,0 +1,49 @@
+{% set name = 'specviz' %}
+{% set version = '0.2.1rc5' %}
+{% set tag = 'v0.2.1rc5' %}
+{% set number = '0' %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_tag: {{ tag }}
+  git_url: https://github.com/spacetelescope/specviz.git
+
+requirements:
+  build:
+    - astropy
+    - cython
+    - specutils
+    - pyyaml
+    - pyqtgraph >=0.9.11
+    - pyqt
+    - scipy
+    - yaml
+    - setuptools
+    - numpy x.x
+    - python x.x
+
+  run:
+    - astropy
+    - cython
+    - specutils
+    - pyyaml
+    - pyqtgraph >=0.9.11
+    - pyqt
+    - scipy
+    - yaml
+    - numpy x.x
+    - python x.x
+
+test:
+  requires:
+    - astropy
+    - specutils
+  imports:
+    - specviz
+
+about:
+  home: https://github.com/spacetelescope/specviz
+  license: BSD

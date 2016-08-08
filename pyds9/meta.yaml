@@ -15,6 +15,7 @@ package:
     version: {{ version }}
 requirements:
     build:
+    - astropy
     - xpa
     - ds9
     - six
@@ -22,6 +23,7 @@ requirements:
     - numpy x.x
     - python x.x
     run:
+    - astropy
     - xpa
     - ds9
     - six

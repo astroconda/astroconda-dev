@@ -1,0 +1,26 @@
+{% set name = 'verhawk' %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set number = '0' %}
+
+about:
+    home: http://github.com/spacetelescope/verhawk
+    license: BSD
+    summary: A simple Python package version scanner.
+build:
+    number: {{ number }}
+package:
+    name: {{ name }}
+    version: {{ version }}
+requirements:
+    build:
+    - setuptools
+    - python x.x
+    run:
+    - python x.x
+source:
+    git_url: https://github.com/spacetelescope/verhawk.git
+test:
+    imports:
+    - verhawk

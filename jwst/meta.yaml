@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/stsci-jwst/jwst.git
@@ -29,6 +29,7 @@ requirements:
     - photutils
     - scipy
     - six
+    - verhawk
     - setuptools
     - numpy x.x
     - python x.x
@@ -46,6 +47,7 @@ requirements:
     - photutils
     - scipy
     - six
+    - verhawk
     - numpy x.x
     - python x.x
 source:

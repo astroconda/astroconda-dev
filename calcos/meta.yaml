@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/calcos
@@ -32,6 +32,6 @@ source:
     git_url: https://github.com/spacetelescope/calcos
 test:
     commands:
-    - calcos --help
+    - calcos -r
     imports:
     - calcos

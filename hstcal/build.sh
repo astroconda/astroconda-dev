@@ -1,5 +1,3 @@
-
-
-/usr/bin/python ./waf configure --destdir=$PREFIX
-/usr/bin/python ./waf build
-/usr/bin/python ./waf install
+./waf configure --prefix=$PREFIX
+./waf build
+./waf install

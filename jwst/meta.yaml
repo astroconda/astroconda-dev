@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/stsci-jwst/jwst.git
@@ -17,7 +17,7 @@ package:
 requirements:
     build:
     - asdf
-    - astropy
+    - astropy <=1.3dev4377
     - crds
     - dask
     - drizzle
@@ -35,7 +35,7 @@ requirements:
     - python x.x
     run:
     - asdf
-    - astropy
+    - astropy <=1.3dev4377
     - crds
     - dask
     - drizzle

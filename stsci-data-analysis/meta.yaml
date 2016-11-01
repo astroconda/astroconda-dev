@@ -2,25 +2,41 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://stsci.edu
     license: BSD
     summary: stsci-data-analysis meta-package
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
-    run:
+    build:
     - astropy
-    - specview
     - astroimtools
-    - cube-tools
     - stginga
-    - asv
+    - specviz
+    - photutils
+    - glueviz
+    - imexam
     - asdf
     - numpy x.x
     - python x.x
+    run:
+    - astropy
+    - astroimtools
+    - stginga
+    - specviz
+    - photutils
+    - glueviz
+    - imexam
+    - asdf
+    - numpy x.x
+    - python x.x
+

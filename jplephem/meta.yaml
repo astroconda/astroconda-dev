@@ -1,0 +1,37 @@
+{% set name = 'jplephem' %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/brandon-rhodes/python-{{name}}
+    license: MIT
+    summary: "Python version of NASA DE4xx ephemerides, the basis for the Astronomical Alamanac"
+
+build:
+    number: {{ number }}
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+requirements:
+    build:
+    - setuptools
+    - numpy x.x
+    - python x.x
+
+    run:
+    - numpy x.x
+    - python x.x
+
+source:
+    git_url: https://github.com/brandon-rhodes/python-{{name}}.git
+    patches:
+    - 0001_use-setuptools.patch
+
+test:
+    imports:
+    - jplephem
+    - jplephem.spk

@@ -16,20 +16,6 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - asdf
-    - astropy <=1.3dev4377
-    - crds
-    - dask
-    - drizzle
-    - drizzlepac
-    - gwcs
-    - jsonschema
-    - matplotlib
-    - nose
-    - photutils
-    - scipy
-    - six
-    - verhawk
     - setuptools
     - numpy x.x
     - python x.x
@@ -42,9 +28,11 @@ requirements:
     - drizzlepac
     - gwcs
     - jsonschema
+    - jplephem
     - matplotlib
     - nose
     - photutils
+    - pymssql
     - scipy
     - six
     - verhawk
@@ -55,4 +43,5 @@ source:
 test:
     imports:
     - jwst
-
+    - jwst.steps
+    # no timeconversion: JPL network is too unstable to obtain *.bsp files.

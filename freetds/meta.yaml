@@ -18,8 +18,8 @@ build:
 requirements:
   build:
     - openssl 1.0.*
-    - krb5 >=1.13       [not win]
     - readline          [not win]
+    - unixodbc          [not win]
     - cmake             [win]
     - jom               [win]
     - vc   9            [win and py27]
@@ -27,8 +27,8 @@ requirements:
     - vc  14            [win and py>34]
   run:
     - openssl 1.0.*
-    - krb5 >=1.13       [not win]
     - readline          [not win]
+    - unixodbc          [not win]
     - vc   9            [win and py27]
     - vc  10            [win and py34]
     - vc  14            [win and py>34]

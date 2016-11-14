@@ -8,6 +8,9 @@ if [ $ARCH -gt 32 ]; then
     fi
 fi
 
-./configure --prefix=${PREFIX} --enable-krb5
+./configure --prefix=${PREFIX} \
+    --with-unixodbc=${PREFIX} \
+    --enable-krb5
+
 make -j${CPU_COUNT}
-make install -k || true
+make install

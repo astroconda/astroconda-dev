@@ -1,0 +1,30 @@
+{% set name = 'unixodbc' %}
+{% set badname = 'unixODBC' %}
+{% set version = '2.3.4' %}
+{% set number = '0' %}
+
+about:
+    home: http://www.unixodbc.org
+    license: GPL
+    summary: |
+        ODBC is an open specification for providing application developers with
+        a predictable API with which to access Data Sources
+
+build:
+    number: {{number}}
+
+package:
+    name: {{name}}
+    version: {{version}}
+
+requirements:
+    build:
+    - readline
+    - pkgconfig
+
+    run:
+    - readline
+
+source:
+    fn: {{badname}}-{{version}}.tar.gz
+    url: http://www.unixodbc.org/{{badname}}-{{version}}.tar.gz

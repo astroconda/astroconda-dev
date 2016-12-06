@@ -21,7 +21,7 @@ requirements:
     - python x.x
     run:
     - asdf
-    - astropy <=1.3dev4377
+    - astropy
     - crds
     - dask
     - drizzle

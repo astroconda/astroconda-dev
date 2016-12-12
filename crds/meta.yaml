@@ -18,12 +18,12 @@ requirements:
     build:
     - d2to1
     - stsci.distutils
-    - astropy
+    - astropy <=1.3dev5740
     - setuptools
     - numpy x.x
     - python x.x
     run:
-    - astropy
+    - astropy <=1.3dev5740
     - numpy x.x
     - python x.x
 source:

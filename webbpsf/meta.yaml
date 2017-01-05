@@ -27,6 +27,7 @@ requirements:
     - scipy
     - matplotlib
     - poppy
+    - jwxml
     - six [py27]
     - webbpsf-data >=0.4.1
     - setuptools
@@ -37,6 +38,7 @@ requirements:
     - numpy x.x
     - scipy
     - matplotlib
+    - jwxml
     - poppy
     - six [py27]
     - webbpsf-data >=0.4.1

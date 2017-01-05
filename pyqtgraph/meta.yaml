@@ -1,5 +1,5 @@
 {% set name = 'pyqtgraph' %}
-{% set version = '0.9.10' %}
+{% set version = '0.10.0' %}
 {% set number = '0' %}
 
 about:
@@ -22,9 +22,8 @@ requirements:
     - python x.x
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    md5: bd84bf7537c43cf38db81cc1ad4f743a
-    url:
-    - https://pypi.python.org/packages/source/p/pyqtgraph/{{ name }}-{{ version }}.tar.gz
+    md5: 371533725828e51658c98379b8f9abb3
+    url: https://pypi.python.org/packages/cd/ad/307e0280df5c19986c4206d138ec3a8954afc722cea991f4adb4a16337d9/{{ name }}-{{ version }}.tar.gz
 test:
     imports:
     - pyqtgraph

@@ -3,7 +3,7 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{ name }}
+    home: https://github.com/astropy/{{ name }}
     license: BSD
     summary: Astropy is a package intended to contain much of the core functionality and some common tools needed for performing astronomy and astrophysics with Python.
 build:

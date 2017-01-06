@@ -18,25 +18,25 @@ package:
 
 requirements:
     build:
-    - astropy
-    - astroimtools
-    - stginga
-    - specviz
-    - photutils
-    - glueviz
-    - imexam
-    - asdf
+    - astropy >=0.0*
+    - astroimtools >=0.0*
+    - stginga >=0.0*
+    - specviz >=0.0*
+    - photutils >=0.0*
+    - glueviz >=0.0*
+    - imexam >=0.0*
+    - asdf >=0.0*
     - numpy x.x
     - python x.x
     run:
-    - astropy
-    - astroimtools
-    - stginga
-    - specviz
-    - photutils
-    - glueviz
-    - imexam
-    - asdf
+    - astropy >=0.0*
+    - astroimtools >=0.0*
+    - stginga >=0.0*
+    - specviz >=0.0*
+    - photutils >=0.0*
+    - glueviz >=0.0*
+    - imexam >=0.0*
+    - asdf >=0.0*
     - numpy x.x
     - python x.x
 

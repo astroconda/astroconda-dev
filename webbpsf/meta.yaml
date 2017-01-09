@@ -23,7 +23,7 @@ requirements:
     build:
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - poppy
@@ -35,7 +35,7 @@ requirements:
     run:
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - jwxml

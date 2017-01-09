@@ -26,7 +26,7 @@ requirements:
     - glueviz >=*0.0*
     - imexam >=*0.0*
     - asdf >=*0.0*
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=*0.0*
@@ -37,6 +37,6 @@ requirements:
     - glueviz >=*0.0*
     - imexam >=*0.0*
     - asdf >=*0.0*
-    - numpy x.x
+    - numpy
     - python x.x
 

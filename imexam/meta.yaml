@@ -20,7 +20,7 @@ requirements:
     - stsci.distutils
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - cython
     - matplotlib
@@ -31,7 +31,7 @@ requirements:
     run:
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - cython
     - matplotlib

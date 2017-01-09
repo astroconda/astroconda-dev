@@ -22,7 +22,7 @@ requirements:
     - scipy
     - yaml
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 
   run:
@@ -34,7 +34,7 @@ requirements:
     - pyqt
     - scipy
     - yaml
-    - numpy x.x
+    - numpy
     - python x.x
 
 test:

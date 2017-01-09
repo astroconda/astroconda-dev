@@ -18,7 +18,7 @@ requirements:
     run:
     - pyqt
     - pyopengl
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     fn: {{ name }}-{{ version }}.tar.gz

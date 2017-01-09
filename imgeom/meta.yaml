@@ -30,7 +30,7 @@ requirements:
     - astropy
     - drizzle
     - gwcs
-    - numpy x.x
+    - numpy
     - python x.x
 
 test:

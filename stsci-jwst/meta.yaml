@@ -16,9 +16,9 @@ package:
 requirements:
     build:
     - jwst
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - jwst
-    - numpy x.x
+    - numpy
     - python x.x

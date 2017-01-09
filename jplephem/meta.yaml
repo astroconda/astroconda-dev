@@ -19,11 +19,11 @@ package:
 requirements:
     build:
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 
     run:
-    - numpy x.x
+    - numpy
     - python x.x
 
 source:

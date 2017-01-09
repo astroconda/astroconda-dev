@@ -23,12 +23,12 @@ requirements:
     build:
     - astropy
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 
     run:
     - astropy
-    - numpy x.x
+    - numpy
     - python x.x
 
 test:

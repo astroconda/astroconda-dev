@@ -21,7 +21,7 @@ requirements:
     - calcos
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - d2to1
@@ -29,7 +29,7 @@ requirements:
     - calcos
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/costools

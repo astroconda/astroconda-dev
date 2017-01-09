@@ -26,12 +26,12 @@ requirements:
     - cython
     - scipy
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy
     - scipy
-    - numpy x.x
+    - numpy
     - python x.x
 
 test:

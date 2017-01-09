@@ -17,7 +17,7 @@ requirements:
     build:
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - six [py27]
@@ -28,7 +28,7 @@ requirements:
     run:
     - nose
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - matplotlib
     - six [py27]

@@ -18,13 +18,13 @@ requirements:
     - cython
     - pkg-config [osx]
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - numpy >=1.9
     - cython
     - fftw
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     fn: pyFFTW-0.9.2.tar.gz

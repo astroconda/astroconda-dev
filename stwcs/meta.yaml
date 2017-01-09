@@ -23,12 +23,12 @@ requirements:
     - astropy >=1.1
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy >=1.1
     - stsci.tools
-    - numpy x.x
+    - numpy
     - python x.x
 
 source:

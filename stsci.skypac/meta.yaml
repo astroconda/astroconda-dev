@@ -24,7 +24,7 @@ requirements:
     - stsci.tools
     - stwcs
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy

@@ -17,14 +17,14 @@ package:
 requirements:
     build:
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - pyqtgraph
     - setuptools
     - python x.x
     run:
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - pyqtgraph
     - python x.x

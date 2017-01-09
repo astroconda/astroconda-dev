@@ -19,11 +19,11 @@ requirements:
     - stsci.distutils
     - pyparsing
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - pyparsing
-    - numpy x.x
+    - numpy
     - python x.x
     - setuptools
 source:

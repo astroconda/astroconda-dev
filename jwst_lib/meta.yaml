@@ -25,7 +25,7 @@ requirements:
     - nose
     - six
     - stsci.distutils
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
@@ -36,7 +36,7 @@ requirements:
     - nose
     - jsonschema
     - six
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

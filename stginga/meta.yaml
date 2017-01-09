@@ -17,14 +17,14 @@ requirements:
     build:
     - ginga
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - setuptools
     - python x.x
     run:
     - ginga
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - python x.x
 source:

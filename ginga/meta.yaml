@@ -13,11 +13,11 @@ package:
     version: {{ version }}
 requirements:
     build:
-    - numpy x.x
+    - numpy
     - setuptools
     - python x.x
     run:
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     fn: {{ name }}-{{ version }}.tar.gz

@@ -21,7 +21,7 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy
@@ -30,7 +30,7 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: https://github.com/spacetelescope/pyasdf

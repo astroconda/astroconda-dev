@@ -16,14 +16,14 @@ requirements:
     build:
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - scipy
     - setuptools
     - python x.x
     run:
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - scipy
     - python x.x
 source:

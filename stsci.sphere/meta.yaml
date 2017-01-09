@@ -21,12 +21,12 @@ requirements:
     - astropy
     - matplotlib
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - python x.x
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere

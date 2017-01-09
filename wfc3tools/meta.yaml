@@ -22,13 +22,13 @@ requirements:
     - scipy
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - stsci.tools
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - scipy
     - python x.x
 source:

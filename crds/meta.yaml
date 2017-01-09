@@ -8,12 +8,15 @@ about:
     home: http://www.stsci.edu/hst/observatory/crds/
     license: AURA
     summary: crds
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'no'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -22,12 +25,15 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/crds
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - crds

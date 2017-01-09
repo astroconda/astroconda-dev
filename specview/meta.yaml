@@ -5,15 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/specview
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
-    readme: README.rst
     summary: specview
+
 build:
     number: {{ number }}
+    
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - astropy
@@ -22,14 +24,17 @@ requirements:
     - pyqtgraph
     - setuptools
     - python x.x
+
     run:
     - astropy
     - numpy
     - scipy
     - pyqtgraph
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/specview
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - specview

@@ -5,15 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/imexam
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
-    readme: README.rst
     summary: imexam
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -28,6 +30,7 @@ requirements:
     - setuptools
     - mock [py27]
     - python x.x
+
     run:
     - nose
     - astropy
@@ -38,8 +41,10 @@ requirements:
     - ipython
     - mock [py27]
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/imexam
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - imexam

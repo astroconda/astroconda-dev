@@ -6,17 +6,21 @@ about:
     home: http://www.fftw.org
     license: GPL
     summary: fftw
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - pkgconfig
+
     run:
     - pkgconfig
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url:
-    - http://www.fftw.org/{{ name }}-{{ version }}.tar.gz
+    url: http://www.fftw.org/{{ name }}-{{ version }}.tar.gz

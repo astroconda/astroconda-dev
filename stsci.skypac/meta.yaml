@@ -5,15 +5,18 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/stsci.skypac
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: stsci.skypac
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -26,6 +29,7 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - stsci.imagestats
@@ -34,8 +38,10 @@ requirements:
     - stwcs
     - python x.x
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.skypac
+    git_url: https://github.com/spacetelescope/{{ name }}
+
 test:
     imports:
     - stsci.skypac

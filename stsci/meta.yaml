@@ -8,11 +8,14 @@ about:
     home: http://stsci.edu
     license: BSD
     summary: stsci meta-package
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     run:
     - stsci-hst >=*0.0*

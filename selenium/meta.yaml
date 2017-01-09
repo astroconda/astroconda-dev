@@ -3,25 +3,30 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/s/selenium
+    home: https://pypi.python.org/packages/source/s/{{ name }}
     license: BSD
     summary: selenium
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - setuptools
     - python x.x
+
     run:
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: 17cfe7c6adb2cad1f64a61cf753f0738
-    url:
-    - https://pypi.python.org/packages/source/s/selenium/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/s/selenium/{{ name }}-{{ version }}.tar.gz
+
 test:
     imports:
     - selenium

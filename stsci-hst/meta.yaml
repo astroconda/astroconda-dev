@@ -8,11 +8,14 @@ about:
     home: http://www.stsci.edu
     license: BSD
     summary: stsci-hst meta-package
+    
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     run:
     - purge_path >=*0.0*

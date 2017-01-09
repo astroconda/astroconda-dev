@@ -6,12 +6,14 @@ about:
     home: http://www.stsci.edu/~mperrin/software/webbpsf
     license: BSD
     summary: webbpsf-data data files
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url:
-    - http://www.stsci.edu/~mperrin/software/webbpsf/{{ name }}-{{ version }}.tar.gz
+    url: http://www.stsci.edu/~mperrin/software/webbpsf/{{ name }}-{{ version }}.tar.gz

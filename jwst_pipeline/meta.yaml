@@ -8,12 +8,15 @@ about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
     license: BSD
     summary: jwst_pipeline
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'True'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -33,6 +36,7 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - asdf
@@ -48,8 +52,10 @@ requirements:
     - scipy
     - numpy
     - python x.x
+
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
+
 test:
     imports:
     - jwst_pipeline

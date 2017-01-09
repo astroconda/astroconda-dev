@@ -5,14 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/mperrin/poppy
+    home: https://github.com/mperrin/{{ name }}
     license: BSD
     summary: poppy
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - nose
@@ -25,6 +28,7 @@ requirements:
     - enum34 [py27]
     - setuptools
     - python x.x
+
     run:
     - nose
     - astropy
@@ -36,5 +40,6 @@ requirements:
     - enum34 [py27]
     - setuptools
     - python x.x
+
 source:
-    git_url: https://github.com/mperrin/poppy
+    git_url: https://github.com/mperrin/{{ name }}.git

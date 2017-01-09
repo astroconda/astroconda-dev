@@ -7,11 +7,14 @@ about:
     home: http://www.iac.es/proyecto/PyNeb/
     license: Unknown
     summary: A modern python tool to compute emission line emissivities
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - astropy
@@ -20,16 +23,18 @@ requirements:
     - scipy
     - setuptools
     - python x.x
+
     run:
     - astropy
     - matplotlib
     - numpy
     - scipy
     - python x.x
+
 source:
     fn: {{ badname }}-{{ version }}.tar.gz
-    url:
-    - https://pypi.python.org/packages/source/P/{{ badname }}/{{ badname }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/P/{{ badname }}/{{ badname }}-{{ version }}.tar.gz
+
 test:
     imports:
     - pyneb

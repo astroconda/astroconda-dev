@@ -6,11 +6,14 @@ about:
     home: https://pypi.python.org/pytools
     license: MIT
     summary: A collection of tools for Python
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - decorator >=3.2.0
@@ -19,17 +22,19 @@ requirements:
     - numpy >=1.6.0
     - setuptools
     - python x.x
+
     run:
     - decorator >=3.2.0
     - appdirs >=1.4.0
     - six >=1.8.0
     - numpy >=1.6.0
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: d8af5c5bea24aa4a21881684dcf03b06
-    url:
-    - https://pypi.python.org/packages/source/p/pytools/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/p/pytools/{{ name }}-{{ version }}.tar.gz
+
 test:
     imports:
     - pytools

@@ -1,7 +1,11 @@
 {% set name = 'specviz' %}
 {% set version = '0.2.1rc5' %}
-{% set tag = 'v0.2.1rc5' %}
+{% set tag = 'v' + version %}
 {% set number = '0' %}
+
+about:
+  home: https://github.com/spacetelescope/specviz
+  license: BSD
 
 package:
   name: {{ name }}
@@ -44,6 +48,3 @@ test:
   imports:
     - specviz
 
-about:
-  home: https://github.com/spacetelescope/specviz
-  license: BSD

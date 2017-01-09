@@ -5,13 +5,16 @@
 {% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/calcos
+    home: https://github.com/spacetelescope/{{ name }}
     summary: calcos
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -22,14 +25,17 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - scipy
     - stsci.tools
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/calcos
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     commands:
     - calcos -r

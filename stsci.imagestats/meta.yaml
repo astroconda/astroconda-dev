@@ -5,15 +5,18 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/embray/stsci.imagestats
-    license: GPL
+    home: https://github.com/spacetelescope/{{ name }}
+    license: BSD
     summary: stsci.imagestats
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -21,11 +24,14 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.imagestats
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - stsci.imagestats

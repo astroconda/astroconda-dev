@@ -5,14 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python
+    home: https://github.com/spacetelescope/drizzlepac.git
     license: BSD
     summary: drizzlepac
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -34,6 +37,7 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - fitsblender
@@ -52,8 +56,10 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/drizzlepac
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - drizzlepac

@@ -6,24 +6,29 @@ about:
     home: https://pypi.python.org/packages/source/s/sphinx_rtd_theme
     license: BSD
     summary: sphinx_rtd_theme
+    
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - sphinx
     - setuptools
     - python x.x
+
     run:
     - sphinx
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: 86a25c8d47147c872e42dc84cc66f97b
-    url:
-    - https://pypi.python.org/packages/source/s/sphinx_rtd_theme/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/s/sphinx_rtd_theme/{{ name }}-{{ version }}.tar.gz
+
 test:
     imports:
     - sphinx_rtd_theme

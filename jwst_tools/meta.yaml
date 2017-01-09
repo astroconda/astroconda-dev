@@ -8,12 +8,15 @@ about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
     license: BSD
     summary: jwst_tools
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'True'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -28,6 +31,7 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - jwst_lib
@@ -38,8 +42,10 @@ requirements:
     - stsci.tools
     - numpy
     - python x.x
+
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
+
 test:
     imports:
     - jwst_tools

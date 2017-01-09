@@ -5,15 +5,18 @@
 {% set number = '0' %}
 
 about:
-    home: http://www.stsci.edu/institute/software_hardware
+    home: https://github.com/spacetelescope/{{ name }}
     license: GPL
     summary: stsci.sphere
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -23,13 +26,15 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - matplotlib
     - numpy
     - python x.x
+
 source:
-    git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere
+    git_url: ssh://git@bitbucket.org/stsci_ssb/{{ name }}.git
 test:
     imports:
     - stsci.sphere

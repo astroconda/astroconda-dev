@@ -5,14 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: http://
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: wfc3tools
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -31,8 +34,10 @@ requirements:
     - numpy
     - scipy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/wfc3tools
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - wfc3tools

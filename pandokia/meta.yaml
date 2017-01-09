@@ -5,14 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: http://ssb.stsci.edu/testing/pandokia
+    home: http://ssb.stsci.edu/testing/{{ name }}
     license: BSD
     summary: pandokia
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -22,13 +25,16 @@ requirements:
     - shunit2
     - setuptools
     - python x.x
+
     run:
     - nose
     - shunit2
     - pytest
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/pandokia
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     commands:
     - pdk --help

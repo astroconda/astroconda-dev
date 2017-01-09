@@ -5,14 +5,17 @@
 {% set number = '2' %}
 
 about:
-    home: https://github.com/astropy/photutils
+    home: https://github.com/astropy/{{ name }}
     license: BSD
     summary: photutils
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -26,6 +29,7 @@ requirements:
     - scipy
     - setuptools
     - python x.x
+
     run:
     - astropy
     - cython
@@ -35,8 +39,10 @@ requirements:
     - scipy
     - setuptools
     - python x.x
+
 source:
-    git_url: https://github.com/astropy/photutils
+    git_url: https://github.com/astropy/{{ name }}.git
+
 test:
     imports:
     - photutils

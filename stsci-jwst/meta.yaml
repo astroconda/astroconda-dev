@@ -8,11 +8,14 @@ about:
     home: http://www.stsci.edu
     license: BSD
     summary: stsci-jwst meta-package
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - jwst

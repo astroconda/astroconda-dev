@@ -5,25 +5,31 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/acstools
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: For analyzing ACS data
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - astropy >=1.1
     - numpy
     - python x.x
+
     run:
     - astropy >=1.1
     - numpy
     - python x.x
+
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     commands:
     - acs_destripe --help

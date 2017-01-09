@@ -5,14 +5,17 @@
 {% set number = '0' %}
 
 about:
-    home: https://github.com/ericmandel/pyds9
+    home: https://github.com/ericmandel/{{ name }}
     license: GPL
     summary: Python connection to SAOimage DS9 via XPA
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - astropy
@@ -22,6 +25,7 @@ requirements:
     - setuptools
     - numpy
     - python x.x
+
     run:
     - astropy
     - xpa
@@ -29,9 +33,11 @@ requirements:
     - six
     - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/ericmandel/pyds9
+    git_url: https://github.com/ericmandel/{{ name }}.git
+
 test:
     imports:
     #- pyds9
-    # ^ Disabled, because it leaves behind an xpans daemon
+    #  ^ Disabled, because it leaves behind the xpans daemon

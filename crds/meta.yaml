@@ -19,11 +19,15 @@ requirements:
     - d2to1
     - stsci.distutils
     - astropy
+    - requests
+    - lxml
     - setuptools
     - numpy x.x
     - python x.x
     run:
     - astropy
+    - requests
+    - lxml
     - numpy x.x
     - python x.x
 source:

@@ -1,17 +1,20 @@
 {% set name = 'cfitsio' %}
 {% set version = '3.370' %}
+{% set version_short = '3370' %}
 {% set number = '1' %}
 
 about:
     home: http://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
     license: BSD-like
     summary: cfitsio
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 source:
-    fn: cfitsio3370.tar.gz
-    url:
-    - ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/cfitsio3370.tar.gz
+    fn: {{ name }}{{ version_short }}.tar.gz
+    url: ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/{{ name }}{{ version_short }}.tar.gz

@@ -5,18 +5,23 @@
 {% set number = '2' %}
 
 about:
-    home: https://github.com/spacetelescope/hstcal
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: hstcal
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - gcc >=4.7 [osx]
+
     run:
     - libgcc >=4.7 [osx]
+
 source:
-    git_url: https://github.com/spacetelescope/hstcal
+    git_url: https://github.com/spacetelescope/{{ name }}.git

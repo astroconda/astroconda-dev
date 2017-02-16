@@ -3,25 +3,30 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/m/mechanize
+    home: https://pypi.python.org/packages/source/m/{{ name }}
     license: BSD
     summary: mechanize
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - setuptools
     - python x.x
+
     run:
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: 32657f139fc2fb75bcf193b63b8c60b2
-    url:
-    - https://pypi.python.org/packages/source/m/mechanize/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/m/mechanize/{{ name }}-{{ version }}.tar.gz
+
 test:
     imports:
     - mechanize

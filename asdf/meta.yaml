@@ -2,17 +2,20 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/pyasdf
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: asdf
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - astropy
@@ -21,8 +24,9 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
+
     run:
     - astropy
     - pyyaml
@@ -30,10 +34,12 @@ requirements:
     - pytest
     - six
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/pyasdf
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     commands:
     - asdftool --help

@@ -5,19 +5,24 @@
 {% set number = '0' %}
 
 about:
-    home: http://bitbucket.org/jhunkeler/purge_path
+    home: http://bitbucket.org/jhunkeler/{{ name }}
     license: GPL
     summary: purge_path a small PATH manipulator
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - python x.x
     - setuptools
+
     run:
     - python x.x
+
 source:
-    git_url: https://bitbucket.org/jhunkeler/purge_path
+    git_url: https://bitbucket.org/jhunkeler/{{ name }}.git

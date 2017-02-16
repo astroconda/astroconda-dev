@@ -10,21 +10,25 @@ about:
 build:
     number: {{ number }}
     preserve_egg_dir: 'true'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - pyobjc-core
     - setuptools
     - python x.x
+
     run:
     - pyobjc-core
     - python x.x
+
 source:
     fn: pyobjc-{{ version }}.tar.gz
-    url:
-    - https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2
+    url: https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2
+
 test:
     imports:
     - Cocoa

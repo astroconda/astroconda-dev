@@ -3,22 +3,27 @@
 {% set number = '0' %}
 
 about:
-    home: https://pypi.python.org/packages/source/s/sphinxcontrib-programoutput
+    home: https://pypi.python.org/packages/source/s/{{ name }}
     license: BSD
     summary: sphinxcontrib-programoutput
+    
 build:
     number: {{ number }}
+    
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - sphinx
     - setuptools
     - python x.x
+    
     run:
     - sphinx
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: bb0be17ef13f268378b2af51ff413c58

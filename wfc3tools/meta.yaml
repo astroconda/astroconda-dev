@@ -2,17 +2,20 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: http://
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: wfc3tools
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -22,17 +25,19 @@ requirements:
     - scipy
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
     run:
     - stsci.tools
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - scipy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/wfc3tools
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - wfc3tools

@@ -6,24 +6,29 @@ about:
     home: https://pypi.python.org/packages/source/l/linecache2
     license: BSD
     summary: linecache2
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - pbr
     - setuptools
     - python x.x
+
     run:
     - pbr
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: 7b25d0289ec36bff1f9e63c4329ce65c
-    url:
-    - https://pypi.python.org/packages/source/l/linecache2/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/l/linecache2/{{ name }}-{{ version }}.tar.gz
+
 test:
     imports:
     - linecache2

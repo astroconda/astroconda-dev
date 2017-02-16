@@ -2,23 +2,27 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: https://github.com/stsci-jwst/jwst.git
+    home: https://github.com/stsci-jwst/{{ name }}
     license: BSD
     summary: JWST Pipeline code
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'True'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - setuptools
-    - numpy x.x
+    - numpy >=1.7*
     - python x.x
+
     run:
     - asdf
     - astropy
@@ -36,10 +40,12 @@ requirements:
     - scipy
     - six
     - verhawk
-    - numpy x.x
+    - numpy >=1.7*
     - python x.x
+
 source:
-    git_url: https://github.com/stsci-jwst/jwst.git
+    git_url: https://github.com/stsci-jwst/{{ name }}.git
+
 test:
     imports:
     - jwst

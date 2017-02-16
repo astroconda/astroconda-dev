@@ -2,18 +2,21 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: ssh://git@bitbucket.org/stsci_ssb/jwst.git
     license: BSD
     summary: jwst_tools
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'True'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -26,8 +29,9 @@ requirements:
     - stsci.distutils
     - stsci.tools
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
+
     run:
     - astropy
     - jwst_lib
@@ -36,10 +40,12 @@ requirements:
     - scipy
     - six
     - stsci.tools
-    - numpy x.x
+    - numpy
     - python x.x
+
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git
+
 test:
     imports:
     - jwst_tools

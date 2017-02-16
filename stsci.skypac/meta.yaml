@@ -2,18 +2,21 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/stsci.skypac
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: stsci.skypac
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -24,8 +27,9 @@ requirements:
     - stsci.tools
     - stwcs
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
+
     run:
     - astropy
     - stsci.imagestats
@@ -34,8 +38,10 @@ requirements:
     - stwcs
     - python x.x
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.skypac
+    git_url: https://github.com/spacetelescope/{{ name }}
+
 test:
     imports:
     - stsci.skypac

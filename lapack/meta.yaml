@@ -8,15 +8,18 @@ about:
     home: http://www.netlib.org
     license: BSD
     summary: lapack
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - cmake
+
 source:
     fn: {{ name }}-{{ version }}.tgz
-    url:
-    - http://www.netlib.org/lapack/{{ name }}-{{ version }}.tgz
+    url: http://www.netlib.org/lapack/{{ name }}-{{ version }}.tgz

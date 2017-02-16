@@ -2,18 +2,21 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: http://www.stsci.edu/institute/software_hardware
+    home: https://github.com/spacetelescope/{{ name }}
     license: GPL
     summary: stsci.sphere
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -21,15 +24,17 @@ requirements:
     - astropy
     - matplotlib
     - setuptools
-    - numpy x.x
+    - numpy
     - python x.x
+
     run:
     - astropy
     - matplotlib
-    - numpy x.x
+    - numpy
     - python x.x
+
 source:
-    git_url: ssh://git@bitbucket.org/stsci_ssb/stsci.sphere
+    git_url: ssh://git@bitbucket.org/stsci_ssb/{{ name }}.git
 test:
     imports:
     - stsci.sphere

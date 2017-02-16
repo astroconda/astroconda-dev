@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -26,11 +26,12 @@ requirements:
     - gwcs
     - setuptools
     - python x.x
+
     run:
     - astropy
     - drizzle
     - gwcs
-    - numpy x.x
+    - numpy
     - python x.x
 
 test:
@@ -39,6 +40,3 @@ test:
     - imgeom.drizmask
     - imgeom.fitting
     - imgeom.reproject
-#
-#   commands:
-#   # - (e.g. program --help)

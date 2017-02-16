@@ -2,33 +2,39 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/stginga
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: stginga
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - ginga
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - setuptools
     - python x.x
+
     run:
     - ginga
     - astropy
-    - numpy x.x
+    - numpy
     - scipy
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stginga
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - stginga

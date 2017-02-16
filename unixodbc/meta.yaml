@@ -11,11 +11,11 @@ about:
         a predictable API with which to access Data Sources
 
 build:
-    number: {{number}}
+    number: {{ number }}
 
 package:
-    name: {{name}}
-    version: {{version}}
+    name: {{ name }}
+    version: {{ version }}
 
 requirements:
     build:

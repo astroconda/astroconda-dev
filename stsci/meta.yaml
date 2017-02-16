@@ -2,17 +2,20 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://stsci.edu
     license: BSD
     summary: stsci meta-package
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     run:
     - stsci-hst >=*0.0*
@@ -25,5 +28,5 @@ requirements:
     - purge_path >=*0.0*
     - pyds9 >=*0.0*
     - pyfftw >=*0.0*
-    - numpy x.x
+    - numpy
     - python x.x

@@ -2,18 +2,21 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
-    home: https://github.com/spacetelescope/stsci.sphinxext
-    license: GPL
+    home: https://github.com/spacetelescope/{{ name }}
+    license: BSD
     summary: stsci.sphinxext
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - d2to1
@@ -21,11 +24,14 @@ requirements:
     - numpydoc
     - setuptools
     - python x.x
+
     run:
     - numpydoc
     - python x.x
+
 source:
-    git_url: https://github.com/spacetelescope/stsci.sphinxext
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
 test:
     imports:
     - stsci.sphinxext

@@ -8,18 +8,23 @@ about:
     home: https://github.com:stsci-ssb/pandeia_data
     license: BSD
     summary: pandeia_data
+
 build:
     number: {{ number }}
     preserve_egg_dir: 'yes'
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - setuptools
     - python x.x
+
     run:
     - pandeia
     - python x.x
+
 source:
     git_url: git@github.com:STScI-SSB/pandeia_data

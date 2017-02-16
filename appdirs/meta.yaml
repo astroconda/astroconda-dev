@@ -3,23 +3,27 @@
 {% set number = '0' %}
 
 about:
-    home: http://github.com/ActiveState/appdirs
+    home: http://github.com/ActiveState/{{ name }}
     license: MIT
     summary: A small Python module for determining appropriate platform-specific dirs,
         e.g. a "user data dir".
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
+
 requirements:
     build:
     - setuptools
     - python x.x
+
     run:
     - python x.x
+
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     md5: 1d17b4c9694ab84794e228f28dc3275b
-    url:
-    - https://pypi.python.org/packages/source/a/appdirs/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/source/a/appdirs/{{ name }}-{{ version }}.tar.gz

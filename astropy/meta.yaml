@@ -24,7 +24,7 @@ requirements:
 
     run:
     - beautiful-soup [py27 or py34]
-    - beautifulsoup4 [py35]
+    - beautifulsoup4 [py>=35]
     - cython
     - h5py
     - ipython

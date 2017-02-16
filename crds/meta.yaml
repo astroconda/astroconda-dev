@@ -22,12 +22,16 @@ requirements:
     - d2to1
     - stsci.distutils
     - astropy
+    - requests
+    - lxml
     - setuptools
     - numpy
     - python x.x
 
     run:
     - astropy
+    - requests
+    - lxml
     - numpy
     - python x.x
 

@@ -2,12 +2,12 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
     license: BSD
-    summary: For handling spherical polygons that represent arbitrary regions of the sky 
+    summary: For handling spherical polygons that represent arbitrary regions of the sky
 
 build:
     number: {{ number }}

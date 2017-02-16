@@ -1,7 +1,7 @@
 {% set badname = 'PyNeb' %}
 {% set name = 'pyneb' %}
 {% set version = '1.0.14' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.iac.es/proyecto/PyNeb/

@@ -1,3 +1,1 @@
-
-
-python setup.py install || exit 1
+python setup.py install

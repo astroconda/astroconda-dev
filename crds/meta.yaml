@@ -2,12 +2,14 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: http://www.stsci.edu/hst/observatory/crds/
     license: AURA
-    summary: crds
+    summary: |
+        CRDS assigns calibration references to data using formal rules
+        represented in simple text files
 
 build:
     number: {{ number }}
@@ -19,20 +21,23 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
-    - astropy
+    - astropy >=1.1
+    - cfitsio
+    - numpy
     - requests
     - lxml
+    - parsley
     - setuptools
-    - numpy
     - python x.x
 
     run:
-    - astropy
+    - astropy >=1.1
+    - cfitsio
+    - numpy
     - requests
     - lxml
-    - numpy
+    - fitsverify
+    - parsley
     - python x.x
 
 source:

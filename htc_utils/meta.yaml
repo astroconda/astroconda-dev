@@ -27,7 +27,7 @@ requirements:
     - python x.x
 
 source:
-    git_url: https://bitbucket.org/jhunkeler/{{ name }}.git
+    git_url: https://github.com/jhunkeler/{{ name }}.git
 
 test:
     imports:

@@ -18,6 +18,7 @@ requirements:
     build:
     - cython
     - jinja2
+    - pytest
     - setuptools
     - numpy x.x
     - python x.x

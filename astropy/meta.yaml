@@ -33,6 +33,7 @@ requirements:
     - matplotlib
     - mpmath
     - pandas
+    - pytest
     - pytz
     - pyyaml
     - scikit-image

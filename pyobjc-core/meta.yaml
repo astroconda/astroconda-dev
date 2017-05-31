@@ -10,6 +10,7 @@ about:
 build:
     number: {{ number }}
     preserve_egg_dir: 'true'
+    skip: False [osx]
 
 package:
     name: {{ name }}
@@ -19,7 +20,7 @@ requirements:
     build:
     - setuptools
     - python x.x
-      
+
     run:
     - python x.x
 

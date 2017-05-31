@@ -5,7 +5,7 @@
 {% set number = '0' %}
 
 about:
-    home: http://bitbucket.org/jhunkeler/{{ name }}
+    home: https://github.com/jhunkeler/{{ name }}
     license: GPL
     summary: htc_utils is a homebrew set of HTCondor wrappers
 

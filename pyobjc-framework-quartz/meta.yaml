@@ -10,6 +10,7 @@ about:
 build:
     number: {{ number }}
     preserve_egg_dir: 'true'
+    skip: False [osx]
 
 package:
     name: {{ name }}
@@ -26,7 +27,7 @@ requirements:
     - pyobjc-core
     - pyobjc-framework-cocoa
     - python x.x
-      
+
 source:
     fn: pyobjc-{{ version }}.tar.gz
     url: https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2

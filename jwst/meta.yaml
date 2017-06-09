@@ -19,8 +19,9 @@ package:
 
 requirements:
     build:
-    - setuptools
+    - astropy
     - numpy >=1.7*
+    - setuptools
     - python x.x
 
     run:

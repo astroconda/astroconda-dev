@@ -20,7 +20,6 @@ requirements:
     run:
     - purge_path >=*0.0*
     - acstools >=*0.0*
-    - astrolib.coords >=*0.0*
     - astropy >=*0.0*
     - calcos >=*0.0*
     - costools >=*0.0*

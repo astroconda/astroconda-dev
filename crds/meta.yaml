@@ -2,7 +2,7 @@
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '2' %}
+{% set number = '0' %}
 
 about:
     home: http://www.stsci.edu/hst/observatory/crds/
@@ -27,6 +27,7 @@ requirements:
     - requests
     - lxml
     - parsley
+    - lockfile
     - setuptools
     - python x.x
 
@@ -38,6 +39,7 @@ requirements:
     - lxml
     - fitsverify
     - parsley
+    - lockfile
     - python x.x
 
 source:

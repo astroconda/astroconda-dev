@@ -1,6 +1,6 @@
 {% set name = 'astropy' %}
 {% set version = '2.0.dev' + environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
@@ -50,7 +50,6 @@ test:
     - fitscheck --help
     - fitsdiff --help
     - fitsinfo --help
-    - samp_hub --help
     - volint --help
     - wcslint --help
     imports:

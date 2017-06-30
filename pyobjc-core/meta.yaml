@@ -10,7 +10,7 @@ about:
 build:
     number: {{ number }}
     preserve_egg_dir: 'true'
-    skip: False [osx]
+    skip: True [not osx]
 
 package:
     name: {{ name }}

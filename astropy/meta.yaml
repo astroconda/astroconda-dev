@@ -50,6 +50,7 @@ test:
     - fitscheck --help
     - fitsdiff --help
     - fitsinfo --help
+    - samp_hub --help
     - volint --help
     - wcslint --help
     imports:

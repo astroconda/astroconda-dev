@@ -1,11 +1,12 @@
-{% set name = 'spherical_geometry' %}
+{% set name = 'spherical-geometry' %}
+{% set reponame = 'spherical_geometry' %}
 {% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
     +".dev"
     +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '0' %}
 
 about:
-    home: https://github.com/spacetelescope/{{ name }}
+    home: https://github.com/spacetelescope/{{ reponame }}
     license: BSD
     summary: For handling spherical polygons that represent arbitrary regions of the sky
 
@@ -31,7 +32,7 @@ requirements:
     - python x.x
 
 source:
-    git_url: https://github.com/spacetelescope/{{ name }}.git
+    git_url: https://github.com/spacetelescope/{{ reponame }}.git
 
 test:
     imports:

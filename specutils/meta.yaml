@@ -14,6 +14,7 @@ package:
 
 build:
     number: {{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}__{{ number }}
 
 source:
     git_tag: {{ tag }}

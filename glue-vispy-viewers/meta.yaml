@@ -18,6 +18,7 @@ source:
 
 build:
   number: {{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}_{{ number }}
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:

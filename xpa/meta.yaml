@@ -10,6 +10,7 @@ about:
     summary: Provides seamless communication between many kinds of Unix programs
 build:
     number: {{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}_{{ number }}
 package:
     name: {{ name }}
     version: {{ version }}

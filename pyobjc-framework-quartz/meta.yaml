@@ -9,6 +9,7 @@ about:
 
 build:
     number: {{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}_{{ number }}
     preserve_egg_dir: 'true'
     skip: True [not osx]
 

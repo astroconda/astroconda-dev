@@ -11,7 +11,7 @@ about:
 
 build:
     number: {{ number }}
-    string: {{ GIT_DESCRIBE_HASH }}_{{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}__{{ number }}
 
 package:
     name: {{ name }}

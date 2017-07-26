@@ -11,7 +11,7 @@ build:
     binary_relocation: False [osx]
     detect_binary_files_with_prefix: False [osx]
     number: {{ number }}
-    string: {{ GIT_DESCRIBE_HASH }}_{{ number }}
+    string: {{ GIT_DESCRIBE_HASH }}__{{ number }}
 
 package:
     name: {{ name }}

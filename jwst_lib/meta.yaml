@@ -11,7 +11,6 @@ about:
 
 build:
     number: {{ number }}
-    string: {{ GIT_DESCRIBE_HASH }}__{{ number }}
     preserve_egg_dir: 'True'
 
 package:

@@ -22,6 +22,7 @@ requirements:
     - pyyaml
     - jsonschema
     - pytest
+    - semantic_version >=2.6.0
     - six
     - setuptools
     - numpy
@@ -32,6 +33,7 @@ requirements:
     - pyyaml
     - jsonschema
     - pytest
+    - semantic_version >=2.6.0
     - six
     - setuptools
     - numpy

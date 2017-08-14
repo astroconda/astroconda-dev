@@ -8,6 +8,7 @@ package:
    version: {{ version }}
 
 build:
+   skip: true [not linux]
    number: {{ number }}
 
 requirements:
@@ -16,11 +17,13 @@ requirements:
     - dbus
     - expat
     - glib
+    # - selinux (fat chance; this might cause issues)
 
   run:
     - dbus
     - expat
     - glib
+    # - selinux (fat chance; this might cause issues)
 
 source:
   fn: {{ archive }}

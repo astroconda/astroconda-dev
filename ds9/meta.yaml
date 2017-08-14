@@ -1,6 +1,6 @@
 {% set name = 'ds9' %}
 {% set version = '7.5' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://ds9.si.edu/download/source/

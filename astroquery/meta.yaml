@@ -1,0 +1,47 @@
+{% set name = 'astroquery' %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
+    +".dev"
+    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% if version[0] == 'v' %}
+{%     set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/astropy/{{ name }}
+    license: BSD
+    summary: Astroquery is a set of tools for querying astronomical web forms and databases.
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+source:
+    git_url: https://github.com/astropy/{{ name }}
+
+build:
+    number: {{ number }}
+
+requirements:
+    build:
+    - astropy
+    - requests
+    - keyring
+    - beautifulsoup4
+    - html5lib
+    - secretstorage
+    - setuptools
+    - python
+
+    run:
+    - astropy
+    - requests
+    - keyring
+    - beautifulsoup4
+    - html5lib
+    - secretstorage
+    - python
+
+test:
+    imports:
+    - astroquery.simbad

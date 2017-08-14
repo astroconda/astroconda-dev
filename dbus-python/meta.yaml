@@ -30,6 +30,7 @@ requirements:
 
     run:
     - dbus
+    - dbus-glib
     - python
 
 test:

@@ -6,7 +6,7 @@
 about:
     home: https://bitbucket.com/ericvsmith/{{ name }}
     license: BSD
-    summary: Release I Control, for git
+    summary: Similar to namedtuple, but instances are mutable.
 
 build:
     number: {{ number }}

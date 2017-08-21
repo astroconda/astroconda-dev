@@ -20,6 +20,7 @@ package:
 requirements:
     build:
     - astropy
+    - namedlist
     - numpy >=1.7*
     - setuptools
     - python x.x
@@ -35,6 +36,7 @@ requirements:
     - jsonschema
     - jplephem
     - matplotlib
+    - namedlist
     - nose
     - photutils
     - pymssql

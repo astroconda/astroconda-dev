@@ -1,0 +1,30 @@
+{% set name = 'dbus-glib' %}
+{% set version = '0.108' %}
+{% set number = '0' %}
+{% set archive = name + '-' + version + '.tar.gz' %}
+
+package:
+   name: {{ name }}
+   version: {{ version }}
+
+build:
+   skip: true [not linux]
+   number: {{ number }}
+
+requirements:
+  build:
+    - pkg-config
+    - dbus
+    - expat
+    - glib
+    # - selinux (fat chance; this might cause issues)
+
+  run:
+    - dbus
+    - expat
+    - glib
+    # - selinux (fat chance; this might cause issues)
+
+source:
+  fn: {{ archive }}
+  url: https://dbus.freedesktop.org/releases/{{ name }}/{{ archive }}

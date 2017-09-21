@@ -1,0 +1,38 @@
+{% set name = 'secretstorage' %}
+{% set version = '2.3.1' %}
+{% set number = '0' %}
+
+about:
+  home: https://github.com/mitya57/{{ name }}
+  license: BSD License
+  summary: 'Python bindings to FreeDesktop.org Secret Service API'
+  license_family: BSD
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+build:
+  skip: true [not linux]
+  number: {{ number }}
+
+source:
+  git_tag: {{ version }}
+  git_url: https://github.com/mitya57/{{ name }}.git
+
+requirements:
+  build:
+    - python
+    - dbus-python
+    - setuptools
+    - cryptography
+
+  run:
+    - python
+    - dbus-python
+    - cryptography
+
+test:
+  imports:
+    - secretstorage
+

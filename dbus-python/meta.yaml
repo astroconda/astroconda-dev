@@ -1,0 +1,39 @@
+{% set name = 'dbus-python' %}
+{% set version = '1.2.4' %}
+{% set number = '0' %}
+{% set archive = name + '-' + version + '.tar.gz' %}
+
+about:
+    home: https://cgit.freedesktop.org/dbus/dbus-python
+    license: GPL
+    summary: Python bindings for D-Bus
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+build:
+    skip: true [not linux]
+    number: {{ number }}
+
+source:
+    fn: {{ archive }}
+    url: https://dbus.freedesktop.org/releases/{{ name }}/{{ archive }}
+
+requirements:
+    build:
+    - autoconf
+    - m4
+    - dbus
+    - dbus-glib
+    - setuptools
+    - python
+
+    run:
+    - dbus
+    - dbus-glib
+    - python
+
+test:
+    imports:
+    - dbus

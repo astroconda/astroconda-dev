@@ -20,7 +20,7 @@ requirements:
     build:
     - ginga
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - setuptools
     - python {{ python }}

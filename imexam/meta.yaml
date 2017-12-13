@@ -22,7 +22,7 @@ requirements:
     - stsci.distutils
     - nose
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - cython
     - matplotlib

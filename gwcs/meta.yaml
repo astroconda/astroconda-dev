@@ -21,7 +21,7 @@ requirements:
     - asdf
     - astropy
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

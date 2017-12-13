@@ -19,7 +19,7 @@ package:
 
 requirements:
     build:
-    - numpy
+    - numpy {{ numpy }}
     - matplotlib
     - python {{ python }}
     run:

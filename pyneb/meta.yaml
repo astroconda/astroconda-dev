@@ -19,7 +19,7 @@ requirements:
     build:
     - astropy
     - matplotlib
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - setuptools
     - python {{ python }}

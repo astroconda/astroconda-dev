@@ -22,7 +22,7 @@ requirements:
     - stsci.distutils
     - pyparsing
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

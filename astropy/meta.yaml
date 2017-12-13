@@ -21,7 +21,7 @@ requirements:
     - jinja2
     - pytest
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

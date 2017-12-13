@@ -29,7 +29,7 @@ requirements:
     - calcos
     - scipy
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

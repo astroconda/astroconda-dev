@@ -27,7 +27,7 @@ requirements:
 
   run:
     - python
-    - numpy
+    - numpy {{ numpy }}
     - pyopengl
     - glueviz
     - scikit-image

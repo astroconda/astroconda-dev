@@ -20,7 +20,7 @@ requirements:
     build:
     - nose
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - matplotlib
     - six [py27]

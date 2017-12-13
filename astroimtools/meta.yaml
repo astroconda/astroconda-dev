@@ -22,7 +22,7 @@ requirements:
     - cython
     - matplotlib
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

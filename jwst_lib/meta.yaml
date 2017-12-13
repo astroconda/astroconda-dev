@@ -28,7 +28,7 @@ requirements:
     - nose
     - six
     - stsci.distutils
-    - numpy
+    - numpy {{ numpy }}
     - setuptools
     - python {{ python }}
 

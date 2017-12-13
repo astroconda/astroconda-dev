@@ -23,7 +23,7 @@ requirements:
     build:
     - astropy >=1.1
     - cfitsio
-    - numpy
+    - numpy {{ numpy }}
     - requests
     - lxml
     - parsley

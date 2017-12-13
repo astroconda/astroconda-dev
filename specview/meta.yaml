@@ -19,7 +19,7 @@ package:
 requirements:
     build:
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - pyqtgraph
     - setuptools

@@ -34,7 +34,7 @@ requirements:
     - scipy
     - stsci.distutils
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

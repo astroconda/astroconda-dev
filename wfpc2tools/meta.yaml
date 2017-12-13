@@ -25,7 +25,7 @@ requirements:
     - stsci.imagestats
     - stsci.tools
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
     run:
     - astropy

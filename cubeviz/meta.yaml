@@ -20,7 +20,7 @@ requirements:
     build:
     - asdf
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - pytest >=3.1*
     - setuptools
     - python {{ python }}

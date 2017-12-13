@@ -16,7 +16,7 @@ package:
 
 requirements:
     build:
-    - numpy
+    - numpy {{ numpy }}
     - setuptools
     - python {{ python }}
     run:

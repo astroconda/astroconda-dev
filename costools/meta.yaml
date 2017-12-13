@@ -24,7 +24,7 @@ requirements:
     - calcos
     - stsci.tools
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

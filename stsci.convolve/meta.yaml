@@ -21,7 +21,7 @@ requirements:
     build:
     - d2to1
     - stsci.distutils
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

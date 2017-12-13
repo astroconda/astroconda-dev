@@ -28,5 +28,5 @@ requirements:
     - purge_path >=*0.0*
     - pyds9 >=*0.0*
     - pyfftw >=*0.0*
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}

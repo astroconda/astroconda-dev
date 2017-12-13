@@ -47,5 +47,5 @@ requirements:
     - stwcs >=*0.0*
     - wfpc2tools >=*0.0*
     - wfc3tools >=*0.0*
-    - numpy
+    - numpy {{ numpy }}
     - python {{ python }}

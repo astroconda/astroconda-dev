@@ -31,7 +31,7 @@ requirements:
     - astropy
     - drizzle
     - gwcs
-    - numpy
+    - numpy {{ numpy }}
     - python
 
 test:

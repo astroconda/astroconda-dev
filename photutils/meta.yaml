@@ -24,7 +24,7 @@ requirements:
     - astropy
     - cython
     - matplotlib
-    - numpy
+    - numpy {{ numpy }}
     - scikit-image
     - scipy
     - setuptools

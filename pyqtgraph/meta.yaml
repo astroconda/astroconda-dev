@@ -22,7 +22,7 @@ requirements:
     run:
     - pyqt
     - pyopengl
-    - numpy
+    - numpy {{ numpy }}
     - python
 
 source:

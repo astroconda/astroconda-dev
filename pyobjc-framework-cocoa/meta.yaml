@@ -20,11 +20,11 @@ requirements:
     build:
     - pyobjc-core
     - setuptools
-    - python x.x
+    - python
 
     run:
     - pyobjc-core
-    - python x.x
+    - python
 
 source:
     fn: pyobjc-{{ version }}.tar.gz

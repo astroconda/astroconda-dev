@@ -20,11 +20,11 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python
 
     run:
     - pandeia
-    - python x.x
+    - python
 
 source:
     git_url: git@github.com:STScI-SSB/pandeia_data

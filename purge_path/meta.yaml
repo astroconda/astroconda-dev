@@ -18,11 +18,11 @@ package:
 
 requirements:
     build:
-    - python x.x
+    - python
     - setuptools
 
     run:
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/jhunkeler/{{ name }}.git

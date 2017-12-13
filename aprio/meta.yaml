@@ -23,13 +23,13 @@ requirements:
     - psutil
     - python-daemon
     - setuptools
-    - python x.x
+    - python
 
     run:
     - docutils
     - psutil
     - python-daemon
-    - python x.x
+    - python
 
 source:
     git_url: https://bitbucket.org/jhunkeler/{{ name }}.git

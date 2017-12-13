@@ -35,7 +35,7 @@ requirements:
     - stsci.distutils
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - astropy
@@ -51,7 +51,7 @@ requirements:
     - photutils
     - scipy
     - numpy
-    - python x.x
+    - python
 
 source:
     git_url: ssh://git@bitbucket.org/stsci_ssb/jwst.git

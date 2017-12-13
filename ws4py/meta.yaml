@@ -17,10 +17,10 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python
 
     run:
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

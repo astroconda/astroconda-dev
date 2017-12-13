@@ -20,11 +20,11 @@ requirements:
     build:
     - argparse [py26]
     - setuptools
-    - python x.x
+    - python
 
     run:
     - argparse [py26]
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/jhunkeler/{{ name }}.git

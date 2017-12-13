@@ -18,11 +18,11 @@ requirements:
     build:
     - docutils
     - lockfile
-    - python x.x
+    - python
 
     run:
     - lockfile
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

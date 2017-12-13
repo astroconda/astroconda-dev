@@ -21,12 +21,12 @@ requirements:
     - astropy
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - astropy
     - numpy
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

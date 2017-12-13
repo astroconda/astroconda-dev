@@ -24,7 +24,7 @@ requirements:
     - namedlist
     - numpy >=1.7*
     - setuptools
-    - python x.x
+    - python
 
     run:
     - asdf
@@ -45,7 +45,7 @@ requirements:
     - six
     - verhawk
     - numpy >=1.7*
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/stsci-jwst/{{ name }}.git

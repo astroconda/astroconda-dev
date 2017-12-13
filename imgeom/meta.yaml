@@ -25,14 +25,14 @@ requirements:
     - drizzle
     - gwcs
     - setuptools
-    - python x.x
+    - python
 
     run:
     - astropy
     - drizzle
     - gwcs
     - numpy
-    - python x.x
+    - python
 
 test:
     imports:

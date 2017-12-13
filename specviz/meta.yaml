@@ -27,7 +27,7 @@ requirements:
     - yaml
     - setuptools
     - numpy
-    - python x.x
+    - python
 
   run:
     - astropy
@@ -39,7 +39,7 @@ requirements:
     - scipy
     - yaml
     - numpy
-    - python x.x
+    - python
 
 test:
   requires:

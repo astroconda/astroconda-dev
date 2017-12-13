@@ -19,11 +19,11 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python
 
     run:
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/embray/{{ name }}.git

@@ -26,13 +26,13 @@ requirements:
     - scipy
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - astropy
     - scipy
     - numpy
-    - python x.x
+    - python
 
 test:
     imports:

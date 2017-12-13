@@ -22,14 +22,14 @@ requirements:
     - numpy
     - scipy
     - setuptools
-    - python x.x
+    - python
 
     run:
     - astropy
     - matplotlib
     - numpy
     - scipy
-    - python x.x
+    - python
 
 source:
     fn: {{ badname }}-{{ version }}.tar.gz

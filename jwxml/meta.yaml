@@ -21,11 +21,11 @@ requirements:
     build:
     - numpy
     - matplotlib
-    - python x.x
+    - python
     run:
     - numpy
     - matplotlib
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/mperrin/{{ name }}.git

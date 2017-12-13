@@ -29,4 +29,4 @@ requirements:
     - pyds9 >=*0.0*
     - pyfftw >=*0.0*
     - numpy
-    - python x.x
+    - python

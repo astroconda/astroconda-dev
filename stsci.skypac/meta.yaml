@@ -28,7 +28,7 @@ requirements:
     - stwcs
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - astropy
@@ -36,8 +36,8 @@ requirements:
     - stsci.sphere
     - stsci.tools
     - stwcs
-    - python x.x
-    - python x.x
+    - python
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}

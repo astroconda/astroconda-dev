@@ -21,12 +21,12 @@ requirements:
     - pyobjc-core
     - pyobjc-framework-cocoa
     - setuptools
-    - python x.x
+    - python
 
     run:
     - pyobjc-core
     - pyobjc-framework-cocoa
-    - python x.x
+    - python
 
 source:
     fn: pyobjc-{{ version }}.tar.gz

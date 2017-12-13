@@ -27,7 +27,7 @@ requirements:
     - imexam >=*0.0*
     - asdf >=*0.0*
     - numpy
-    - python x.x
+    - python
     run:
     - astropy >=*0.0*
     - astroimtools >=*0.0*
@@ -38,5 +38,5 @@ requirements:
     - imexam >=*0.0*
     - asdf >=*0.0*
     - numpy
-    - python x.x
+    - python
 

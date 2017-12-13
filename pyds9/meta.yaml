@@ -24,7 +24,7 @@ requirements:
     - six
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - astropy
@@ -32,7 +32,7 @@ requirements:
     - ds9
     - six
     - numpy
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/ericmandel/{{ name }}.git

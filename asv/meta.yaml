@@ -22,13 +22,13 @@ requirements:
     - sphinx
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - six
     - sphinx
     - numpy
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

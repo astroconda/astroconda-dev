@@ -21,8 +21,8 @@ requirements:
     - jinja2
     - pytest
     - setuptools
-    - numpy x.x
-    - python x.x
+    - numpy
+    - python
 
     run:
     - beautiful-soup [py27 or py34]
@@ -39,8 +39,8 @@ requirements:
     - pyyaml
     - scikit-image
     - scipy
-    - numpy x.x
-    - python x.x
+    - numpy
+    - python
 
 source:
     git_url: https://github.com/astropy/{{ name }}.git

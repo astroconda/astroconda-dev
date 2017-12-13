@@ -22,11 +22,11 @@ requirements:
     - stsci.distutils
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - numpy
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

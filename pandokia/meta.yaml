@@ -24,13 +24,13 @@ requirements:
     - pytest
     - shunit2
     - setuptools
-    - python x.x
+    - python
 
     run:
     - nose
     - shunit2
     - pytest
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

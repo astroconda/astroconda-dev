@@ -27,7 +27,7 @@ requirements:
     - mock [py27]
     - enum34 [py27]
     - setuptools
-    - python x.x
+    - python
 
     run:
     - nose
@@ -39,7 +39,7 @@ requirements:
     - mock [py27]
     - enum34 [py27]
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/mperrin/{{ name }}.git

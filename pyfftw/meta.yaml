@@ -22,14 +22,14 @@ requirements:
     - pkg-config [osx]
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - numpy >=1.9
     - cython
     - fftw
     - numpy
-    - python x.x
+    - python
 
 source:
     fn: pyFFTW-0.9.2.tar.gz

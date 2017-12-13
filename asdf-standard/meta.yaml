@@ -24,13 +24,13 @@ requirements:
     - mistune
     - six [py27|py3k]
     - setuptools
-    - python x.x
+    - python
     
     run:
     - nose
     - astropy
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}.git

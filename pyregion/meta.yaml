@@ -23,12 +23,12 @@ requirements:
     - pyparsing
     - setuptools
     - numpy
-    - python x.x
+    - python
 
     run:
     - pyparsing
     - numpy
-    - python x.x
+    - python
     - setuptools
 
 source:

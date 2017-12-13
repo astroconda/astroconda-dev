@@ -20,13 +20,13 @@ requirements:
     - linecache2
     - six
     - setuptools
-    - python x.x
+    - python
 
     run:
     - pbr
     - linecache2
     - six
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

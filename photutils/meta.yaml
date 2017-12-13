@@ -28,7 +28,7 @@ requirements:
     - scikit-image
     - scipy
     - setuptools
-    - python x.x
+    - python
 
     run:
     - astropy
@@ -38,7 +38,7 @@ requirements:
     - scikit-image
     - scipy
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/astropy/{{ name }}.git

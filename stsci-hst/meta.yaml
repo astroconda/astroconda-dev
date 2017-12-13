@@ -48,4 +48,4 @@ requirements:
     - wfpc2tools >=*0.0*
     - wfc3tools >=*0.0*
     - numpy
-    - python
+    - python {{ python }}

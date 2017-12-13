@@ -20,7 +20,7 @@ requirements:
     build:
     - argparse [py26]
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - argparse [py26]

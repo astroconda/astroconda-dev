@@ -25,7 +25,7 @@ requirements:
     - drizzle
     - gwcs
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy

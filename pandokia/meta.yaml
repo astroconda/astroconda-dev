@@ -24,7 +24,7 @@ requirements:
     - pytest
     - shunit2
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - nose

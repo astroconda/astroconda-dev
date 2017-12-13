@@ -27,7 +27,7 @@ requirements:
     - dbus
     - dbus-glib
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - dbus

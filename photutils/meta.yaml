@@ -28,7 +28,7 @@ requirements:
     - scikit-image
     - scipy
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy

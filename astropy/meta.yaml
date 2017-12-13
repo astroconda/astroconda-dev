@@ -22,7 +22,7 @@ requirements:
     - pytest
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - beautiful-soup [py27 or py34]

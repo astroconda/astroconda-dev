@@ -31,7 +31,7 @@ requirements:
     - html5lib
     - secretstorage [linux]
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy

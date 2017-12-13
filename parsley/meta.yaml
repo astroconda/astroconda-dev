@@ -19,7 +19,7 @@ package:
 requirements:
     build:
     - setuptools
-    - python
+    - python {{ python }}
     run:
     - python
 

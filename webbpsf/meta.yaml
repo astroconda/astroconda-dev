@@ -34,7 +34,7 @@ requirements:
     - six [py27]
     - webbpsf-data >=0.4.1
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - nose

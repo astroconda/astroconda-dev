@@ -23,7 +23,7 @@ requirements:
     - numpy
     - pytest >=3.1*
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - asdf

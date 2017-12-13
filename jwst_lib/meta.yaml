@@ -30,7 +30,7 @@ requirements:
     - stsci.distutils
     - numpy
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - asdf

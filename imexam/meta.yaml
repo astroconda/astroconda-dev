@@ -29,7 +29,7 @@ requirements:
     - ipython
     - setuptools
     - mock [py27]
-    - python
+    - python {{ python }}
 
     run:
     - nose

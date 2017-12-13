@@ -29,7 +29,7 @@ requirements:
     - stsci.tools
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - d2to1

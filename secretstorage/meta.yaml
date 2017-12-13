@@ -22,7 +22,7 @@ source:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - dbus-python
     - setuptools
     - cryptography

@@ -20,7 +20,7 @@ requirements:
     build:
     - jwst
     - numpy
-    - python
+    - python {{ python }}
     run:
     - jwst
     - numpy

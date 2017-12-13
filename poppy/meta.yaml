@@ -27,7 +27,7 @@ requirements:
     - mock [py27]
     - enum34 [py27]
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - nose

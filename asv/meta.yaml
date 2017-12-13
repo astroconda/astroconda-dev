@@ -22,7 +22,7 @@ requirements:
     - sphinx
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - six

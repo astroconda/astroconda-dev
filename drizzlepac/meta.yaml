@@ -36,7 +36,7 @@ requirements:
     - pyregion
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - astropy

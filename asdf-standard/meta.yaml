@@ -24,7 +24,7 @@ requirements:
     - mistune
     - six [py27|py3k]
     - setuptools
-    - python
+    - python {{ python }}
     
     run:
     - nose

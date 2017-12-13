@@ -20,7 +20,7 @@ requirements:
     build:
     - astropy >=1.1
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - astropy >=1.1

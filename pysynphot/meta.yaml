@@ -27,7 +27,7 @@ requirements:
     - matplotlib
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - nose

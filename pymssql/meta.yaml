@@ -24,7 +24,7 @@ build:
 requirements:
   build:
     - openssl 1.0.*     # [win]
-    - python
+    - python {{ python }}
     - cython
     - setuptools
     - libiconv          # [win]

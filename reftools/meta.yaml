@@ -30,7 +30,7 @@ requirements:
     - scipy
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - stsci.imagestats

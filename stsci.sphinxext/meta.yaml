@@ -23,7 +23,7 @@ requirements:
     - stsci.distutils
     - numpydoc
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - numpydoc

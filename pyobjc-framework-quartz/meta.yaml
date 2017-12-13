@@ -21,7 +21,7 @@ requirements:
     - pyobjc-core
     - pyobjc-framework-cocoa
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - pyobjc-core

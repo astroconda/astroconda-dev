@@ -29,7 +29,7 @@ requirements:
     - parsley
     - lockfile
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy >=1.1

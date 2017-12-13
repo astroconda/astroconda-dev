@@ -24,7 +24,7 @@ requirements:
     - namedlist
     - numpy >=1.7*
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - asdf

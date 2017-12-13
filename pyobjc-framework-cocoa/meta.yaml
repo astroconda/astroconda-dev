@@ -20,7 +20,7 @@ requirements:
     build:
     - pyobjc-core
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - pyobjc-core

@@ -20,7 +20,7 @@ requirements:
     build:
     - setuptools
     - numpy
-    - python
+    - python {{ python }}
 
     run:
     - numpy

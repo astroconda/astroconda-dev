@@ -1,0 +1,13 @@
+python:
+  - 3.5
+  - 3.6
+
+numpy:
+  - 1.12
+
+pin_build_as_run:
+  python:
+    max_pin: x.x
+
+  numpy:
+    max_pin: x.x

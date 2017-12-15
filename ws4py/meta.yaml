@@ -1,6 +1,6 @@
 {% set name = 'ws4py' %}
 {% set version = '0.3.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/w/{{ name }}

@@ -1,6 +1,6 @@
 {% set name = 'pytools' %}
 {% set version = '2016.1' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://pypi.python.org/pytools

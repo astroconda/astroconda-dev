@@ -1,6 +1,6 @@
 {% set name = 'fftw' %}
 {% set version = '3.3.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.fftw.org

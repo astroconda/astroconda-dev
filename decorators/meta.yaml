@@ -1,6 +1,6 @@
 {% set name = 'decorators' %}
 {% set version = '0.1' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/micheles/decorator

@@ -1,6 +1,6 @@
 {% set name = 'threading2' %}
 {% set version = '0.2.1' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/t/{{ name }}

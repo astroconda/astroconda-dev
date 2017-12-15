@@ -1,6 +1,6 @@
 {% set name = 'appdirs' %}
 {% set version = '1.4.0' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://github.com/ActiveState/{{ name }}

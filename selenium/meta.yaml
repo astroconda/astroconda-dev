@@ -1,6 +1,6 @@
 {% set name = 'selenium' %}
 {% set version = '2.49.2' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/{{ name }}

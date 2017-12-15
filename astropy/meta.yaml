@@ -1,6 +1,8 @@
 {% set name = 'astropy' %}
-{% set version = '3.0.dev' + environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set version = '3.0.0' %}
+{% set commit = 'f7ea2accef333fc078b35795dc0269eaf4304a93' %}
+{% set build_str = 'py' + CONDA_PY + '_' + commit[0:8] %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
@@ -8,8 +10,9 @@ about:
     summary: Astropy is a package intended to contain much of the core functionality and some common tools needed for performing astronomy and astrophysics with Python.
 
 build:
-    skip: True [py27]
+    skip: True [py27 or py33 or py34]
     number: {{ number }}
+    string: {{ build_str }}
 
 package:
     name: {{ name }}
@@ -25,8 +28,7 @@ requirements:
     - python {{ python }}
 
     run:
-    - beautiful-soup [py27 or py34]
-    - beautifulsoup4 [py>=35]
+    - beautifulsoup4
     - cython
     - h5py
     - ipython
@@ -43,6 +45,7 @@ requirements:
     - python
 
 source:
+    git_rev: {{ commit }}
     git_url: https://github.com/astropy/{{ name }}.git
 
 test:
@@ -56,3 +59,4 @@ test:
     - wcslint --help
     imports:
     - astropy
+

@@ -1,6 +1,6 @@
 {% set name = 'pyqtgraph' %}
 {% set version = '0.10.0' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: http://www.pyqtgraph.org/

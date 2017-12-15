@@ -1,6 +1,6 @@
 {% set name = 'glue-vispy-viewers' %}
 {% set version = '0.4' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
   home: https://github.com/glue-viz/glue-vispy-viewers

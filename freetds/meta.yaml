@@ -1,6 +1,6 @@
 {% set name = 'freetds' %}
 {% set version = '1.00.9' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
   home: http://www.freetds.org/index.html

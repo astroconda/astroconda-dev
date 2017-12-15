@@ -1,6 +1,6 @@
 {% set name = 'linecache2' %}
 {% set version = '1.0.0' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/l/linecache2

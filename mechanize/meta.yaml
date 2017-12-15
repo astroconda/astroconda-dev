@@ -1,6 +1,6 @@
 {% set name = 'mechanize' %}
 {% set version = '0.2.5' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/m/{{ name }}

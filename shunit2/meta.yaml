@@ -1,6 +1,6 @@
 {% set name = 'shunit2' %}
 {% set version = '2.1.3' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://sourceforge.net/projects/shunit2

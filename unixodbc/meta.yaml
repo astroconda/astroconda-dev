@@ -1,7 +1,7 @@
 {% set name = 'unixodbc' %}
 {% set badname = 'unixODBC' %}
 {% set version = '2.3.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.unixodbc.org

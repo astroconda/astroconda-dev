@@ -1,6 +1,6 @@
 {% set name = 'dbus-python' %}
 {% set version = '1.2.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 {% set archive = name + '-' + version + '.tar.gz' %}
 
 about:

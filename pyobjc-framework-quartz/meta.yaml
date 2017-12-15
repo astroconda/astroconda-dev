@@ -1,6 +1,6 @@
 {% set name = 'pyobjc-framework-quartz' %}
 {% set version = '3.1.1' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://pyobjc.sourceforge.net/

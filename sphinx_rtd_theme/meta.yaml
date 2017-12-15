@@ -1,6 +1,6 @@
 {% set name = 'sphinx_rtd_theme' %}
 {% set version = '0.1.9' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/sphinx_rtd_theme

@@ -1,6 +1,6 @@
 {% set name = 'traceback2' %}
 {% set version = '1.4.0' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/t/{{ name }}

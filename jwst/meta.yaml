@@ -10,6 +10,7 @@ about:
     summary: JWST Pipeline code
 
 build:
+    skip: True [py27]
     number: {{ number }}
     preserve_egg_dir: 'True'
 
@@ -22,7 +23,8 @@ requirements:
     - astropy
     - matplotlib
     - namedlist
-    - numpy >=1.7*
+    - numpy {{ numpy }}
+    - pymssql [not py36]
     - setuptools
     - python {{ python }}
 
@@ -32,15 +34,21 @@ requirements:
     - crds
     - dask
     - drizzle
+    - fitsblender
     - gwcs
     - jsonschema
     - jplephem
     - matplotlib
     - namedlist
     - photutils
-    - pymssql
+    - pymssql [not py36]
     - scipy
     - six
+    - stsci.image
+    - stsci.imagestats
+    - stsci.sphere
+    - stsci.stimage
+    - stsci.tools
     - verhawk
     - numpy >=1.7*
     - python

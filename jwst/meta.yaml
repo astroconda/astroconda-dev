@@ -10,7 +10,7 @@ about:
 build:
     skip: True [py27]
     number: {{ number }}
-    preserve_egg_dir: 'True'
+    preserve_egg_dir: True
 
 package:
     name: {{ name }}
@@ -21,9 +21,9 @@ requirements:
     - astropy
     - matplotlib
     - namedlist
-    - numpy {{ numpy }}
     - pymssql [not py36]
     - setuptools
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:
@@ -48,7 +48,7 @@ requirements:
     - stsci.stimage
     - stsci.tools
     - verhawk
-    - numpy >=1.7*
+    - numpy
     - python
 
 source:

@@ -1,5 +1,5 @@
 {% set name = 'stsci-hst' %}
-{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% set version = '0.0.0dev.0' %}
 {% set number = '2' %}
 
 about:
@@ -45,5 +45,5 @@ requirements:
     - stwcs >=*0.0*
     - wfpc2tools >=*0.0*
     - wfc3tools >=*0.0*
-    - numpy {{ numpy }}
-    - python {{ python }}
+    - numpy
+    - python

@@ -1,5 +1,5 @@
 {% set name = 'stsci.tools' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0") +".dev" +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% set number = '2' %}
 
 about:

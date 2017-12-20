@@ -1,11 +1,7 @@
 {% set name = 'astropy' %}
 {% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% set commit = '76c58d4b8d7baa6641a114c3927b2464805e1a09' %}
-{% set number = '0' %}
-{% set build_str = GIT_DESCRIBE_HASH + '_' + PKG_BUILDNUM %}
-{% if CONDA_PY %}
-  {% set build_str = 'py' + CONDA_PY + '_' + build_str %}
-{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
@@ -15,7 +11,6 @@ about:
 build:
     skip: True [py27 or py33 or py34]
     number: {{ number }}
-    string: {{ build_str }}
 
 package:
     name: {{ name }}

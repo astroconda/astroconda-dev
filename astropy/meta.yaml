@@ -1,8 +1,11 @@
 {% set name = 'astropy' %}
-{% set version = '3.0.0' %}
-{% set commit = 'f7ea2accef333fc078b35795dc0269eaf4304a93' %}
-{% set build_str = 'py' + CONDA_PY + '_' + commit[0:8] %}
-{% set number = '1' %}
+{% set version = '3.0.0.dev' + GIT_DESCRIBE_NUMBER %}
+{% set commit = '76c58d4b8d7baa6641a114c3927b2464805e1a09' %}
+{% set number = '0' %}
+{% set build_str = GIT_DESCRIBE_HASH + '_' + PKG_BUILDNUM %}
+{% if CONDA_PY %}
+  {% set build_str = 'py' + CONDA_PY + '_' + build_str %}
+{% endif %}
 
 about:
     home: https://github.com/astropy/{{ name }}

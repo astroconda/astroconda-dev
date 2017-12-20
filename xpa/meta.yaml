@@ -1,7 +1,5 @@
 {% set name = 'xpa' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% set number = '1' %}
 
 about:
@@ -13,6 +11,12 @@ build:
 package:
     name: {{ name }}
     version: {{ version }}
+requirements:
+  build:
+    - python
+  run:
+    - python
+
 source:
     git_url: https://github.com/ericmandel/{{ name }}.git
 test:

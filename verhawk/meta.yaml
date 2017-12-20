@@ -1,7 +1,5 @@
 {% set name = 'verhawk' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0") +".dev" +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
 {% set number = '1' %}
 
 about:

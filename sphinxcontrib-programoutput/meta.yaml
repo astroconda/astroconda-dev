@@ -6,11 +6,11 @@ about:
     home: https://pypi.python.org/packages/source/s/{{ name }}
     license: BSD
     summary: sphinxcontrib-programoutput
-    
+
 build:
     number: {{ number }}
     preserve_egg_dir: True
-    
+
 package:
     name: {{ name }}
     version: {{ version }}
@@ -20,7 +20,7 @@ requirements:
     - sphinx
     - setuptools
     - python {{ python }}
-    
+
     run:
     - sphinx
     - python

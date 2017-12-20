@@ -6,7 +6,7 @@ about:
     home: https://pypi.python.org/packages/source/s/sphinx_rtd_theme
     license: BSD
     summary: sphinx_rtd_theme
-    
+
 build:
     number: {{ number }}
 

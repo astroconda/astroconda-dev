@@ -6,19 +6,17 @@ about:
     home: https://github.com/ericmandel/{{ name }}
     license: MIT
     summary: Provides seamless communication between many kinds of Unix programs
+
 build:
     number: {{ number }}
+
 package:
     name: {{ name }}
     version: {{ version }}
-requirements:
-  build:
-    - python
-  run:
-    - python
 
 source:
     git_url: https://github.com/ericmandel/{{ name }}.git
+
 test:
     commands:
     - test -x `which xpaget`

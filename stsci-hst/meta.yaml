@@ -28,7 +28,6 @@ requirements:
     - nictools >=*0.0*
     - pyregion >=*0.0*
     - pysynphot >=*0.0*
-    - pywcs >=*0.0*
     - reftools >=*0.0*
     - stistools >=*0.0*
     - stsci.convolve >=*0.0*

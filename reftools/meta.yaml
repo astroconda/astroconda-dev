@@ -17,27 +17,12 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
-    - stsci.imagestats
-    - stsci.tools
-    - pywcs
-    - pysynphot
-    - stwcs
-    - calcos
-    - scipy
-    - setuptools
+    - astropy >=1.1
     - numpy {{ numpy }}
     - python {{ python }}
-
+    - setuptools
     run:
-    - stsci.imagestats
-    - stsci.tools
-    - pywcs
-    - pysynphot
-    - stwcs
-    - calcos
-    - scipy
+    - astropy >=1.1
     - numpy
     - python
 

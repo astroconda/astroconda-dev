@@ -28,3 +28,4 @@ requirements:
 source:
     fn: {{badname}}-{{version}}.tar.gz
     url: http://www.unixodbc.org/{{badname}}-{{version}}.tar.gz
+    md5: bd25d261ca1808c947cb687e2034be81

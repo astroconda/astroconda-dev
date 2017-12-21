@@ -24,3 +24,4 @@ requirements:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: http://www.fftw.org/{{ name }}-{{ version }}.tar.gz
+    md5: 2edab8c06b24feeb3b82bbb3ebf3e7b3

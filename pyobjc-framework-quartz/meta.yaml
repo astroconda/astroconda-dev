@@ -31,6 +31,7 @@ requirements:
 source:
     fn: pyobjc-{{ version }}.tar.gz
     url: https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2
+    md5: 2a1dfe4646aebfda470789a39a317cdf
 
 #test:
     # - see runtest.py

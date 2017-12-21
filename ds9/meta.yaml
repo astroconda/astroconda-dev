@@ -20,6 +20,5 @@ requirements:
 
 source:
     fn: {{ name }}.{{ version }}.tar.gz
-    url:
-    - http://ds9.si.edu/download/source/{{ name }}.{{ version }}.tar.gz
-
+    url: http://ds9.si.edu/download/source/{{ name }}.{{ version }}.tar.gz
+    md5: 5684be5f6123f3d0426ea3db46466cb4

@@ -19,6 +19,7 @@ build:
 source:
     fn: {{ archive }}
     url: https://dbus.freedesktop.org/releases/{{ name }}/{{ archive }}
+    md5: 7372a588c83a7232b4e08159bfd48fe5
 
 requirements:
     build:

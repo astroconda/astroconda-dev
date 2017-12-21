@@ -17,6 +17,7 @@ package:
 source:
     fn: {{ name }}-{{ version }}.tgz
     url: https://downloads.sourceforge.net/shunit2/{{ name }}-{{ version }}.tgz
+    md5: 156a2491925a269fe09b70562deae091
 
 test:
     commands:

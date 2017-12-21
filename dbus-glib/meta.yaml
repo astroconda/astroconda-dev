@@ -28,3 +28,4 @@ requirements:
 source:
   fn: {{ archive }}
   url: https://dbus.freedesktop.org/releases/{{ name }}/{{ archive }}
+  md5: a66a613705870752ca9786e0359aea97

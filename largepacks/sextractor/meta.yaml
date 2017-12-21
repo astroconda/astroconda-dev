@@ -23,5 +23,5 @@ requirements:
     - fftw
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url:
-    - http://www.astromatic.net/download/sextractor/{{ name }}-{{ version }}.tar.gz
+    url: http://www.astromatic.net/download/sextractor/{{ name }}-{{ version }}.tar.gz
+    md5: 2115556b5d30571306608b7c023a318f

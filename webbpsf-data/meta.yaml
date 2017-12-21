@@ -17,3 +17,4 @@ package:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: http://www.stsci.edu/~mperrin/software/webbpsf/{{ name }}-{{ version }}.tar.gz
+    md5: c1cd63fcb68f97382e5ca5a64f720e46

@@ -1,6 +1,8 @@
 {% set name = 'specutils' %}
-{% set version = '0.2.1' %}
-{% set tag = 'v' + version %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set number = '2' %}
 
 about:
@@ -16,7 +18,6 @@ build:
     number: {{ number }}
 
 source:
-    git_tag: {{ tag }}
     git_url: https://github.com/astropy/{{ name }}.git
 
 requirements:
@@ -37,8 +38,10 @@ requirements:
 test:
     imports:
     - specutils
+    - specutils.analysis
     - specutils.io
-    - specutils.models
+    - specutils.modeling
+    - specutils.spectra
     - specutils.utils
     - specutils.wcs
 

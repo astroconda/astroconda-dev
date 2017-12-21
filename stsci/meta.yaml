@@ -1,5 +1,5 @@
 {% set name = 'stsci' %}
-{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% set version = '0.0.0.dev0' %}
 {% set number = '2' %}
 
 about:
@@ -16,15 +16,15 @@ package:
 
 requirements:
     run:
-    - stsci-hst >=*0.0*
-    - stsci-data-analysis >=*0.0*
-    - astropy >=*0.0*
-    - cfitsio >=*0.0*
-    - ds9 >=*0.0*
-    - fftw >=*0.0*
-    - htc_utils >=*0.0*
-    - purge_path >=*0.0*
-    - pyds9 >=*0.0*
-    - pyfftw >=*0.0*
+    - stsci-hst
+    - stsci-data-analysis
+    - astropy
+    - cfitsio
+    - ds9
+    - fftw
+    - htc_utils
+    - purge_path
+    - pyds9
+    - pyfftw
     - numpy
     - python

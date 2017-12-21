@@ -1,5 +1,8 @@
 {% set name = 'asdf-standard' %}
 {% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set number = '1' %}
 
 about:
@@ -23,7 +26,7 @@ requirements:
     - six [py27|py3k]
     - setuptools
     - python {{ python }}
-    
+
     run:
     - nose
     - astropy

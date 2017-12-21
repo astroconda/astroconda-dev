@@ -1,5 +1,8 @@
 {% set name = 'astropy' %}
 {% set version = "3.0.0.dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set commit = '76c58d4b8d7baa6641a114c3927b2464805e1a09' %}
 {% set number = '1' %}
 

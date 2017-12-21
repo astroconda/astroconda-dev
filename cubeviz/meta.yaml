@@ -17,17 +17,21 @@ package:
 requirements:
     build:
     - asdf
+    - asteval
     - astropy
+    - glueviz
     - numpy {{ numpy }}
-    - pytest >=3.1*
+    - pytest
     - setuptools
     - python {{ python }}
 
     run:
     - asdf
+    - asteval
     - astropy
+    - glueviz
     - numpy
-    - pytest >=3.1*
+    - pytest
     - python
 
 source:

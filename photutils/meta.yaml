@@ -19,8 +19,6 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - nose
     - astropy
     - cython

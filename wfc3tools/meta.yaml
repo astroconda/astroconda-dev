@@ -19,8 +19,6 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - astropy
     - matplotlib
     - scipy
@@ -29,11 +27,11 @@ requirements:
     - numpy {{ numpy }}
     - python {{ python }}
     run:
-    - stsci.tools
     - astropy
     - matplotlib
     - numpy
     - scipy
+    - stsci.tools
     - python
 
 source:

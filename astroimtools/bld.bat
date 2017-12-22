@@ -1,3 +1,3 @@
 
-python setup.py install --offline
+%PYTHON% setup.py install
 if errorlevel 1 exit 1

@@ -23,4 +23,4 @@ set_py3k
 if [ $PY3K -ne 0 ] ; then
 2to3 -w .
 fi
-python setup.py install || exit 1
+$PYTHON setup.py install

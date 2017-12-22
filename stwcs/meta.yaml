@@ -19,7 +19,6 @@ package:
 
 requirements:
     build:
-    - d2to1
     - astropy >=1.1
     - stsci.tools
     - setuptools

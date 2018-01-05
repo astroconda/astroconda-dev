@@ -1,6 +1,6 @@
 {% set name = 'pyfftw' %}
 {% set version = '0.9.2' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: http://hgomersall.github.com/pyFFTW
@@ -22,18 +22,19 @@ requirements:
     - pkg-config [osx]
     - setuptools
     - numpy
-    - python x.x
+    - python {{ python }}
 
     run:
     - numpy >=1.9
     - cython
     - fftw
     - numpy
-    - python x.x
+    - python
 
 source:
     fn: pyFFTW-0.9.2.tar.gz
     url: https://pypi.python.org/packages/source/p/pyFFTW/pyFFTW-0.9.2.tar.gz
+    md5: 34fcbc68afb8ebe5f040a02a8d20d565
 
 test:
     imports:

@@ -1,8 +1,9 @@
 {% set name = 'cubeviz' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -19,17 +20,21 @@ package:
 requirements:
     build:
     - asdf
+    - asteval
     - astropy
-    - numpy
-    - pytest >=3.1*
+    - glueviz
+    - numpy {{ numpy }}
+    - pytest
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - asdf
+    - asteval
     - astropy
+    - glueviz
     - numpy
-    - pytest >=3.1*
+    - pytest
     - python
 
 source:

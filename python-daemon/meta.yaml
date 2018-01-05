@@ -1,6 +1,6 @@
 {% set name = 'python-daemon' %}
 {% set version = '2.0.5' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://bitbucket.org/jhunkeler/python-daemon
@@ -18,11 +18,11 @@ requirements:
     build:
     - docutils
     - lockfile
-    - python x.x
+    - python {{ python }}
 
     run:
     - lockfile
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

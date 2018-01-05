@@ -1,6 +1,6 @@
 {% set name = 'dbus-python' %}
 {% set version = '1.2.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 {% set archive = name + '-' + version + '.tar.gz' %}
 
 about:
@@ -19,6 +19,7 @@ build:
 source:
     fn: {{ archive }}
     url: https://dbus.freedesktop.org/releases/{{ name }}/{{ archive }}
+    md5: 7372a588c83a7232b4e08159bfd48fe5
 
 requirements:
     build:
@@ -27,7 +28,7 @@ requirements:
     - dbus
     - dbus-glib
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - dbus

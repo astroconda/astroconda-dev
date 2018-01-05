@@ -1,8 +1,9 @@
 {% set name = 'aprio' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '0' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '1' %}
 
 about:
     home: http://bitbucket.org/jhunkeler/{{ name }}
@@ -23,13 +24,13 @@ requirements:
     - psutil
     - python-daemon
     - setuptools
-    - python x.x
+    - python
 
     run:
     - docutils
     - psutil
     - python-daemon
-    - python x.x
+    - python
 
 source:
     git_url: https://bitbucket.org/jhunkeler/{{ name }}.git

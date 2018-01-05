@@ -1,7 +1,7 @@
 {% set name = 'cfitsio' %}
 {% set version = '3.410' %}
 {% set version_short = '3410' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: http://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
@@ -24,3 +24,4 @@ requirements:
 source:
     fn: {{ name }}{{ version_short }}.tar.gz
     url: http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/{{ name }}{{ version_short }}.tar.gz
+    md5: 9c7e34741bdff85768c82aa8326b3664

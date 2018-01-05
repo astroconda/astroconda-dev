@@ -1,0 +1,60 @@
+{% set name = "asteval" %}
+{% set version = "0.9.11" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "5995f1863c1685cd00df010663c15be880035a38b1e58c6340fb1d3adc499d8e" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  host:
+    - python {{ python }}
+    - setuptools
+    - numpy {{ numpy }}
+    - six
+  run:
+    - python
+    - numpy
+    - six
+
+test:
+  imports:
+    - asteval
+
+about:
+  home: http://github.com/newville/asteval
+  license: BSD License
+  license_family: BSD
+  license_file: ''
+  summary: Safe, minimalistic evaluator of python expression using ast module
+  description: 'ASTEVAL provides a numpy-aware, safe(ish) ''eval'' function
+
+
+    Emphasis is on mathematical expressions, and so numpy ufuncs
+
+    are used if available.  Symbols are held in the Interpreter
+
+    symbol table ''symtable'':  a simple dictionary supporting a
+
+    simple, flat namespace.
+
+
+    Expressions can be compiled into ast node for later evaluation,
+
+    using the values in the symbol table current at evaluation time.'
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''

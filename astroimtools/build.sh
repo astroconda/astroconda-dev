@@ -1,2 +1,2 @@
 
-python setup.py install --offline || exit 1
+$PYTHON setup.py install

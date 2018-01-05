@@ -1,11 +1,9 @@
 {% set name = 'astroquery' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% if version[0] == 'v' %}
-{%     set version = version[1:] %}
+{%   set version = version[1:] %}
 {% endif %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
@@ -31,7 +29,7 @@ requirements:
     - html5lib
     - secretstorage [linux]
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - astropy

@@ -1,7 +1,7 @@
 {% set name = 'specviz' %}
 {% set version = '0.2.1rc5' %}
 {% set tag = 'v' + version %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
   home: https://github.com/spacetelescope/specviz
@@ -26,8 +26,8 @@ requirements:
     - scipy
     - yaml
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
 
   run:
     - astropy
@@ -39,7 +39,7 @@ requirements:
     - scipy
     - yaml
     - numpy
-    - python x.x
+    - python
 
 test:
   requires:

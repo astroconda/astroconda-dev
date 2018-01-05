@@ -1,7 +1,7 @@
 {% set name = 'unixodbc' %}
 {% set badname = 'unixODBC' %}
 {% set version = '2.3.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.unixodbc.org
@@ -28,3 +28,4 @@ requirements:
 source:
     fn: {{badname}}-{{version}}.tar.gz
     url: http://www.unixodbc.org/{{badname}}-{{version}}.tar.gz
+    md5: bd25d261ca1808c947cb687e2034be81

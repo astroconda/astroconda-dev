@@ -1,6 +1,6 @@
 {% set name = 'wcstools' %}
 {% set version = '3.9.5' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://tdc-www.harvard.edu/{{ name }}
@@ -23,3 +23,4 @@ requirements:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: http://tdc-www.harvard.edu/software/wcstools/{{ name }}-{{ version }}.tar.gz
+    md5: 30ee0aaa74567805b95c4548e654aa48

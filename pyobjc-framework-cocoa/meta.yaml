@@ -1,6 +1,6 @@
 {% set name = 'pyobjc-framework-cocoa' %}
 {% set version = '3.1.1' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://pyobjc.sourceforge.net/
@@ -20,15 +20,16 @@ requirements:
     build:
     - pyobjc-core
     - setuptools
-    - python x.x
+    - python {{ python }}
 
     run:
     - pyobjc-core
-    - python x.x
+    - python
 
 source:
     fn: pyobjc-{{ version }}.tar.gz
     url: https://bitbucket.org/ronaldoussoren/pyobjc/get/pyobjc-{{ version }}.tar.bz2
+    md5: 2a1dfe4646aebfda470789a39a317cdf
 
 test:
     imports:

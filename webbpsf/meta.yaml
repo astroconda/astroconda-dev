@@ -1,8 +1,9 @@
 {% set name = 'webbpsf' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '2' %}
 
 # Keep in mind:
 #     webbpsf-data is version-locked to prevent older builds from picking
@@ -26,7 +27,7 @@ requirements:
     build:
     - nose
     - astropy
-    - numpy
+    - numpy {{ numpy }}
     - scipy
     - matplotlib
     - poppy
@@ -34,7 +35,7 @@ requirements:
     - six [py27]
     - webbpsf-data >=0.4.1
     - setuptools
-    - python x.x
+    - python {{ python }}
 
     run:
     - nose
@@ -47,7 +48,7 @@ requirements:
     - six [py27]
     - webbpsf-data >=0.4.1
     - setuptools
-    - python x.x
+    - python
 
 source:
     git_url: https://github.com/mperrin/{{ name }}.git

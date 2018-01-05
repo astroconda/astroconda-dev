@@ -1,6 +1,6 @@
 {% set name = 'shunit2' %}
 {% set version = '2.1.3' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://sourceforge.net/projects/shunit2
@@ -17,6 +17,7 @@ package:
 source:
     fn: {{ name }}-{{ version }}.tgz
     url: https://downloads.sourceforge.net/shunit2/{{ name }}-{{ version }}.tgz
+    md5: 156a2491925a269fe09b70562deae091
 
 test:
     commands:

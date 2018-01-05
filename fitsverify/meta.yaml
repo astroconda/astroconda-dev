@@ -1,6 +1,6 @@
 {% set name = 'fitsverify' %}
 {% set version = '4.18' %}
-{% set number = '3' %}
+{% set number = '4' %}
 # number = 1 ; legacy, links against whatever is provided by available cfitsio package
 # number = 2 ; links against cfitsio < 3.410
 # number = 3 ; links against cfitsio >= 3.410
@@ -31,6 +31,7 @@ requirements:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: https://heasarc.gsfc.nasa.gov/docs/software/ftools/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    md5: 84f2930e802891392043cb8a6cbf4d5d
 
 test:
     commands:

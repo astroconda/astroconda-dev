@@ -1,7 +1,8 @@
 {% set name = 'jwst' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set number = '2' %}
 
 about:
@@ -10,8 +11,9 @@ about:
     summary: JWST Pipeline code
 
 build:
+    skip: True [py27]
     number: {{ number }}
-    preserve_egg_dir: 'True'
+    preserve_egg_dir: True
 
 package:
     name: {{ name }}
@@ -22,9 +24,10 @@ requirements:
     - astropy
     - matplotlib
     - namedlist
-    - numpy >=1.7*
+    - pymssql [not py36]
     - setuptools
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
 
     run:
     - asdf
@@ -32,20 +35,24 @@ requirements:
     - crds
     - dask
     - drizzle
-    - drizzlepac
+    - fitsblender
     - gwcs
     - jsonschema
     - jplephem
     - matplotlib
     - namedlist
-    - nose
     - photutils
-    - pymssql
+    - pymssql [not py36]
     - scipy
     - six
+    - stsci.image
+    - stsci.imagestats
+    - stsci.sphere
+    - stsci.stimage
+    - stsci.tools
     - verhawk
-    - numpy >=1.7*
-    - python x.x
+    - numpy
+    - python
 
 source:
     # The git rev may be overridden by setting an env var with the name

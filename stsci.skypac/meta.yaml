@@ -1,8 +1,9 @@
 {% set name = 'stsci.skypac' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -27,8 +28,8 @@ requirements:
     - stsci.tools
     - stwcs
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
 
     run:
     - astropy
@@ -36,8 +37,8 @@ requirements:
     - stsci.sphere
     - stsci.tools
     - stwcs
-    - python x.x
-    - python x.x
+    - python
+    - python
 
 source:
     git_url: https://github.com/spacetelescope/{{ name }}

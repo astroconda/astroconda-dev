@@ -1,6 +1,6 @@
 {% set name = 'namedlist' %}
 {% set version = '1.7' %}
-{% set number = '0' %}
+{% set number = '1' %}
 {% set filename = name + '-' + version + '.tar.gz' %}
 
 about:
@@ -18,7 +18,7 @@ package:
 requirements:
     build:
     - setuptools
-    - python
+    - python {{ python }}
 
     run:
     - python

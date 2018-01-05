@@ -1,12 +1,12 @@
 {% set name = 'sphinx_rtd_theme' %}
 {% set version = '0.1.9' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/sphinx_rtd_theme
     license: BSD
     summary: sphinx_rtd_theme
-    
+
 build:
     number: {{ number }}
 
@@ -18,11 +18,11 @@ requirements:
     build:
     - sphinx
     - setuptools
-    - python x.x
+    - python {{ python }}
 
     run:
     - sphinx
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

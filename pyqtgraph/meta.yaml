@@ -1,6 +1,6 @@
 {% set name = 'pyqtgraph' %}
 {% set version = '0.10.0' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: http://www.pyqtgraph.org/
@@ -17,13 +17,13 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python {{ python }}
 
     run:
     - pyqt
     - pyopengl
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

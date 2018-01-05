@@ -1,8 +1,6 @@
 {% set name = 'stsci-hst' %}
-{% set version = environ.get("GIT_DESCRIBE_TAG", "0.0.0")
-    +".dev"
-    +environ.get("GIT_DESCRIBE_NUMBER", "0") %}
-{% set number = '1' %}
+{% set version = '0.0.0dev.0' %}
+{% set number = '2' %}
 
 about:
     home: http://www.stsci.edu
@@ -30,7 +28,6 @@ requirements:
     - nictools >=*0.0*
     - pyregion >=*0.0*
     - pysynphot >=*0.0*
-    - pywcs >=*0.0*
     - reftools >=*0.0*
     - stistools >=*0.0*
     - stsci.convolve >=*0.0*
@@ -48,4 +45,4 @@ requirements:
     - wfpc2tools >=*0.0*
     - wfc3tools >=*0.0*
     - numpy
-    - python x.x
+    - python

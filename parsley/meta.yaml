@@ -1,7 +1,7 @@
 {% set name = 'parsley' %}
 {% set badname = 'Parsley' %}
 {% set version = '1.3' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/P/{{ badname }}
@@ -19,9 +19,9 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python {{ python }}
     run:
-    - python x.x
+    - python
 
 source:
     fn: Parsley-{{ version }}.tar.gz

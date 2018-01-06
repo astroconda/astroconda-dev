@@ -1,6 +1,6 @@
 {% set name = 'fftw' %}
 {% set version = '3.3.4' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.fftw.org
@@ -24,3 +24,4 @@ requirements:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: http://www.fftw.org/{{ name }}-{{ version }}.tar.gz
+    md5: 2edab8c06b24feeb3b82bbb3ebf3e7b3

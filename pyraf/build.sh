@@ -9,4 +9,4 @@ set +e
     2to3 -w .
 fi
 
-python setup.py install || exit 1
+$PYTHON setup.py install

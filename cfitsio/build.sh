@@ -4,4 +4,5 @@ case "$(uname)" in
         ;;
 esac
 ./configure --prefix=$PREFIX --disable-static --enable-reentrant
-(make -j $CPU_COUNT shared && make install) || exit 1
+make -j $CPU_COUNT shared
+make install

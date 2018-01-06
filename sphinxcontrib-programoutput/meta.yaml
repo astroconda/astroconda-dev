@@ -1,16 +1,16 @@
 {% set name = 'sphinxcontrib-programoutput' %}
 {% set version = '0.8' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/{{ name }}
     license: BSD
     summary: sphinxcontrib-programoutput
-    
+
 build:
     number: {{ number }}
     preserve_egg_dir: True
-    
+
 package:
     name: {{ name }}
     version: {{ version }}
@@ -19,11 +19,11 @@ requirements:
     build:
     - sphinx
     - setuptools
-    - python x.x
-    
+    - python {{ python }}
+
     run:
     - sphinx
-    - python x.x
+    - python
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz

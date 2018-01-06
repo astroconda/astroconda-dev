@@ -1,3 +1,4 @@
-
+# README has invalid unicode characters
 echo > README.txt
-python setup.py install || exit 1
+
+$PYTHON setup.py install

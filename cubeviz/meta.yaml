@@ -22,9 +22,10 @@ requirements:
     - asdf
     - asteval
     - astropy
-    - glueviz
+    - glueviz >=0.12
+    - specviz
+    - pytest >=3.1*
     - numpy {{ numpy }}
-    - pytest
     - setuptools
     - python {{ python }}
 
@@ -34,7 +35,9 @@ requirements:
     - astropy
     - glueviz
     - numpy
-    - pytest
+    - glueviz >=0.12
+    - specviz
+    - pytest >=3.1*
     - python
 
 source:

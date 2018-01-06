@@ -17,6 +17,7 @@ package:
 requirements:
     build:
     - autoconf [osx]
+    - automake [osx]
     - fftw
     - gcc
     - libtool [osx]

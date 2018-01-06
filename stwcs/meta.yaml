@@ -21,6 +21,7 @@ requirements:
     build:
     - astropy >=1.1
     - lxml
+    - requests
     - stsci.tools
     - setuptools
     - numpy {{ numpy }}
@@ -28,6 +29,7 @@ requirements:
     run:
     - astropy >=1.1
     - lxml
+    - requests
     - stsci.tools
     - numpy
     - python

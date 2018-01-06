@@ -27,6 +27,7 @@ requirements:
     - specutils
     - glueviz
     - matplotlib
+    - qtpy
     - numpy {{ numpy }}
     - python {{ python }}
 
@@ -35,6 +36,7 @@ requirements:
     - specutils
     - glueviz
     - matplotlib
+    - qtpy
     - numpy
     - python
 

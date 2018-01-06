@@ -20,12 +20,14 @@ package:
 requirements:
     build:
     - astropy >=1.1
+    - lxml
     - stsci.tools
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
     run:
     - astropy >=1.1
+    - lxml
     - stsci.tools
     - numpy
     - python

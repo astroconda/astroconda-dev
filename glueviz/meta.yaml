@@ -4,7 +4,7 @@
 
 {% set name = 'glueviz' %}
 {% set version = '0.12.0' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 package:
   name: {{ name }}
@@ -24,6 +24,9 @@ requirements:
     - glue-core >=0.12
     - glue-vispy-viewers >=0.9
     - glue-ginga
+    # Conda-build is not smart enough to use 'python' on its own.
+    # DO NOT REMOVE THIS LINE:
+    - python
 
 app:
   entry: glue

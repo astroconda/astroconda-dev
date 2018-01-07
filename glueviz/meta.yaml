@@ -1,6 +1,10 @@
+# NOTE: this is a meta-package that includes the core glue code as well as stable
+# plugins. This is the main conda package we want in the Navigator, so we add the
+# app: entry here and not in the glue-core package.
+
 {% set name = 'glueviz' %}
-{% set version = '0.8.2' %}
-{% set number = '2' %}
+{% set version = '0.12.0' %}
+{% set number = '0' %}
 
 package:
   name: {{ name }}
@@ -8,43 +12,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/g/glueviz/{{ name }}-{{ version }}.tar.gz
-  md5: 92dd7de2621a6ab6861cc9b689e86c3e
+  url: https://pypi.io/packages/source/g/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4b41b9bb41d88567e9fef76af545059ba9bb6c3a3645a07619fa5b1b47adbc5e
 
 build:
   number: {{ number }}
   script: python setup.py install --single-version-externally-managed --record record.txt
-  osx_is_app: True
 
 requirements:
-  build:
-    - python {{ python }}
-
   run:
-    - python
-    - numpy {{ numpy }}
-    - scipy
-    - matplotlib
-    - astropy
-    - ipython
-    - ipykernel
-    - h5py
-    - pandas
-    - pyqt
-    - qtconsole
-    - xlrd
-    - scikit-image
-    - python.app  # [osx]
-
-test:
-  requires:
-    - mock
-    - pytest
-  imports:
-    - glue
-  commands:
-    - glue --version
-    - glue-deps list
+    - glue-core >=0.12
+    - glue-vispy-viewers >=0.9
+    - glue-ginga
 
 app:
   entry: glue
@@ -56,7 +35,3 @@ about:
   home: http://glueviz.org
   license: BSD 3-Clause
   summary: Multi-dimensional linked data exploration
-
-extra:
-  recipe-maintainers:
-    - astrofrog

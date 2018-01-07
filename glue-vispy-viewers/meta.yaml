@@ -1,46 +1,45 @@
 {% set name = 'glue-vispy-viewers' %}
-{% set version = '0.4' %}
-{% set number = '2' %}
-
-about:
-  home: https://github.com/glue-viz/glue-vispy-viewers
-  license: BSD 3-Clause
-  summary: 3D viewers for Glue
+{% set version = "0.9" %}
+{% set number = '0' %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{version}}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/glue-vispy-viewers/{{ name }}-{{ version }}.tar.gz
-  md5: ded543ba93070a71f322da650b792b16
+  sha256: 8af81e184fc2ed43421f5be4affb88b9c190dd6c5ef14317821bd6b921c591d3
 
 build:
   number: {{ number }}
   script: python setup.py install --single-version-externally-managed --record record.txt
+  preserve_egg_dir: True
 
 requirements:
   build:
-    - python {{ python }}
+    - python
     - setuptools
+    - numpy
+    - pyopengl
+    - glue-core >=0.12
 
   run:
     - python
-    - numpy {{ numpy }}
+    - numpy
     - pyopengl
-    - glueviz
-    - scikit-image
+    - glue-core >=0.12
     - matplotlib
+    - qtpy
+    - pyqt
 
 test:
-  requires:
-    - mock
-    - pytest
   imports:
     - glue_vispy_viewers
+    - glue_vispy_viewers.scatter
+    - glue_vispy_viewers.volume
 
-
-extra:
-  recipe-maintainers:
-    - astrofrog
+about:
+  home: https://github.com/glue-viz/glue-vispy-viewers
+  license: BSD 3-Clause
+  summary: 3D viewers for Glue

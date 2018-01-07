@@ -21,6 +21,7 @@ requirements:
     build:
     - astropy >=1.1
     - lxml
+    - pytest
     - requests
     - stsci.tools
     - setuptools

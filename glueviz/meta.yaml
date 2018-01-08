@@ -4,7 +4,7 @@
 
 {% set name = 'glueviz' %}
 {% set version = '0.12.0' %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 package:
   name: {{ name }}
@@ -20,6 +20,11 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
+  build:
+    # Conda-build is not smart enough to use 'python' on its own.
+    # DO NOT REMOVE THIS LINE:
+    - python {{ python }}
+
   run:
     - glue-core >=0.12
     - glue-vispy-viewers >=0.9

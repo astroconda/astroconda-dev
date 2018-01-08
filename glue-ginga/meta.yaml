@@ -1,7 +1,7 @@
 {% set name = 'glue-ginga' %}
 {% set version = '0.2' %}
 {% set tag = 'v' + version %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/ejeschke/{{ name }}
@@ -22,14 +22,14 @@ requirements:
     - glue-vispy-viewers >=0.8
     - ginga >=2.6.1
     - setuptools
-    - numpy
-    - python x.x
+    - numpy {{ numpy }}
+    - python {{ python }}
     run:
     - astropy >=1.2
     - glueviz >=0.10
     - ginga >=2.6.1
     - numpy
-    - python x.x
+    - python
 
 source:
     git_tag: {{ tag }}

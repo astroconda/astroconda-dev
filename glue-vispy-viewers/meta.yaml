@@ -1,6 +1,6 @@
 {% set name = 'glue-vispy-viewers' %}
 {% set version = "0.9" %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 package:
   name: {{ name }}
@@ -18,9 +18,9 @@ build:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - setuptools
-    - numpy
+    - numpy {{ numpy }}
     - pyopengl
     - glue-core >=0.12
 

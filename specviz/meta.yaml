@@ -7,6 +7,9 @@ about:
   home: https://github.com/spacetelescope/specviz
   license: BSD
 
+build:
+    number: {{ number }}
+
 package:
   name: {{ name }}
   version: {{ version }}

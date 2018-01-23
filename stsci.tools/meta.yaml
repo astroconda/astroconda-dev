@@ -31,7 +31,6 @@ requirements:
     - astropy
     - nose      # .tester
     - pytest    # .tester
-    - stwcs     # .fileutils
     - numpy
     - python
 

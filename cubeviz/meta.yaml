@@ -22,7 +22,7 @@ requirements:
     - asdf
     - asteval
     - astropy
-    - glueviz >=0.12
+    - glue-core >=0.12
     - specviz
     - pytest >=3.1*
     - numpy {{ numpy }}
@@ -33,9 +33,8 @@ requirements:
     - asdf
     - asteval
     - astropy
-    - glueviz
     - numpy
-    - glueviz >=0.12
+    - glue-core >=0.12
     - specviz
     - pytest >=3.1*
     - python

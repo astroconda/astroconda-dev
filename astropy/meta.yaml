@@ -1,9 +1,9 @@
 {% set name = 'astropy' %}
-{% set version = "3.0.0.dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% set version = "3.1.0.dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/astropy/{{ name }}

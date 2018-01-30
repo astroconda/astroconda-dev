@@ -50,6 +50,7 @@ requirements:
     - stsci.sphere
     - stsci.stimage
     - stsci.tools
+    - stwcs
     - verhawk
     - numpy
     - python

@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}

@@ -12,6 +12,7 @@ about:
 
 build:
     number: {{ number }}
+    skip: True [py27]
 
 package:
     name: {{ name }}

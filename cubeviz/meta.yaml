@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -22,8 +22,9 @@ requirements:
     - asdf
     - asteval
     - astropy
-    - glueviz >=0.12
+    - glue-core >=0.12
     - specviz
+    - spectral-cube
     - pytest >=3.1*
     - numpy {{ numpy }}
     - setuptools
@@ -33,10 +34,10 @@ requirements:
     - asdf
     - asteval
     - astropy
-    - glueviz
     - numpy
-    - glueviz >=0.12
+    - glue-core >=0.12
     - specviz
+    - spectral-cube
     - pytest >=3.1*
     - python
 

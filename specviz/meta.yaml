@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
   home: https://github.com/spacetelescope/specviz
@@ -39,6 +39,7 @@ requirements:
   run:
     - astropy
     - cython
+    - docopt
     - specutils
     - py-expression-eval
     - pyyaml

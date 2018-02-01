@@ -25,7 +25,7 @@ requirements:
   build:
     - astropy
     - specutils
-    - glueviz
+    - glue-core
     - matplotlib
     - qtpy
     - numpy {{ numpy }}
@@ -34,7 +34,7 @@ requirements:
   run:
     - astropy
     - specutils
-    - glueviz
+    - glue-core
     - matplotlib
     - qtpy
     - numpy

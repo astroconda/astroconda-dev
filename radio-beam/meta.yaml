@@ -1,0 +1,40 @@
+{% set name = 'radio-beam' %}
+{% set reponame = 'radio_beam' %}
+{% set tag = 'v0.2' %}
+{% set version = tag %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/radio-astro-tools/{{ reponame }}
+    license: BSD
+    summary: This package provides tools for working with beams in radio data.
+
+build:
+    number: {{ number }}
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+requirements:
+    build:
+    - astropy
+    - numpy {{ numpy }}
+    - python {{ python }}
+    - setuptools
+
+    run:
+    - astropy
+    - numpy
+    - python
+
+source:
+    git_tag: {{ tag }}
+    git_url: https://github.com/radio-astro-tools/{{ reponame }}.git
+
+test:
+    imports:
+    - radio_beam

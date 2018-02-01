@@ -39,6 +39,7 @@ requirements:
   run:
     - astropy
     - cython
+    - docopt
     - specutils
     - py-expression-eval
     - pyyaml

@@ -1,7 +1,9 @@
 {% set name = 'specviz' %}
-{% set version = '0.2.1rc5' %}
-{% set tag = 'v' + version %}
-{% set number = '2' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
 
 about:
   home: https://github.com/spacetelescope/specviz
@@ -15,18 +17,20 @@ package:
   version: {{ version }}
 
 source:
-  git_tag: {{ tag }}
   git_url: https://github.com/spacetelescope/specviz.git
 
 requirements:
   build:
     - astropy
     - cython
+    - docopt
     - specutils
+    - py-expression-eval
     - pyyaml
     - pyqtgraph >=0.9.11
-    - pyqt
+    - qtpy
     - scipy
+    - spectral-cube
     - yaml
     - setuptools
     - numpy {{ numpy }}
@@ -36,10 +40,12 @@ requirements:
     - astropy
     - cython
     - specutils
+    - py-expression-eval
     - pyyaml
     - pyqtgraph >=0.9.11
-    - pyqt
+    - qtpy
     - scipy
+    - spectral-cube
     - yaml
     - numpy
     - python

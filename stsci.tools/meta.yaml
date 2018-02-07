@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '5' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -20,17 +20,14 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - astropy
+    - pytest-runner
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
 
     run:
     - astropy
-    - nose      # .tester
-    - pytest    # .tester
     - numpy
     - python
 

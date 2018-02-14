@@ -16,7 +16,6 @@ package:
 
 requirements:
     run:
-    - purge_path >=*0.0*
     - acstools >=*0.0*
     - astropy >=*0.0*
     - calcos >=*0.0*

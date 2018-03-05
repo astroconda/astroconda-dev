@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '2' %}
+{% set number = '3' %}
 
 about:
     home: https://github.com/astropy/specutils
@@ -24,14 +24,18 @@ requirements:
     build:
     - astropy
     - cython
+    - gwcs
     - scipy
+    - six
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
 
     run:
     - astropy
+    - gwcs
     - scipy
+    - six
     - numpy
     - python
 

@@ -44,8 +44,6 @@ test:
     - specutils
     - specutils.analysis
     - specutils.io
-    - specutils.modeling
     - specutils.spectra
     - specutils.utils
     - specutils.wcs
-

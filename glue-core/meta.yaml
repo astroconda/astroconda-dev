@@ -57,6 +57,7 @@ requirements:
     # Optional dependencies (defined in ``extras_require``)
     - scipy
     - scikit-image
+    - spectral-cube
     - plotly
 
     # Temporary: the scikit-image conda package is missing the dask dependency

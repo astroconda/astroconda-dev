@@ -1,6 +1,6 @@
 {% set name = 'cfitsio' %}
-{% set version = '3.410' %}
-{% set version_short = '3410' %}
+{% set version = '3.430' %}
+{% set version_short = '3430' %}
 {% set number = '2' %}
 
 about:

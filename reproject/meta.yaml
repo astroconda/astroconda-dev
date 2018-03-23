@@ -1,0 +1,44 @@
+{% set name = "reproject" %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
+
+about:
+  home: http://reproject.readthedocs.io/
+  license: BSD
+  summary: |
+    Reproject astronomical images
+
+build:
+  number: {{ number }}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+requirements:
+  build:
+    - astropy >=1.0
+    - astropy-healpix
+    - cython
+    - scipy >=0.9
+    - setuptools
+    - numpy {{ numpy }}
+    - python {{ python }}
+
+  run:
+    - astropy >=1.0
+    - astropy-healpix
+    - scipy >=0.9
+    - numpy
+    - python
+
+source:
+  git_url: https://github.com/astrofrog/{{ name }}.git
+
+test:
+  imports:
+    - reproject
+

@@ -1,0 +1,39 @@
+{% set name = "astropy-healpix" %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
+
+about:
+  home: http://astropy-healpix.readthedocs.io/
+  license: BSD
+  summary: Speedy Cosmic Ray Annihilation Package in Python
+
+build:
+  number: {{ number }}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+requirements:
+  build:
+    - astropy
+    - cython
+    - setuptools <38.5.1
+    - numpy {{ numpy }}
+    - python {{ python }}
+
+  run:
+    - astropy
+    - numpy
+    - python
+
+source:
+  git_url: https://github.com/astropy/{{ name }}.git
+
+test:
+  imports:
+    - astropy_healpix
+

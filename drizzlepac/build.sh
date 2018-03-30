@@ -1,3 +1,2 @@
-
-test -f setup.cfg && sed -i -e '/astrolib\.coords.*/d' setup.cfg
+$PYTHON setup.py build build_ext --inplace -- build_sphinx
 $PYTHON setup.py install

@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '2' %}
+{% set number = '3' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -23,8 +23,8 @@ requirements:
     - d2to1
     - stsci.distutils
     - astropy
+    - spherical-geometry
     - stsci.imagestats
-    - stsci.sphere
     - stsci.tools
     - stwcs
     - setuptools
@@ -33,11 +33,10 @@ requirements:
 
     run:
     - astropy
+    - spherical-geometry
     - stsci.imagestats
-    - stsci.sphere
     - stsci.tools
     - stwcs
-    - python
     - python
 
 source:

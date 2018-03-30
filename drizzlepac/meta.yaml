@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
     home: https://github.com/spacetelescope/drizzlepac.git
@@ -23,15 +23,20 @@ requirements:
     - stsci.distutils
     - astropy
     - fitsblender
+    - graphviz
     - nictools
+    - numpydoc
     - scipy
+    - spherical-geometry
+    - sphinx
+    - sphinx_rtd_theme
+    - stsci_rtd_theme
     - stsci.convolve
     - stsci.image
     - stsci.imagemanip
     - stsci.imagestats
     - stsci.ndimage
     - stsci.skypac
-    - stsci.sphere
     - stsci.stimage
     - stwcs
     - pyregion
@@ -44,13 +49,13 @@ requirements:
     - fitsblender
     - nictools
     - scipy
+    - spherical-geometry
     - stsci.convolve
     - stsci.image
     - stsci.imagemanip
     - stsci.imagestats
     - stsci.ndimage
     - stsci.skypac
-    - stsci.sphere
     - stsci.stimage
     - stwcs
     - pyregion

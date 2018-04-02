@@ -23,6 +23,7 @@ requirements:
     - fitsblender
     - graphviz
     - nictools
+    - nose
     - numpydoc
     - scipy
     - spherical-geometry
@@ -46,6 +47,7 @@ requirements:
     - astropy
     - fitsblender
     - nictools
+    - nose
     - scipy
     - spherical-geometry
     - stsci.convolve

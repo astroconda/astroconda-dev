@@ -45,7 +45,7 @@ requirements:
     - pymssql [not py36]
     - scipy
     - six
-    - spherical_geometry
+    - spherical-geometry
     - stsci.image
     - stsci.imagestats
     - stsci.stimage

@@ -40,6 +40,7 @@ requirements:
     # Required dependencies
     - python
     - numpy
+    - bottleneck >=1.2
     - pandas >=0.14
     - astropy >=1.3
     - matplotlib >=1.4

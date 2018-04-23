@@ -32,7 +32,7 @@ requirements:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: https://heasarc.gsfc.nasa.gov/docs/software/ftools/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    md5: 84f2930e802891392043cb8a6cbf4d5d
+    #md5: 84f2930e802891392043cb8a6cbf4d5d # Checksumming broken in conda-build.
 
 test:
     commands:

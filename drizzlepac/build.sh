@@ -1,2 +1,5 @@
-$PYTHON setup.py build build_ext --inplace -- build_sphinx
+# Placeholder for real conda package
+pip install --no-deps --upgrade --force sphinx-automodapi
+
+$PYTHON setup.py build_sphinx
 $PYTHON setup.py install

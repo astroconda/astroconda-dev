@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '2' %}
+{% set number = '3' %}
 
 about:
     home: http://www.stsci.edu/hst/observatory/crds/
@@ -28,7 +28,7 @@ requirements:
     - requests
     - lxml
     - parsley
-    - lockfile
+    - filelock
     - setuptools
     - python {{ python }}
 
@@ -40,7 +40,7 @@ requirements:
     - lxml
     - fitsverify
     - parsley
-    - lockfile
+    - filelock
     - python
 
 source:

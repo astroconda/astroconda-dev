@@ -3,7 +3,7 @@ python:
   - 3.6
 
 numpy:
-  - 1.12
+  - 1.13
 
 pin_build_as_run:
   python:

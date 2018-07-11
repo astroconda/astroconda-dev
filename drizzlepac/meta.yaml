@@ -38,7 +38,7 @@ requirements:
     - stsci.skypac
     - stsci.stimage
     - stwcs
-    - pyregion
+    - stregion
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
@@ -58,7 +58,7 @@ requirements:
     - stsci.skypac
     - stsci.stimage
     - stwcs
-    - pyregion
+    - stregion
     - setuptools
     - numpy
     - python

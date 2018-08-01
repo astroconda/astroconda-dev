@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '3' %}
+{% set number = '4' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -24,7 +24,7 @@ requirements:
     - astropy
     - matplotlib
     - namedlist
-    - pymssql [not py36]
+    - pymssql
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
@@ -41,7 +41,7 @@ requirements:
     - matplotlib
     - namedlist
     - photutils
-    - pymssql [not py36]
+    - pymssql
     - scipy
     - six
     - spherical-geometry

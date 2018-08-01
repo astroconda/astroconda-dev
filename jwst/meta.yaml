@@ -35,7 +35,6 @@ requirements:
     - crds
     - dask
     - drizzle
-    - fitsblender
     - gwcs
     - jsonschema
     - jplephem
@@ -50,7 +49,6 @@ requirements:
     - stsci.imagestats
     - stsci.stimage
     - stsci.tools
-    - stwcs
     - verhawk
     - numpy
     - python

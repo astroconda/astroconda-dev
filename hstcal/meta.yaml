@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '4' %}
+{% set number = '5' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -33,3 +33,5 @@ source:
 test:
   commands:
     - calacs.e --gitinfo
+    - otool -L $(which calacs.e) [osx]
+    - ldd $(which calacs.e) [linux]

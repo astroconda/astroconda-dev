@@ -3,7 +3,8 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '3' %}
+{% set number = '4' %}
+# number = 4 ; links against cfitsio >= 3.440 (no curl)
 
 about:
     home: http://www.stsci.edu/hst/observatory/crds/

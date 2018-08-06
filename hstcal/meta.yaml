@@ -3,7 +3,8 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '5' %}
+{% set number = '6' %}
+# number = 6 ; links against cfitsio >= 3.440 (no curl)
 
 about:
     home: https://github.com/spacetelescope/{{ name }}

@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 about:
   home: https://github.com/spacetelescope/specviz
@@ -27,8 +27,10 @@ requirements:
     - specutils
     - py-expression-eval
     - pyyaml
+    - pyqt >=5.0.0
     - pyqtgraph >=0.9.11
     - qtpy
+    - qtawesome
     - scipy
     - spectral-cube
     - yaml
@@ -43,8 +45,10 @@ requirements:
     - specutils
     - py-expression-eval
     - pyyaml
+    - pyqt >=5.0.0
     - pyqtgraph >=0.9.11
     - qtpy
+    - qtawesome
     - scipy
     - spectral-cube
     - yaml
@@ -55,6 +59,7 @@ test:
   requires:
     - astropy
     - specutils
+
   imports:
     - specviz
 

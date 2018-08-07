@@ -1,11 +1,9 @@
-# Version has been faked!
-# Replace with GIT_DESCRIBE_TAG when >=0.13.0 exists in the repository
 {% set name = 'glue-core' %}
-{% set version = "0.13.0" ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '1' %}
+{% set number = '2' %}
 
 package:
   name: {{ name }}

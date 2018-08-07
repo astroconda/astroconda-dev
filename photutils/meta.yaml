@@ -3,15 +3,16 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '4' %}
+{% set number = '0' %}
 
 about:
     home: https://github.com/astropy/{{ name }}
     license: BSD
-    summary: photutils
+    summary: An Astropy package for photometry
 
 build:
     number: {{ number }}
+    skip: True [py27]
 
 package:
     name: {{ name }}
@@ -19,29 +20,31 @@ package:
 
 requirements:
     build:
-    - nose
-    - astropy
-    - cython
-    - matplotlib
-    - numpy {{ numpy }}
-    - scikit-image
-    - scipy
-    - setuptools
-    - python {{ python }}
+      - astropy >=2.0
+      - cython
+      - matplotlib >=1.3
+      - numpy >=1.10
+      - scikit-image >=0.11
+      - scikit-learn >=0.18
+      - scipy >=0.16
+      - setuptools
+      - python {{ python }}
 
     run:
-    - astropy
-    - cython
-    - matplotlib
-    - numpy
-    - scikit-image
-    - scipy
-    - setuptools
-    - python
+      - astropy >=2.0
+      - pytest-astropy
+      - cython
+      - matplotlib >=1.3
+      - numpy >=1.10
+      - scikit-image >=0.11
+      - scikit-learn >=0.18
+      - scipy >=0.16
+      - setuptools
+      - python
 
 source:
     git_url: https://github.com/astropy/{{ name }}.git
 
 test:
-    imports:
+  imports:
     - photutils

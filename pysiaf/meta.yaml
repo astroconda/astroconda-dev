@@ -1,16 +1,17 @@
 {% set name = 'pysiaf' %}
-{% set version = '0.1.8' %}
-{% set tag = version %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
 {% set number = '0' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
     license: BSD
-    summary: 
+    summary:
         Handling of Science Instrument Aperture Files (SIAF) for space telescopes
 
 source:
-    git_tag: {{ tag }}
     git_url: https://github.com/spacetelescope/{{ name }}.git
 
 package:
@@ -19,7 +20,7 @@ package:
 
 build:
     number: {{ number }}
-    
+
 requirements:
     build:
     - astropy >=1.2
@@ -30,7 +31,7 @@ requirements:
     - openpyxl >=2.4
     - python {{ python }}
     - setuptools
-    
+
     run:
     - astropy >=1.2
     - numpy >=1.9

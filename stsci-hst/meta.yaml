@@ -25,7 +25,6 @@ requirements:
     - fitsblender >=*0.0*
     - hstcal >=*0.0*
     - nictools >=*0.0*
-    - pyregion >=*0.0*
     - pysynphot >=*0.0*
     - reftools >=*0.0*
     - stistools >=*0.0*

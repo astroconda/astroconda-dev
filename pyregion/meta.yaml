@@ -12,6 +12,7 @@ about:
 
 build:
     number: {{ number }}
+    skip: True  # Replaced by 'stregion'
 
 package:
     name: {{ name }}

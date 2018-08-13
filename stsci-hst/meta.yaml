@@ -1,6 +1,6 @@
 {% set name = 'stsci-hst' %}
 {% set version = '0.0.0dev.0' %}
-{% set number = '2' %}
+{% set number = '3' %}
 
 about:
     home: http://www.stsci.edu
@@ -15,32 +15,36 @@ package:
     version: {{ version }}
 
 requirements:
+    build:
+      - numpy {{ numpy }}
+      - python {{ python }}
+
     run:
-    - acstools >=*0.0*
-    - astropy >=*0.0*
-    - calcos >=*0.0*
-    - costools >=*0.0*
-    - crds >=*0.0*
-    - drizzlepac >=*0.0*
-    - fitsblender >=*0.0*
-    - hstcal >=*0.0*
-    - nictools >=*0.0*
-    - pysynphot >=*0.0*
-    - reftools >=*0.0*
-    - stistools >=*0.0*
-    - stsci.convolve >=*0.0*
-    - stsci.image >=*0.0*
-    - stsci.imagemanip >=*0.0*
-    - stsci.imagestats >=*0.0*
-    - stsci.ndimage >=*0.0*
-    - stsci.numdisplay >=*0.0*
-    - stsci.sphinxext >=*0.0*
-    - stsci.stimage >=*0.0*
-    - stsci.skypac >=*0.0*
-    - stsci.sphere >=*0.0*
-    - stsci.tools >=*0.0*
-    - stwcs >=*0.0*
-    - wfpc2tools >=*0.0*
-    - wfc3tools >=*0.0*
-    - numpy
-    - python
+      - acstools >=*0.0*
+      - astropy >=*0.0*
+      - calcos >=*0.0*
+      - costools >=*0.0*
+      - crds >=*0.0*
+      - drizzlepac >=*0.0*
+      - fitsblender >=*0.0*
+      - hstcal >=*0.0*
+      - nictools >=*0.0*
+      - pysynphot >=*0.0*
+      - reftools >=*0.0*
+      - stistools >=*0.0*
+      - stsci.convolve >=*0.0*
+      - stsci.image >=*0.0*
+      - stsci.imagemanip >=*0.0*
+      - stsci.imagestats >=*0.0*
+      - stsci.ndimage >=*0.0*
+      - stsci.numdisplay >=*0.0*
+      - stsci.sphinxext >=*0.0*
+      - stsci.stimage >=*0.0*
+      - stsci.skypac >=*0.0*
+      - stsci.sphere >=*0.0*
+      - stsci.tools >=*0.0*
+      - stwcs >=*0.0*
+      - wfpc2tools >=*0.0*
+      - wfc3tools >=*0.0*
+      - numpy
+      - python

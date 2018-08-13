@@ -1,6 +1,6 @@
 {% set name = 'stsci-data-analysis' %}
 {% set version = '0.0.0dev.0' %}
-{% set number = '3' %}
+{% set number = '4' %}
 
 about:
     home: http://stsci.edu
@@ -15,15 +15,19 @@ package:
     version: {{ version }}
 
 requirements:
+    build:
+      - numpy {{ numpy }}
+      - python {{ python }}
+
     run:
-    - astropy >=*0.0*
-    - astroimtools >=*0.0*
-    - stginga >=*0.0*
-    - specviz >=*0.0*
-    - photutils >=*0.0*
-    - glueviz >=*0.0*
-    - imexam >=*0.0*
-    - asdf >=*0.0*
-    - numpy
-    - python
+      - astropy >=*0.0*
+      - astroimtools >=*0.0*
+      - stginga >=*0.0*
+      - specviz >=*0.0*
+      - photutils >=*0.0*
+      - glueviz >=*0.0*
+      - imexam >=*0.0*
+      - asdf >=*0.0*
+      - numpy
+      - python
 

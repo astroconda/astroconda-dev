@@ -1,7 +1,7 @@
 {% set badname = "PyOpenGL-accelerate" %}
 {% set name = badname|lower %}
 {% set version = "3.1.1a1" %}
-{% set number = '0' %}
+{% set number = '100' %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_value = "3d37af9f2565febf214e1da2a5fe019561992d34026ce2a5f51972e121b84cdd" %}

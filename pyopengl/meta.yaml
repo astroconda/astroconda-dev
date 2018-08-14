@@ -1,7 +1,7 @@
 {% set badname = "PyOpenGL" %}
 {% set name = badname|lower %}
 {% set version = "3.1.1a1" %}
-{% set number = '0' %}
+{% set number = '100' %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_value = "c96d909b359abe3271b746bacf7e6ba52935141e2406a8f90231e4e44dfa4075" %}

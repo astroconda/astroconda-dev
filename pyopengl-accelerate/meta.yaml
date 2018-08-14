@@ -1,0 +1,42 @@
+{% set badname = "PyOpenGL-accelerate" %}
+{% set name = badname|lower %}
+{% set version = "3.1.1a1" %}
+{% set number = '0' %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "3d37af9f2565febf214e1da2a5fe019561992d34026ce2a5f51972e121b84cdd" %}
+
+about:
+  home: http://pyopengl.sourceforge.net
+  license: BSD License
+  summary: Acceleration code for PyOpenGL
+  description: "Acceleration code for PyOpenGL\n\nThis set of C (Cython) extensions provides acceleration of common operations\nfor slow points in PyOpenGL 3.x."
+
+package:
+  name: '{{ name }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ badname }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ badname[0] }}/{{ badname }}/{{ badname }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: {{ number }}
+
+requirements:
+  build:
+    - cython
+    - numpy {{ numpy }}
+    - pyopengl =={{ version }}
+    - python {{ python }}
+    - setuptools
+
+  run:
+    - numpy
+    - pyopengl =={{ version }}
+    - python
+
+test:
+  imports:
+    - OpenGL_accelerate

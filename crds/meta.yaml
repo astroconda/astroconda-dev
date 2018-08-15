@@ -30,6 +30,7 @@ requirements:
     - lxml
     - parsley
     - filelock
+    - lockfile
     - setuptools
     - python {{ python }}
 
@@ -39,6 +40,8 @@ requirements:
     - numpy
     - requests
     - lxml
+    - filelock
+    - lockfile
     - fitsverify
     - parsley
     - filelock

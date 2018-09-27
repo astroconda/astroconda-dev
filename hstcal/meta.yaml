@@ -29,6 +29,12 @@ requirements:
       - libgcc >=4.7
 
 source:
+    # The git rev may be overridden by setting an env var with the name
+    # "ASCO_GIT_REV_<package short name>" before building the recipe.
+    # i.e "ASCO_GIT_REV_hstcal=2.0.0"
+    # The value may be a git full hash, short hash, branch, or tag name.
+    # The default value is "master".
+    git_rev: {{ environ.get("ASCO_GIT_REV_"+name, "master") }}
     git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:

@@ -22,7 +22,6 @@ requirements:
     build:
       - cfitsio
       - pkg-config
-      - gcc >=4.7
 
     run:
       - cfitsio

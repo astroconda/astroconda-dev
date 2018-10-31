@@ -48,15 +48,15 @@ source:
     git_rev: "master"
     git_url: https://github.com/astropy/{{ name }}.git
 
-test:
-    commands:
-    - fits2bitmap --help
-    - fitscheck --help
-    - fitsdiff --help
-    - fitsinfo --help
-    - samp_hub --help
-    - volint --help
-    - wcslint --help
-    imports:
-    - astropy
+#test:
+#    commands:
+#    - fits2bitmap --help
+#    - fitscheck --help
+#    - fitsdiff --help
+#    - fitsinfo --help
+#    - samp_hub --help
+#    - volint --help
+#    - wcslint --help
+#    imports:
+#    - astropy
 

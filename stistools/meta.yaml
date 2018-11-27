@@ -19,10 +19,14 @@ package:
 
 requirements:
     build:
-    - d2to1
-    - stsci.distutils
     - astropy
+    - nose
+    - numpy
+    - numpydoc
     - scipy
+    - sphinx
+    - sphinx_rtd_theme
+    - stsci_rtd_theme
     - stsci.tools
     - setuptools
     - numpy {{ numpy }}
@@ -30,7 +34,13 @@ requirements:
 
     run:
     - astropy
+    - nose
+    - numpy
+    - numpydoc
     - scipy
+    - sphinx
+    - sphinx_rtd_theme
+    - stsci_rtd_theme
     - stsci.tools
     - numpy
     - python

@@ -1,6 +1,6 @@
 {% set name = 'stsci-data-analysis' %}
 {% set version = '0.0.0.dev0' %}
-{% set number = '5' %}
+{% set number = '6' %}
 
 about:
     home: http://stsci.edu

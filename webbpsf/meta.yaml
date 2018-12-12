@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '3' %}
+{% set number = '4' %}
 
 # Keep in mind:
 #     webbpsf-data is version-locked to prevent older builds from picking

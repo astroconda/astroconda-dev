@@ -26,7 +26,7 @@ package:
 requirements:
     build:
     - nose
-    - astropy <3.0
+    - astropy >=1.0.3
     - numpy {{ numpy }}
     - scipy
     - matplotlib
@@ -40,7 +40,7 @@ requirements:
 
     run:
     - nose
-    - astropy <3.0
+    - astropy >=1.0.3
     - numpy
     - scipy
     - matplotlib

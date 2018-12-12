@@ -11,7 +11,7 @@
 #     need to be updated to reflect it. If there was a better way, I'd do it
 
 about:
-    home: https://github.com/mperrin/{{ name }}
+    home: https://github.com/spacetelescope/{{ name }}
     license: BSD
     summary: webbpsf
 

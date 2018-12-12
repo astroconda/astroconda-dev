@@ -23,8 +23,8 @@ requirements:
     build:
     - asdf
     - astropy
+    - ci_watson
     - crds
-    - dask
     - drizzle
     - gwcs
     - jsonschema
@@ -34,9 +34,7 @@ requirements:
     - photutils
     - pymssql
     - pytest
-    - pytest-remotedata
     - scipy
-    - six
     - spherical-geometry
     - stsci.image
     - stsci.imagestats
@@ -50,8 +48,8 @@ requirements:
     run:
     - asdf
     - astropy
+    - ci_watson
     - crds
-    - dask
     - drizzle
     - gwcs
     - jsonschema
@@ -61,9 +59,7 @@ requirements:
     - photutils
     - pymssql
     - pytest
-    - pytest-remotedata
     - scipy
-    - six
     - spherical-geometry
     - stsci.image
     - stsci.imagestats

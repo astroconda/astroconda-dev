@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '2' %}
+{% set number = '3' %}
 
 # Keep in mind:
 #     webbpsf-data is version-locked to prevent older builds from picking
@@ -34,7 +34,7 @@ requirements:
     - pysiaf
     - jwxml
     - six [py27]
-    - webbpsf-data >=0.4.1
+    - webbpsf-data >=0.7.0
     - setuptools
     - python {{ python }}
 
@@ -48,12 +48,12 @@ requirements:
     - poppy
     - pysiaf
     - six [py27]
-    - webbpsf-data >=0.4.1
+    - webbpsf-data >=0.7.0
     - setuptools
     - python
 
 source:
-    git_url: https://github.com/mperrin/{{ name }}.git
+    git_url: https://github.com/spacetelescope/{{ name }}.git
 
 test:
     commands:

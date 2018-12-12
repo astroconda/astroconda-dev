@@ -1,6 +1,6 @@
 {% set name = 'webbpsf-data' %}
-{% set version = '0.5.0' %}
-{% set number = '1' %}
+{% set version = '0.7.0' %}
+{% set number = '0' %}
 
 about:
     home: http://www.stsci.edu/~mperrin/software/webbpsf
@@ -17,4 +17,4 @@ package:
 source:
     fn: {{ name }}-{{ version }}.tar.gz
     url: http://www.stsci.edu/~mperrin/software/webbpsf/{{ name }}-{{ version }}.tar.gz
-    md5: c1cd63fcb68f97382e5ca5a64f720e46
+    md5: f1ebd2bfe981aebc299dae93b079e59c

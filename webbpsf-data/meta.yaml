@@ -1,6 +1,6 @@
 {% set name = 'webbpsf-data' %}
 {% set version = '0.7.0' %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: http://www.stsci.edu/~mperrin/software/webbpsf

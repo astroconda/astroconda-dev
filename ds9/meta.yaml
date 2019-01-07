@@ -1,5 +1,5 @@
 {% set name = 'ds9' %}
-{% set version = '8.0' %}
+{% set version = '8.0.1' %}
 {% set number = '0' %}
 
 about:

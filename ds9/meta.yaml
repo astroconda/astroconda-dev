@@ -17,6 +17,7 @@ package:
 requirements:
     build:
     - gcc >=4.6 [osx]
+    - autoconf
 
 source:
     fn: {{ name }}.{{ version }}.tar.gz

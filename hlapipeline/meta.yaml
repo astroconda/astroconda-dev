@@ -1,0 +1,56 @@
+{% set name = 'hlapipeline' %}
+{% set version = GIT_DESCRIBE_TAG ~ ".dev" ~ GIT_DESCRIBE_NUMBER ~ "+" ~ GIT_DESCRIBE_HASH %}
+{% if version[0] == 'v' %}
+{%   set version = version[1:] %}
+{% endif %}
+{% set number = '0' %}
+
+about:
+    home: https://github.com/spacetelescope/hlapipeline.git
+    license: BSD
+    summary: Software related to the migration of the HLA to the pipeline
+
+build:
+    number: {{ number }}
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+
+requirements:
+    build:
+    - click>=6.0
+    - photutils
+    - astroquery
+    - sphinx_rtd_theme
+    - stsci_rtd_theme
+    - stwcs
+    - setuptools
+    - pytest-runner
+    - numpy {{ numpy }}
+    - python {{ python }}
+
+    run:
+    - click>=6.0
+    - astropy
+    - scipy
+    - matplotlib
+    - photutils
+    - pyyaml
+    - astroquery
+    - scipy
+    - sphinx
+    - sphinx_rtd_theme
+    - stsci_rtd_theme
+    - stsci.tools
+    - stwcs
+    - setuptools
+    - numpy {{ numpy }}
+    - python {{ python }}
+
+source:
+    git_url: https://github.com/spacetelescope/{{ name }}.git
+
+test:
+    imports:
+    - hlapipeline

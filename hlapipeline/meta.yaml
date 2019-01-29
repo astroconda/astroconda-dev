@@ -36,7 +36,6 @@ requirements:
     - scipy
     - matplotlib
     - photutils
-    - pyyaml
     - astroquery
     - scipy
     - sphinx

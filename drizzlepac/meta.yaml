@@ -21,6 +21,7 @@ requirements:
     build:
     - acstools
     - astropy
+    - astroquery
     - fitsblender
     - graphviz
     - nictools
@@ -40,12 +41,16 @@ requirements:
     - stwcs
     - stregion
     - setuptools
+    - photutils
+    - pysynphot
+    - tweakwcs
     - numpy {{ numpy }}
     - python {{ python }}
 
     run:
     - acstools
     - astropy
+    - astroquery
     - fitsblender
     - nictools
     - nose
@@ -60,6 +65,9 @@ requirements:
     - stwcs
     - stregion
     - setuptools
+    - photutils
+    - pysynphot
+    - tweakwcs
     - numpy
     - python
 

@@ -22,6 +22,8 @@ source:
 requirements:
   build:
     - astropy
+    - asteval
+    - click
     - cython
     - docopt
     - specutils
@@ -62,4 +64,3 @@ test:
 
   imports:
     - specviz
-

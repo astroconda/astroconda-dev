@@ -31,7 +31,6 @@ requirements:
     - matplotlib
     - photutils
     - pymssql
-    - pytest
     - scipy
     - spherical-geometry
     - stsci.image
@@ -53,7 +52,6 @@ requirements:
     - matplotlib
     - photutils
     - pymssql
-    - pytest
     - scipy
     - spherical-geometry
     - stsci.image

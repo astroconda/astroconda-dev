@@ -19,23 +19,19 @@ package:
 
 requirements:
     build:
-    - astropy
-    - pyyaml
-    - jsonschema
-    - pytest
-    - semantic_version >=2.6.0
-    - six
+    - semantic_version >=2.3.1
+    - pyyaml >=3.10
+    - jsonschema >=2.3,<=2.6
+    - six >=1.9.0
     - setuptools
     - numpy {{ numpy }}
     - python {{ python }}
-
     run:
-    - astropy
-    - pyyaml
-    - jsonschema
+    - semantic_version >=2.3.1
+    - pyyaml >=3.10
+    - jsonschema >=2.3,<=2.6
     - pytest
-    - semantic_version >=2.6.0
-    - six
+    - six >=1.9.0
     - setuptools
     - numpy
     - python

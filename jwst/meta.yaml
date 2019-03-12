@@ -26,10 +26,9 @@ requirements:
     - crds
     - drizzle
     - gwcs
-    - jsonschema
+    - jsonschema <=2.6
     - jplephem
     - matplotlib
-    - namedlist
     - photutils
     - pymssql
     - pytest
@@ -38,7 +37,6 @@ requirements:
     - stsci.image
     - stsci.imagestats
     - stsci.stimage
-    - stsci.tools
     - verhawk
     - setuptools
     - numpy {{ numpy }}
@@ -50,10 +48,9 @@ requirements:
     - crds
     - drizzle
     - gwcs
-    - jsonschema
+    - jsonschema <=2.6
     - jplephem
     - matplotlib
-    - namedlist
     - photutils
     - pymssql
     - pytest
@@ -62,7 +59,6 @@ requirements:
     - stsci.image
     - stsci.imagestats
     - stsci.stimage
-    - stsci.tools
     - verhawk
     - numpy
     - python

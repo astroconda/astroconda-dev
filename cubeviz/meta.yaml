@@ -26,8 +26,9 @@ requirements:
     - specviz
     - spectral-cube
     - pytest >=3.1*
-    - numpy {{ numpy }}
     - setuptools
+    - setuptools_scm
+    - numpy {{ numpy }}
     - python {{ python }}
 
     run:

@@ -24,16 +24,12 @@ requirements:
     - astroquery
     - fitsblender
     - graphviz
+    - lxml
     - nictools
     - nose
-    - numpydoc
     - scipy
     - spherical-geometry
-    - sphinx
-    - sphinx_rtd_theme
-    - stsci_rtd_theme
     - stsci.image
-    - stsci.imagemanip
     - stsci.imagestats
     - stsci.ndimage
     - stsci.skypac
@@ -54,6 +50,7 @@ requirements:
     - fitsblender
     - nictools
     - nose
+    - lxml
     - scipy
     - spherical-geometry
     - stsci.image

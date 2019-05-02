@@ -12,6 +12,8 @@ about:
 
 build:
     number: {{ number }}
+    # Cannot be installed stand-alone as of 04/27/2019
+    skip: true
 
 package:
     name: {{ name }}

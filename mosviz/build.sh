@@ -5,4 +5,5 @@ cp setup.cfg.new setup.cfg
 # as there is no file containing 'glueviz' produced for that package since
 # glueviz has become a metapackage.
 sed -i -e "/'glueviz.*',$/d" setup.py
-$PYTHON setup.py install
+
+$PYTHON setup.py install --single-version-externally-managed --record=record.txt

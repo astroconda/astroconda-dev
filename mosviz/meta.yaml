@@ -28,6 +28,7 @@ requirements:
     - glue-core
     - matplotlib
     - qtpy
+    - setuptools_scm
     - numpy {{ numpy }}
     - python {{ python }}
 

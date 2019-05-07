@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/{{ name }}
@@ -11,7 +11,6 @@ about:
     summary: stsci.imagemanip
 build:
     number: {{ number }}
-    preserve_egg_dir: 'yes'
 
 package:
     name: {{ name }}

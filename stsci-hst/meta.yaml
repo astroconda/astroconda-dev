@@ -1,6 +1,6 @@
 {% set name = 'stsci-hst' %}
 {% set version = '0.0.0.dev0' %}
-{% set number = '5' %}
+{% set number = '6' %}
 
 about:
     home: http://www.stsci.edu
@@ -37,7 +37,6 @@ requirements:
       - stsci.imagemanip >=*0.0*
       - stsci.imagestats >=*0.0*
       - stsci.ndimage >=*0.0*
-      - stsci.sphinxext >=*0.0*
       - stsci.stimage >=*0.0*
       - stsci.skypac >=*0.0*
       - stsci.tools >=*0.0*

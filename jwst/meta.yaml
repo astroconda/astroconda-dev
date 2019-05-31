@@ -73,5 +73,3 @@ source:
 test:
     imports:
     - jwst
-    - jwst.steps
-    # no timeconversion: JPL network is too unstable to obtain *.bsp files.

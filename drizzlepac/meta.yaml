@@ -3,7 +3,7 @@
 {% if version[0] == 'v' %}
 {%   set version = version[1:] %}
 {% endif %}
-{% set number = '0' %}
+{% set number = '1' %}
 
 about:
     home: https://github.com/spacetelescope/drizzlepac.git
@@ -31,7 +31,6 @@ requirements:
     - spherical-geometry
     - stsci.image
     - stsci.imagestats
-    - stsci.ndimage
     - stsci.skypac
     - stsci.stimage
     - stwcs
@@ -54,9 +53,7 @@ requirements:
     - scipy
     - spherical-geometry
     - stsci.image
-    - stsci.imagemanip
     - stsci.imagestats
-    - stsci.ndimage
     - stsci.skypac
     - stsci.stimage
     - stwcs
